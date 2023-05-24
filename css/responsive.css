@@ -66,6 +66,7 @@
 
     .logo {
         float: left;
+        min-width: 300px;
         width: 50%;
         margin: 0;
         position: absolute;
@@ -93,6 +94,7 @@
     
 @media (min-width: 960px) and (max-width: 1279.98px) { /*Medium*/
         
+    
 }
     
 @media (min-width: 1280px) { /*Large*/

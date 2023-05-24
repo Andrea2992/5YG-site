@@ -1,0 +1,19 @@
+.block {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.textAlignRight {
+    text-align: right;
+}
+
+.textAlignLeft {
+    text-align: left;
+}
+
+.inlineBlock {
+    display: inline-block;
+}

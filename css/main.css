@@ -1,3 +1,12 @@
+@import 'fonts.css';
+@import 'generalClasses.css';
+
+/************** GENERAL ******************/
+
+body {
+    font-family: 'Oswald-Light', Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -27,7 +36,7 @@ header {
 
 .logo {
     float: left;
-    width: 25%;
+    width: 35%;
     margin: 0;
 }
 
@@ -44,6 +53,16 @@ nav {
     transform: translateY(-50%);
 }
 
+nav ul {
+    margin: 0 auto;
+    
+}
+
+nav li {
+    margin: 7px 4px;
+    padding: 1px;
+}
+
 .navFullScreen {
     display: block;
     position: static;
@@ -52,38 +71,23 @@ nav {
     margin-top: 80px;
 }
 
-nav ul {
-    margin: 0 auto;
-    
+nav.navFullScreen li {
+    border: 1px black solid;
+    padding: 5px 0 5px 7px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8365721288515406) 18%, rgba(255,0,0,1) 100%);
 }
 
-.textAlignRight {
-    text-align: right;
-}
-
-.textAlignLeft {
-    text-align: left;
-}
-
-.inlineBlock {
-    display: inline-block;
-}
-
-.block {
-    display: block;
-}
-
-nav li {
-    margin: 7px 4px;
+nav.navFullScreen li a {
+    color: #fff;
 }
 
 nav li a {
     color: rgb(0, 0, 0);
+    font-size: 18px;
     font-weight: bold;
     padding: 2px 5px;
     text-align: center;
     text-transform: uppercase;
-    
 }
 
 .menu {
@@ -99,6 +103,4 @@ nav li a {
     background-color: rgb(41, 41, 41);
 }
 
-.hide {
-    display: none;
-}
+/************ SLIDER **************/
