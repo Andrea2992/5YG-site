@@ -10,14 +10,6 @@
         margin: 0;
     }
 
-    nav {
-       display: none;
-    }
-
-    nav li { /*****forse*****/
-        display: list-item;
-    }
-
     #navBar {
         float: right;
         cursor: pointer;
@@ -47,14 +39,6 @@
         top: 50%;
         transform: translateY(-50%);
         left: 5px;
-    }
-
-    nav {
-       display: none;
-    }
-
-    nav li { /*****forse*****/
-        display: list-item;
     }
 
     #navBar {
@@ -92,15 +76,7 @@
         left: 5px;
     }
 
-    nav {
-       display: none;
-    }
-
-    nav li { /*****forse*****/
-        display: list-item;
-    }
-
-    #navBar {
+        #navBar {
         float: right;
         cursor: pointer;
         position: absolute;
