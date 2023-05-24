@@ -35,7 +35,7 @@
             if (!menu.hasClass('hide')) {
                 menu.addClass('hide');
             }
-            if(navLargeScreen.hasClass('hide')) {
+            if (navLargeScreen.hasClass('hide')) {
                 navLargeScreen.removeClass('hide');
             }
         }

@@ -18,7 +18,7 @@ header::after {
 }
 
 header {
-    background-color: aqua;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
     position: fixed;
 	width: 100%;
 	top: 0;
@@ -33,14 +33,11 @@ header {
 
 #logoImage {
     width: 100%;
-    background: red;
-
 }
 
 nav {
     width: 65%;
     margin: 0;
-    background: rgb(29, 199, 199);
     position: absolute;
     right: 10px;
     top: 50%;
@@ -86,6 +83,7 @@ nav li a {
     padding: 2px 5px;
     text-align: center;
     text-transform: uppercase;
+    
 }
 
 .menu {
@@ -94,7 +92,11 @@ nav li a {
     height: 100%;
     top: 0;
     left: 0;
-    background: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+#iconBar {
+    background-color: rgb(41, 41, 41);
 }
 
 .hide {
