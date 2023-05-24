@@ -1,1 +1,106 @@
-@import url(responsive.css);
+@import 'fonts.css';
+@import 'generalClasses.css';
+
+/************** GENERAL ******************/
+
+body {
+    font-family: 'Oswald-Light', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+/**************** HEADER ******************/
+header::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+    position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.logo {
+    float: left;
+    width: 35%;
+    margin: 0;
+}
+
+#logoImage {
+    width: 100%;
+}
+
+nav {
+    width: 65%;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul {
+    margin: 0 auto;
+    
+}
+
+nav li {
+    margin: 7px 4px;
+    padding: 1px;
+}
+
+.navFullScreen {
+    display: block;
+    position: static;
+    transform: translateY(0%);
+    width: 100%;
+    margin-top: 80px;
+}
+
+nav.navFullScreen li {
+    border: 1px black solid;
+    padding: 5px 0 5px 7px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8365721288515406) 18%, rgba(255,0,0,1) 100%);
+}
+
+nav.navFullScreen li a {
+    color: #fff;
+}
+
+nav li a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+#iconBar {
+    background-color: rgb(41, 41, 41);
+}
+
+/************ SLIDER **************/
