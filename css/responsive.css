@@ -24,8 +24,12 @@
     }
 
     /*********** SLIDER ************/
+    .slider {
+        height: 350px;
+    }
+    
     .slide-viewer {
-        height: 150px;
+        height: 100%;
     }      
     
     .slide-buttons {
@@ -34,6 +38,51 @@
 
     .slide-btn {
         font-size: 200%;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .container-live {
+       display: block;
+       width: 80%;
+    }
+
+    .container-giorno {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .giorno-concerto {
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info-concerto {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .evento-locale {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .luogo {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 
 }
@@ -72,8 +121,12 @@
     }
 
     /*********** SLIDER ************/
+    .slider {
+        height: 500px;
+    }
+    
     .slide-viewer {
-        height: 250px;
+        height: 100%;
     }      
 
     .slide-buttons {
@@ -82,6 +135,51 @@
 
     .slide-btn {
         font-size: 200%;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .container-live {
+       display: block;
+       width: 80%;
+    }
+
+    .container-giorno {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .giorno-concerto {
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info-concerto {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .evento-locale {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .luogo {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
 
 }
@@ -121,8 +219,12 @@
     }
 
     /*********** SLIDER ************/
+    .slider {
+        height: 600px;
+    }
+    
     .slide-viewer {
-        height: 400px;
+        height: 100%;
     }
     
     .slide-buttons {
@@ -133,13 +235,35 @@
         font-size: 200%;
     }
 
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 35px;
+    }
+
+    .giorno-concerto {
+        font-size: 24px;
+    }
+
+    .evento-locale {
+        font-size: 19px;
+    }
+
+    .luogo {
+        font-size: 19px;
+    }
+
 }
     
 @media (min-width: 960px) and (max-width: 1279.98px) { /*Medium*/
     
     /*********** SLIDER ************/
+    .slider {
+        height: 800px;
+    }
+    
     .slide-viewer {
-        height: 600px;
+        height: 100%;
     }        
     
 }
