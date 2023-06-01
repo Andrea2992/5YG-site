@@ -125,19 +125,19 @@ a, button {
 }
 
 .slide-1 {
-    background: url(../img/live1.jpg) no-repeat center / cover fixed;
+    background: url(../img/live1.jpg) no-repeat center / cover;
 }
 
 .slide-2 {
-    background: url(../img/live2.jpg) no-repeat center / cover fixed;
+    background: url(../img/live2.jpg) no-repeat center / cover;
 }
 
 .slide-3 {
-    background: url(../img/live3.jpg) no-repeat center / cover fixed;
+    background: url(../img/live3.jpg) no-repeat center / cover;
 }
 
 .slide-4 {
-    background: url(../img/live4.jpg) no-repeat center / cover fixed;
+    background: url(../img/live4.jpg) no-repeat center / cover;
 }
 
 .slide {
@@ -175,7 +175,7 @@ a, button {
 #concerti {
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
     color: #fff;
 }
 
