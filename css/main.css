@@ -3,7 +3,7 @@
 
 /************** GENERAL ******************/
 
-* {
+*, h1 {
     padding: 0;
     margin: 0;
 }
@@ -108,12 +108,13 @@ a, button {
 /********** SLIDER **********/
 .slider {
     max-width: 100%;
-    margin: 0px auto 30px auto;
+    height: calc(100vh - 40.391px);
+    margin: 0px auto 0px auto;
 }
 
 .slide-viewer {
     overflow: hidden;
-    height: 800px;
+    height: 100%;
     position: relative;
 }
   
@@ -150,8 +151,6 @@ a, button {
     display: block;
 }
   
-  
-/********** BUTTONS **********/
 .slide-buttons {
     text-align: center;
     background-color: #000;
@@ -170,3 +169,72 @@ a, button {
     color: #ed8e6c;
     cursor: pointer;
 }
+
+/********** CONCERTI **********/
+
+#concerti {
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+    color: #fff;
+}
+
+.title-container {
+    width: 80%;
+    padding-top: 90px;
+    margin: 0 auto 40px auto;
+}
+
+div#concerti h1 {
+    font-size: 45px;
+}
+
+.divide-content {
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+.container-live {
+    display: flex;
+    margin: 0 10%;
+    align-items: center
+}
+
+.container-giorno {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.giorno-concerto {
+    font-size: 30px;
+}
+
+.info-concerto {
+    display: flex;
+    width: 53%;
+    margin-left: 5%;
+}
+
+.evento-locale {
+    display: flex;
+    width: 46%;
+    margin: 0 2%;
+    align-items: center;
+    font-size: 23px;
+}
+
+.luogo {
+    display: flex;
+    width: 46%;
+    margin: 0 2%;
+    font-size: 23px;
+}
+
+.fine-lista-concerti {
+    width: 100%;
+    height: 100px;
+}
+
