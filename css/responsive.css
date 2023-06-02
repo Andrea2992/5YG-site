@@ -23,6 +23,18 @@
         margin: 4px;
     }
 
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+    
+        50% {
+            height: 20px;
+        }
+    }
+
     /*********** SLIDER ************/
     .slider {
         height: 200px;
@@ -118,6 +130,18 @@
         width: 30px;
         height: 5px;
         margin: 4px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+    
+        50% {
+            height: 50px;
+        }
     }
 
     /*********** SLIDER ************/
@@ -218,6 +242,18 @@
         width: 35px;
         height: 5px;
         margin: 5px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
     }
 
     /*********** SLIDER ************/
