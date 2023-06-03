@@ -37,7 +37,7 @@
 
     /*********** SLIDER ************/
     .slider {
-        height: 200px;
+        height: 150px;
     }
     
     .slide-viewer {
@@ -99,7 +99,340 @@
 
 }
 
-@media (min-width: 220px) and (max-width: 499.98px) { /*Smarthphone*/
+@media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
+ 
+    /*********** HEADER ************/
+    header {
+        min-height: 65px;
+    }
+
+    .logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    #navBar {
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    #iconBar {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 4px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+    
+        50% {
+            height: 50px;
+        }
+    }
+
+    /*********** SLIDER ************/
+    .slider {
+        height: 155px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .container-live {
+       display: block;
+       width: 80%;
+    }
+
+    .container-giorno {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .giorno-concerto {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info-concerto {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .evento-locale {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .luogo {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 359.98px) { /*Smarthphone*/
+ 
+    /*********** HEADER ************/
+    header {
+        min-height: 65px;
+    }
+
+    .logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    #navBar {
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    #iconBar {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 4px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+    
+        50% {
+            height: 50px;
+        }
+    }
+
+    /*********** SLIDER ************/
+    .slider {
+        height: 200px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .container-live {
+       display: block;
+       width: 80%;
+    }
+
+    .container-giorno {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .giorno-concerto {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info-concerto {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .evento-locale {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .luogo {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 439.98px) { /*Smarthphone*/
+ 
+    /*********** HEADER ************/
+    header {
+        min-height: 65px;
+    }
+
+    .logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    #navBar {
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    #iconBar {
+        display: block;
+        width: 30px;
+        height: 5px;
+        margin: 4px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+    
+        50% {
+            height: 50px;
+        }
+    }
+
+    /*********** SLIDER ************/
+    .slider {
+        height: 250px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .container-live {
+       display: block;
+       width: 80%;
+    }
+
+    .container-giorno {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    .giorno-concerto {
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .info-concerto {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .evento-locale {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .luogo {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 440px) and (max-width: 499.98px) { /*Smarthphone*/
  
     /*********** HEADER ************/
     header {
@@ -210,7 +543,177 @@
 
 }
 
-@media (min-width: 500px) and (max-width: 959.98px)  { /*Small*/    
+@media (min-width: 500px) and (max-width: 599.98px)  { /*Small*/    
+
+    /*********** HEADER ************/
+    header {
+        min-height: 65px;
+    }
+
+    .logo {
+        float: left;
+        min-width: 300px;
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    #navBar {
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    #iconBar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }
+
+    /*********** SLIDER ************/
+    .slider {
+        height: 350px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }
+    
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 280%;
+        padding: 0 4px;
+        line-height: 0.7em;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 35px;
+    }
+
+    .giorno-concerto {
+        font-size: 24px;
+    }
+
+    .evento-locale {
+        font-size: 19px;
+    }
+
+    .luogo {
+        font-size: 19px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 759.98px)  { /*Small*/    
+
+    /*********** HEADER ************/
+    header {
+        min-height: 65px;
+    }
+
+    .logo {
+        float: left;
+        min-width: 300px;
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    #navBar {
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    #iconBar {
+        display: block;
+        width: 35px;
+        height: 5px;
+        margin: 5px;
+    }
+
+    /*********** LOADER ************/
+
+    @keyframes loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }
+
+    /*********** SLIDER ************/
+    .slider {
+        height: 400px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }
+    
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 280%;
+        padding: 0 4px;
+        line-height: 0.7em;
+    }
+
+    /*********** CONCERTI ************/
+
+    div#concerti h1 {
+        font-size: 35px;
+    }
+
+    .giorno-concerto {
+        font-size: 24px;
+    }
+
+    .evento-locale {
+        font-size: 19px;
+    }
+
+    .luogo {
+        font-size: 19px;
+    }
+
+}
+
+@media (min-width: 760px) and (max-width: 959.98px)  { /*Small*/    
 
     /*********** HEADER ************/
     header {
@@ -294,12 +797,12 @@
     }
 
 }
-    
-@media (min-width: 960px) and (max-width: 1279.98px) { /*Medium*/
+
+@media (min-width: 960px) and (max-width: 1019.98px) { /*Medium*/
     
     /*********** SLIDER ************/
     .slider {
-        height: 800px;
+        height: 570px;
     }
     
     .slide-viewer {
@@ -307,7 +810,59 @@
     }        
     
 }
+
+@media (min-width: 1020px) and (max-width: 1069.98px) { /*Medium*/
     
-@media (min-width: 1280px) { /*Large*/
+    /*********** SLIDER ************/
+    .slider {
+        height: 630px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+    
+}
+
+@media (min-width: 1070px) and (max-width: 1149.98px) { /*Medium*/
+    
+    /*********** SLIDER ************/
+    .slider {
+        height: 680px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+    
+}
+
+@media (min-width: 1150px) and (max-width: 1279.98px) { /*Medium*/
+    
+    /*********** SLIDER ************/
+    .slider {
+        height: 720px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+    
+}
+
+@media (min-width: 1280px) and (max-width: 1350.98px) { /*Large*/
+         
+    /*********** SLIDER ************/
+    .slider {
+        height: 750px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+       
+}
+
+@media (min-width: 1351px){ /*Large*/
         
 }
