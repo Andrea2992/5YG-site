@@ -20,6 +20,16 @@ li {
     list-style: none;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .slide-btn:hover {
+        color: #ed8e6c;
+    }
+    
+    .gallery li:hover {
+        box-shadow: 0px 3px 10px 3px rgb(133, 133, 133);
+    }
+}
+
 /**************** LOADER ******************/
 
 #preloaded-images {
@@ -34,11 +44,6 @@ li {
 }
 
 /**************** HEADER ******************/
-header::after {
-    content: " ";
-    display: table;
-    clear: both;
-}
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
@@ -75,14 +80,12 @@ nav li {
     display: block;
     position: static;
     transform: translateY(0%);
-    width: 80%;
+    width: 100%;
     margin-top: 70px;
-    margin-left: 20%;
 }
 
 nav.navFullScreen li {
     border: 1px black solid;
-    border-radius: 0px 0 0 25px;
     padding: 9px 0 9px 7px;
     margin: 0 2px 0 0;
     background: linear-gradient(90deg, rgba(0,0,0,0.8365721288515406) 18%, rgba(255,0,0,1) 100%);
@@ -98,6 +101,7 @@ nav li a {
 }
 
 #ulSmallScreen a {
+    margin-left: 2%;
     font-size: 22px;
 }
 
@@ -275,18 +279,12 @@ a, button {
     cursor: pointer;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .slide-btn:hover {
-        color: #ed8e6c;
-    }
-}
-
 /********** CONCERTI **********/
 
 #concerti {
     min-height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-    url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
     color: #fff;
 }
 
@@ -349,3 +347,49 @@ div#concerti h1 {
     height: 100px;
 }
 
+/********** ALBUMS **********/
+
+.albums-background {
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/albums.jpg) no-repeat center / cover fixed;
+}
+
+.container-albums {
+    box-sizing: border-box;
+    margin: 30px 10%;
+}
+
+.section-albums {
+    width: 100%;
+}
+
+.gallery {
+    list-style: none;
+    margin: 0;
+	padding: 0;
+    transition: 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery li {
+    width: 25%;
+    margin: 50px 4.15%;
+    float: left;
+    background-color: #dddcdc;
+	z-index: 2;
+}
+
+.gallery li a p {
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    font-family: Oswald-Regular;
+    font-size: 1.2em;
+}

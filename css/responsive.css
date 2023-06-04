@@ -97,6 +97,22 @@
         text-align: center;
     }
 
+    /*********** ALBUMS ************/
+
+    .gallery li {
+        width: 85%;
+        margin: 30px 7.5%;
+    }
+
+    .gallery li {
+        width: 90%;
+        margin: 30px 5%;
+    }
+
+    .gallery li a p {
+        font-size: 0.9em;
+    }
+
 }
 
 @media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
@@ -206,6 +222,17 @@
         width: 100%;
         margin: 0;
         text-align: center;
+    }
+    
+    /*********** ALBUMS ************/
+
+    .gallery li {
+        width: 80%;
+        margin: 30px 10%;
+    }
+
+    .gallery li a p {
+        font-size: 0.9em;
     }
 
 }
@@ -318,6 +345,17 @@
         margin: 0;
         text-align: center;
     }
+    
+    /*********** ALBUMS ************/
+
+    .gallery li {
+        width: 65%;
+        margin: 30px 17.5%;
+    }
+
+    .gallery li a p {
+        font-size: 0.9em;
+    }
 
 }
 
@@ -429,7 +467,17 @@
         margin: 0;
         text-align: center;
     }
+    
+    /*********** ALBUMS ************/
 
+    .gallery li {
+        width: 65%;
+        margin: 30px 17.5%;
+    }
+
+    .gallery li a p {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 440px) and (max-width: 499.98px) { /*Smarthphone*/
@@ -540,6 +588,17 @@
         margin: 0;
         text-align: center;
     }
+    
+    /*********** ALBUMS ************/
+
+    .gallery li {
+        width: 60%;
+        margin: 30px 20%;
+    }
+
+    .gallery li a p {
+        font-size: 1em;
+    }
 
 }
 
@@ -624,6 +683,21 @@
 
     .luogo {
         font-size: 19px;
+    }
+    
+    /*********** ALBUMS ************/
+
+    .container-albums {
+        margin: 30px 10%;
+    }
+
+    .gallery li {
+        width: 45%;
+        margin: 40px 2.5%;
+    }
+
+    .gallery li a p {
+        font-size: 1em;
     }
 
 }
@@ -710,6 +784,21 @@
     .luogo {
         font-size: 19px;
     }
+    
+    /*********** ALBUMS ************/
+
+    .container-albums {
+        margin: 30px 10%;
+    }
+
+    .gallery li {
+        width: 45%;
+        margin: 40px 2.5%;
+    }
+
+    .gallery li a p {
+        font-size: 1em;
+    }
 
 }
 
@@ -795,6 +884,16 @@
     .luogo {
         font-size: 19px;
     }
+    
+    /*********** ALBUMS ************/
+
+    .container-albums {
+        margin: 30px 5%;
+    }
+
+    .gallery li a p {
+        font-size: 0.9em;
+    }
 
 }
 
@@ -808,7 +907,13 @@
     .slide-viewer {
         height: 100%;
     }        
-    
+ 
+    /*********** ALBUMS ************/
+
+    .gallery li a p {
+        font-size: 1em;
+    }
+
 }
 
 @media (min-width: 1020px) and (max-width: 1069.98px) { /*Medium*/
@@ -822,6 +927,12 @@
         height: 100%;
     }        
     
+    /*********** ALBUMS ************/
+
+    .gallery li a p {
+        font-size: 1em;
+    }
+
 }
 
 @media (min-width: 1070px) and (max-width: 1149.98px) { /*Medium*/
