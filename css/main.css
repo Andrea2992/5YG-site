@@ -292,7 +292,7 @@ a, button {
 #concerti {
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-                url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+                url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     color: #fff;
 }
 
@@ -360,7 +360,7 @@ div#concerti h1 {
 .albums-background {
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-                url(../img/albums.jpg) no-repeat center / cover fixed;
+                url(../img/albums.jpg) no-repeat center / cover;
 }
 
 .container-albums {
@@ -402,7 +402,7 @@ div#concerti h1 {
     font-size: 1.2em;
 }
 
-/**************** FOTO INIZIO******************/
+/**************** FOTO ******************/
 
 .galleria-container {
     height: 800px;
@@ -418,7 +418,7 @@ div#concerti h1 {
 
 .freccia-album-left {
     position: absolute;
-    left: 3%;
+    left: 20%;
     background: url(../img/arrow_circle_left.png) no-repeat center / cover;
     border: none;
     height: 40px;
@@ -433,7 +433,7 @@ div#concerti h1 {
 
 .freccia-album-right {
     position: absolute;
-    right: 3%;
+    right: 20%;
     background: url(../img/arrow_circle_right.png) no-repeat center / cover;
     border: none;
     height: 40px;
@@ -457,28 +457,23 @@ div#concerti h1 {
 }
 
 .elem-album-cn {
-    width: 20%;
-    
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 16%;
+    margin-left: 2%;
+    margin-right: 2%;
     background: blue;
     border-radius: 6%;
 }
 
 .elem-album-sx {
     width: 10%;
-    
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 3%;
     background: green;
     border-radius: 6%;
 }
 
 .elem-album-dx {
     width: 10%;
-    
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
     background: green;
     border-radius: 6%;
 }

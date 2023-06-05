@@ -124,13 +124,31 @@
     /*********** FOTO ************/
 
     .freccia-album-left {
-        height: 24px;
-        width: 24px;
+        width: 45px;
+        height: 45px;
+       left: -10%; 
     }
 
     .freccia-album-right {
-        height: 24px;
-        width: 24px;
+        width: 45px;
+        height: 45px;        
+        right: -10%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 50%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
     }
 
 }
@@ -266,14 +284,33 @@
     /*********** FOTO ************/
 
     .freccia-album-left {
-        height: 24px;
-        width: 24px;
+        width: 45px;
+        height: 45px;
+        left: -12%; 
     }
 
     .freccia-album-right {
-        height: 24px;
-        width: 24px;
+        width: 45px;
+        height: 45px;        
+        right: -12%;
     }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 75%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
+    }
+      
 
 }
 
@@ -408,13 +445,31 @@
     /*********** FOTO ************/
 
     .freccia-album-left {
-        height: 24px;
-        width: 24px;
+        width: 55px;
+        height: 55px;
+        left: -6%; 
     }
 
     .freccia-album-right {
-        height: 24px;
-        width: 24px;
+        width: 55px;
+        height: 55px;        
+        right: -6%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 65%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
     }
 
 }
@@ -550,13 +605,31 @@
     /*********** FOTO ************/
 
     .freccia-album-left {
-        height: 24px;
-        width: 24px;
+        width: 55px;
+        height: 55px;
+        left: 0%; 
     }
 
     .freccia-album-right {
-        height: 24px;
-        width: 24px;
+        width: 55px;
+        height: 55px;        
+        right: 0%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 60%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
     }
 
 }
@@ -692,13 +765,31 @@
     /*********** FOTO ************/
 
     .freccia-album-left {
-        height: 24px;
-        width: 24px;
+        width: 55px;
+        height: 55px;
+        left: 8%; 
     }
 
     .freccia-album-right {
-        height: 24px;
-        width: 24px;
+        width: 55px;
+        height: 55px;        
+        right: 8%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 50%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
     }
 
 }
@@ -809,6 +900,36 @@
         font-size: 1em;
     }
 
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        width: 55px;
+        height: 55px;
+       left: 15%; 
+    }
+
+    .freccia-album-right {
+        width: 55px;
+        height: 55px;        
+        right: 15%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 40%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
+    }
+
 }
 
 @media (min-width: 600px) and (max-width: 759.98px)  { /*Small*/    
@@ -917,6 +1038,36 @@
         font-size: 1em;
     }
 
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        width: 55px;
+        height: 55px;
+        left: 18%; 
+    }
+
+    .freccia-album-right {
+        width: 55px;
+        height: 55px;        
+        right: 18%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 40%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
+    }
+
 }
 
 @media (min-width: 760px) and (max-width: 959.98px)  { /*Small*/    
@@ -1019,6 +1170,36 @@
     .gallery li a p {
         font-size: 0.9em;
     }
+
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        width: 55px;
+        height: 55px;
+        left: 18%; 
+    }
+
+    .freccia-album-right {
+        width: 55px;
+        height: 55px;        
+        right: 18%;
+    }
+
+    .album-galleria {
+        padding: 20px 0;
+    }
+
+    .elem-album-cn {
+        width: 35%;
+    }
+
+    .elem-album-sx {
+        display: none;
+    }
+
+    .elem-album-dx {
+        display: none;
+    }    
 
 }
 
