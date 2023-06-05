@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<header id="header" class="clearfix">
-		<a class="logo" href="index.html">
+		<a class="logo" href="#">
 			<img id="logoImage" src="img/logo.png" alt="Logo 5ive Years Gone">
 		</a>
 		<nav id="navLargeScreen">
@@ -34,7 +34,7 @@
 				<li class="inlineBlock"><a href="#">Home</a></li>
 				<li class="inlineBlock"><a href="#concerti">Concerti</a></li>
 				<li class="inlineBlock"><a href="#albums">Albums</a></li>
-				<li class="inlineBlock"><a href="">Foto</a></li>
+				<li class="inlineBlock"><a href="#foto">Foto</a></li>
 				<li class="inlineBlock"><a href="">News</a></li>
 				<li class="inlineBlock"><a href="">Band</a></li>
 				<li class="inlineBlock"><a href="">Contatti</a></li>
@@ -46,7 +46,7 @@
 					<li><a href="#" class="block textAlignLeft">Home</a></li>
 					<li><a href="#concerti" class="block textAlignLeft">Concerti</a></li>
 					<li><a href="#albums" class="block textAlignLeft">Albums</a></li>
-					<li><a href="" class="block textAlignLeft">Foto</a></li>
+					<li><a href="#foto" class="block textAlignLeft">Foto</a></li>
 					<li><a href="" class="block textAlignLeft">News</a></li>
 					<li><a href="" class="block textAlignLeft">Band</a></li>
 					<li><a href="" class="block textAlignLeft">Contatti</a></li>
@@ -136,10 +136,24 @@
 			</section>
 		</div>
 	</div>
-
+	<div id="foto">
+		<div class="galleria-container">
+			<div class="album-container">
+				<button class="freccia-album-left"></button>
+				<ul id="album-galleria" class="album-galleria">
+					<li class="elem-album-sx"></li>
+					<li class="elem-album-cn"></li>
+					<li class="elem-album-dx"></li>
+				</ul>
+				<button class="freccia-album-right"></button>
+			</div>
+			<div id="foto-galleria" class="foto-galleria"></div>
+		</div>
+	</div>
 	
 	<script type="text/javascript" src="js/jQuery-3.7.js"></script>
 	<script type="text/javascript" src="js/nav-menu.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/foto.js"></script>
 </body>
 </html>

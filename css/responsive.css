@@ -121,6 +121,18 @@
         font-size: 0.9em;
     }
 
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        height: 24px;
+        width: 24px;
+    }
+
+    .freccia-album-right {
+        height: 24px;
+        width: 24px;
+    }
+
 }
 
 @media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
@@ -249,6 +261,18 @@
 
     .gallery li a p {
         font-size: 0.9em;
+    }
+
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        height: 24px;
+        width: 24px;
+    }
+
+    .freccia-album-right {
+        height: 24px;
+        width: 24px;
     }
 
 }
@@ -381,6 +405,18 @@
         font-size: 0.9em;
     }
 
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        height: 24px;
+        width: 24px;
+    }
+
+    .freccia-album-right {
+        height: 24px;
+        width: 24px;
+    }
+
 }
 
 @media (min-width: 360px) and (max-width: 439.98px) { /*Smarthphone*/
@@ -510,6 +546,19 @@
     .gallery li a p {
         font-size: 1em;
     }
+
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        height: 24px;
+        width: 24px;
+    }
+
+    .freccia-album-right {
+        height: 24px;
+        width: 24px;
+    }
+
 }
 
 @media (min-width: 440px) and (max-width: 499.98px) { /*Smarthphone*/
@@ -638,6 +687,18 @@
 
     .gallery li a p {
         font-size: 1em;
+    }
+
+    /*********** FOTO ************/
+
+    .freccia-album-left {
+        height: 24px;
+        width: 24px;
+    }
+
+    .freccia-album-right {
+        height: 24px;
+        width: 24px;
     }
 
 }
