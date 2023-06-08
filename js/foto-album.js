@@ -1,6 +1,7 @@
 var foto = [
     {
         albumSrc: 'img/foto-cover-album/vecchiaFormazione-cover-album.jpg',
+        albumTitle: 'Formazione Precedente 2019/2023',
         fotoSrc: [
             {
                 src: 'img/vecchia-formazione/vf-1.jpg',
@@ -46,6 +47,7 @@ var foto = [
     },
     {
         albumSrc: 'img/foto-cover-album/torreano-cover-album.jpg',
+        albumTitle: 'Match Ball - Torreano 2023',
         fotoSrc: [
             {
                 src: 'img/torreano/t-1.jpg',
@@ -127,6 +129,7 @@ var foto = [
     },
     {
         albumSrc: 'img/foto-cover-album/tuneMusicLab-cover-album.jpg',
+        albumTitle: 'Tune Music Lab - Pordenone 2023',
         fotoSrc: [
             {
                 src: 'img/tune-music-lab/tml-1.jpg',
@@ -188,6 +191,7 @@ var foto = [
     },
     {
         albumSrc: 'img/foto-cover-album/rockCamp-cover-album.jpg',
+        albumTitle: 'Rock Camp 2023 - Prepotto (TS) 2023',
         fotoSrc: [
             {
                 src: 'img/rock-camp/rc-1.jpg',

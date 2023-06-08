@@ -133,16 +133,24 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 45px;
         height: 45px;
-       left: -10%; 
+       left: 5%; 
+       z-index: 1000;
+       opacity: 0.7;
     }
 
     .freccia-album-right {
         width: 45px;
         height: 45px;        
-        right: -10%;
+        right: 5%;
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .album-galleria {
@@ -150,7 +158,9 @@
     }
 
     .elem-album-cn {
-        width: 50%;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -162,8 +172,7 @@
     }
 
     .foto-galleria {
-        width: 120%;
-        transform: translateX(-8.5%);
+        width: 100%;
     }
 
     .navigate-left, .navigate-right {
@@ -313,16 +322,24 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 45px;
         height: 45px;
-        left: -12%; 
+        left: 5%;
+        z-index: 1000;
+        opacity: 0.7; 
     }
 
     .freccia-album-right {
         width: 45px;
         height: 45px;        
-        right: -12%;
+        right: 5%;
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .album-galleria {
@@ -330,7 +347,9 @@
     }
 
     .elem-album-cn {
-        width: 75%;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -342,8 +361,7 @@
     }
 
     .foto-galleria {
-        width: 120%;
-        transform: translateX(-8.5%);
+        width: 100%;
     }
 
     .navigate-left, .navigate-right {
@@ -493,16 +511,24 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 55px;
         height: 55px;
-        left: -6%; 
+        left: 5%;
+        z-index: 1000;
+        opacity: 0.7; 
     }
 
     .freccia-album-right {
         width: 55px;
         height: 55px;        
-        right: -6%;
+        right: 5%;
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .album-galleria {
@@ -510,7 +536,9 @@
     }
 
     .elem-album-cn {
-        width: 65%;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -522,8 +550,7 @@
     }
 
     .foto-galleria {
-        width: 120%;
-        transform: translateX(-8.5%);
+        width: 100%;
     }
 
     .navigate-left, .navigate-right {
@@ -673,16 +700,24 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 55px;
         height: 55px;
-        left: 0%; 
+        left: 5%;
+        z-index: 1000;
+        opacity: 0.7; 
     }
 
     .freccia-album-right {
         width: 55px;
         height: 55px;        
-        right: 0%;
+        right: 5%;
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .album-galleria {
@@ -690,7 +725,9 @@
     }
 
     .elem-album-cn {
-        width: 60%;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -702,8 +739,7 @@
     }
 
     .foto-galleria {
-        width: 120%;
-        transform: translateX(-8.5%);
+        width: 100%;
     }
 
     .navigate-left, .navigate-right {
@@ -853,16 +889,24 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 55px;
         height: 55px;
-        left: 8%; 
+        left: 5%; 
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .freccia-album-right {
         width: 55px;
         height: 55px;        
-        right: 8%;
+        right: 5%;
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .album-galleria {
@@ -870,7 +914,9 @@
     }
 
     .elem-album-cn {
-        width: 50%;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -882,8 +928,7 @@
     }
 
     .foto-galleria {
-        width: 120%;
-        transform: translateX(-8.5%);
+        width: 100%;
     }
 
     .navigate-left, .navigate-right {
@@ -1011,16 +1056,24 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 55px;
         height: 55px;
-       left: 15%; 
+        left: 11%; 
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .freccia-album-right {
         width: 55px;
         height: 55px;        
-        right: 15%;
+        right: 11%;
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .album-galleria {
@@ -1028,7 +1081,9 @@
     }
 
     .elem-album-cn {
-        width: 40%;
+        width: 80%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -1040,8 +1095,7 @@
     }
 
     .foto-galleria {
-        width: 120%;
-        transform: translateX(-8.5%);
+        width: 100%;
     }
 
     .navigate-left, .navigate-right {
@@ -1169,16 +1223,22 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 55px;
         height: 55px;
-        left: 18%; 
+        left: 5%;
+        z-index: 1000; 
     }
 
     .freccia-album-right {
         width: 55px;
         height: 55px;        
-        right: 18%;
+        right: 5%;
+        z-index: 1000;
     }
 
     .album-galleria {
@@ -1186,7 +1246,9 @@
     }
 
     .elem-album-cn {
-        width: 40%;
+        width: 70%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {
@@ -1321,16 +1383,22 @@
 
     /*********** FOTO ************/
 
+    .galleria-container {
+        margin: 30px 0;
+    }
+
     .freccia-album-left {
         width: 55px;
         height: 55px;
-        left: 18%; 
+        left: 5%; 
+        z-index: 1000;
     }
 
     .freccia-album-right {
         width: 55px;
         height: 55px;        
-        right: 18%;
+        right: 5%;
+        z-index: 1000;
     }
 
     .album-galleria {
@@ -1338,7 +1406,9 @@
     }
 
     .elem-album-cn {
-        width: 35%;
+        width: 50%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .elem-album-sx {

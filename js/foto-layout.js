@@ -60,7 +60,7 @@
         var widthElemGalleria = elemGalleria.width();
         elemGalleria.css ({'height': widthElemGalleria / 2});
         if (window.innerWidth < 960) {
-            var newWidthElemCn = widthElemCn / 1.4;
+            var newWidthElemCn = widthElemCn / 1.7;
             elemCn.css({'height': newWidthElemCn});
         } else {
             elemSx.css({'height': widthElemSx});
