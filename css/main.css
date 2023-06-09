@@ -57,7 +57,11 @@ li {
     url(../img/live1.jpg),
     url(../img/live2.jpg),
     url(../img/live3.jpg),
-    url(../img/live4.jpg);
+    url(../img/live4.jpg),
+    url(../img/foto-cover-album/vecchiaFormazione-cover-album.jpg),
+    url(../img/foto-cover-album/torreano-cover-album.jpg),
+    url(../img/foto-cover-album/tuneMusicLab-cover-album.jpg),
+    url(../img/foto-cover-album/rockCamp-cover-album.jpg);
 }
 
 /**************** HEADER ******************/
@@ -566,6 +570,15 @@ div#concerti h1 {
   }
   
 @keyframes loader {
+    50% {
+      box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px;
+    }
+    100% {
+      box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px;
+    }
+}
+
+@-webkit-keyframes loader {
     50% {
       box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px;
     }

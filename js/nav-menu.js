@@ -4,7 +4,6 @@
     var $navBar = $('#navBar');
     var navLargeScreen = $('#navLargeScreen');
     var navSmallScreen = $('#navSmallScreen');
-    var $window = $(window);
     
     $navBar.on('click', toggleVisibility);
     navSmallScreen.on('click', closeFullNav);
@@ -26,7 +25,7 @@
         navLargeScreen.addClass('hide');
     }
 
-    $window.on('resize', function() {
+    window.addEventListener('resize', function() {
         if (window.innerWidth < 960) {
             if (!navLargeScreen.hasClass('hide')) {
                 navLargeScreen.addClass('hide');
