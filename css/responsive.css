@@ -138,16 +138,16 @@
     }
 
     .freccia-album-left {
-        width: 45px;
-        height: 45px;
-       left: 5%; 
-       z-index: 1000;
-       opacity: 0.7;
+        width: 40px;
+        height: 40px;
+        left: 5%; 
+        z-index: 1000;
+        opacity: 0.7;
     }
 
     .freccia-album-right {
-        width: 45px;
-        height: 45px;        
+        width: 40px;
+        height: 40px;        
         right: 5%;
         z-index: 1000;
         opacity: 0.7;
@@ -158,7 +158,7 @@
     }
 
     .elem-album-cn {
-        width: 100%;
+        width: 50%;
         margin: 0;
         border-radius: 0;
     }
@@ -331,7 +331,6 @@
         height: 45px;
         left: 5%;
         z-index: 1000;
-        opacity: 0.7; 
     }
 
     .freccia-album-right {
@@ -339,7 +338,6 @@
         height: 45px;        
         right: 5%;
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .album-galleria {
@@ -347,7 +345,7 @@
     }
 
     .elem-album-cn {
-        width: 100%;
+        width: 45%;
         margin: 0;
         border-radius: 0;
     }
@@ -520,7 +518,6 @@
         height: 55px;
         left: 5%;
         z-index: 1000;
-        opacity: 0.7; 
     }
 
     .freccia-album-right {
@@ -528,7 +525,6 @@
         height: 55px;        
         right: 5%;
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .album-galleria {
@@ -536,7 +532,7 @@
     }
 
     .elem-album-cn {
-        width: 100%;
+        width: 45%;
         margin: 0;
         border-radius: 0;
     }
@@ -709,7 +705,6 @@
         height: 55px;
         left: 5%;
         z-index: 1000;
-        opacity: 0.7; 
     }
 
     .freccia-album-right {
@@ -717,7 +712,6 @@
         height: 55px;        
         right: 5%;
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .album-galleria {
@@ -725,7 +719,7 @@
     }
 
     .elem-album-cn {
-        width: 100%;
+        width: 40%;
         margin: 0;
         border-radius: 0;
     }
@@ -898,7 +892,6 @@
         height: 55px;
         left: 5%; 
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .freccia-album-right {
@@ -906,7 +899,6 @@
         height: 55px;        
         right: 5%;
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .album-galleria {
@@ -914,7 +906,7 @@
     }
 
     .elem-album-cn {
-        width: 100%;
+        width: 40%;
         margin: 0;
         border-radius: 0;
     }
@@ -1065,7 +1057,6 @@
         height: 55px;
         left: 11%; 
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .freccia-album-right {
@@ -1073,7 +1064,6 @@
         height: 55px;        
         right: 11%;
         z-index: 1000;
-        opacity: 0.7;
     }
 
     .album-galleria {
@@ -1081,7 +1071,7 @@
     }
 
     .elem-album-cn {
-        width: 80%;
+        width: 35%;
         margin: 0;
         border-radius: 0;
     }
@@ -1246,7 +1236,7 @@
     }
 
     .elem-album-cn {
-        width: 70%;
+        width: 35%;
         margin: 0;
         border-radius: 0;
     }
@@ -1406,7 +1396,7 @@
     }
 
     .elem-album-cn {
-        width: 50%;
+        width: 35%;
         margin: 0;
         border-radius: 0;
     }
