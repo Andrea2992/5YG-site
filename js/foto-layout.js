@@ -1,46 +1,46 @@
 (function() {
   
-    var $window = $(window);
-    $window.on('load', function() {
+    var $window = $(window);/**VIA**/
+    $window.on('load', function() {/**VIA**/
 
     
         function elemWidth() {
-            var elemSx = $('.elem-album-sx');
-            var elemDx = $('.elem-album-dx');
-            var elemCn = $('.elem-album-cn');
-            var widthElemSx = elemSx.width();
-            var widthElemDx = elemDx.width();
-            var widthElemCn = elemCn.width();
-            var elemGalleria = $('.foto-galleria');
-            var widthElemGalleria = elemGalleria.width();
-            elemGalleria.css ({'height': widthElemGalleria / 2});
-            if (window.innerWidth < 960) {
-                var heightElemCn = widthElemCn / 1.7;
-                elemCn.css({'height': heightElemCn});
-            } else {
-                elemSx.css({'height': widthElemSx});
-                elemDx.css({'height': widthElemDx});
-                elemCn.css({'height': widthElemCn});
+            var elemSx = $('.elem-album-sx');/**VIA**/
+            var elemDx = $('.elem-album-dx');/**VIA**/
+            var elemCn = $('.elem-album-cn');/**VIA**/
+            var widthElemSx = elemSx.width();/**VIA**/
+            var widthElemDx = elemDx.width();/**VIA**/
+            var widthElemCn = elemCn.width();/**VIA**/
+            var elemGalleria = $('.foto-galleria');/**RESTA**/
+            var widthElemGalleria = elemGalleria.width();/**RESTA**/
+            elemGalleria.css ({'height': widthElemGalleria / 2});/**RESTA**/
+            if (window.innerWidth < 960) {/**VIA**/
+                var heightElemCn = widthElemCn / 1.7;/**VIA**/
+                elemCn.css({'height': heightElemCn});/**VIA**/
+            } else {/**VIA**/
+                elemSx.css({'height': widthElemSx});/**VIA**/
+                elemDx.css({'height': widthElemDx});/**VIA**/
+                elemCn.css({'height': widthElemCn});/**VIA**/
             }
             
-            fotoAdapt();
+            fotoAdapt();/**VIA**/
         }
 
-        function centerArrow() {   
+        function centerArrow() {   /**VIA**//**VIA**//**VIA**//**VIA**/
             var leftArrow = $('.freccia-album-left');
             var rightArrow = $('.freccia-album-right');
-            var value;
+            var value;/**VIA**//**VIA**//**VIA**/
             var valueText;
             var heightGalleria = $('.album-galleria').outerHeight();
             if (window.innerWidth < 300) {
-                value = (heightGalleria / 2) - 22.5;
+                value = (heightGalleria / 2) - 22.5;/**VIA**//**VIA**/
             } else if (window.innerWidth < 960) {
                 value = (heightGalleria / 2) - 27.5;
-            } else {
+            } else {/**VIA**//**VIA**//**VIA**//**VIA**/
                 value = (heightGalleria / 2) - 20;
             }
             valueText = value.toString() + 'px'
-            leftArrow.css({'top': valueText});
+            leftArrow.css({'top': valueText});/**VIA**//**VIA**//**VIA**/
             rightArrow.css({'top': valueText});
 
             window.addEventListener('resize', function() {
@@ -48,72 +48,72 @@
                 if (window.innerWidth < 300) {
                     value = (heightGalleria / 2) - 22.5;
                 } else if (window.innerWidth < 960) {
-                    value = (heightGalleria / 2) - 27.5;
+                    value = (heightGalleria / 2) - 27.5;/**VIA**//**VIA**//**VIA**/
                 } else {
                     value = (heightGalleria / 2) - 20;
-                }
+                }/**VIA**//**VIA**//**VIA**/
                 valueText = value + 'px'
                 leftArrow.css({'top': valueText});
                 rightArrow.css({'top': valueText});
             });
-        }
+        }/**VIA**//**VIA**//**VIA**//**VIA**//**VIA**/
 
-        function centerNavigateArrows() {
-            var navigateLeft = $('.navigate-left');
-            var navigateRight = $('.navigate-right');
-            var heightFotoGalleria = $('.foto-galleria').height();
-            var topValue = (heightFotoGalleria / 2) - 20;
-            navigateLeft.css({'top': topValue});
-            navigateRight.css({'top': topValue});
+        function centerNavigateArrows() {/**RESTA**/
+            var navigateLeft = $('.navigate-left');/**RESTA**/
+            var navigateRight = $('.navigate-right');/**RESTA**/
+            var heightFotoGalleria = $('.foto-galleria').height();/**RESTA**/
+            var topValue = (heightFotoGalleria / 2) - 20;/**RESTA**/
+            navigateLeft.css({'top': topValue});/**RESTA**/
+            navigateRight.css({'top': topValue});/**RESTA**/
+/**RESTA**/
+            window.addEventListener('resize', function() {/**RESTA**/
+                var heightFotoGalleria = $('.foto-galleria').height();/**RESTA**/
+                var topValue = (heightFotoGalleria / 2) - 20;/**RESTA**/
+                navigateLeft.css({'top': topValue});/**RESTA**/
+                navigateRight.css({'top': topValue});/**RESTA**/
+            })/**RESTA**/
+        }/**RESTA**/
 
-            window.addEventListener('resize', function() {
-                var heightFotoGalleria = $('.foto-galleria').height();
-                var topValue = (heightFotoGalleria / 2) - 20;
-                navigateLeft.css({'top': topValue});
-                navigateRight.css({'top': topValue});
-            })
-        }
 
-
-        elemWidth();
-        centerArrow();
-        centerNavigateArrows();
+        elemWidth();/**RESTA**/
+        centerArrow();/**VIA**/
+        centerNavigateArrows();/**RESTA**/
 
 
         window.addEventListener('resize', function() {
-            var elemSx = $('.elem-album-sx');
-            var elemDx = $('.elem-album-dx');
-            var elemCn = $('.elem-album-cn');
-            var elemGalleria = $('.foto-galleria');
-            var widthElemSx = elemSx.width();
-            var widthElemDx = elemDx.width();
-            var widthElemCn = elemCn.width();
-            var widthElemGalleria = elemGalleria.width();
-            elemGalleria.css ({'height': widthElemGalleria / 2});
-            if (window.innerWidth < 960) {
-                var heightElemCn = widthElemCn / 1.7;
-                elemCn.css({'height': heightElemCn});
-            } else {
-                elemSx.css({'height': widthElemSx});
-                elemDx.css({'height': widthElemDx});
-                elemCn.css({'height': widthElemCn});
-            }
+            var elemSx = $('.elem-album-sx');/**VIA**/
+            var elemDx = $('.elem-album-dx');/**VIA**/
+            var elemCn = $('.elem-album-cn');/**VIA**/
+            var widthElemSx = elemSx.width();/**VIA**/
+            var widthElemDx = elemDx.width();/**VIA**/
+            var widthElemCn = elemCn.width();/**VIA**/
+            var elemGalleria = $('.foto-galleria');/**RESTA**/
+            var widthElemGalleria = elemGalleria.width();/**RESTA**/
+            elemGalleria.css ({'height': widthElemGalleria / 2});/**RESTA**/
+            if (window.innerWidth < 960) {/**VIA**/
+                var heightElemCn = widthElemCn / 1.7;/**VIA**/
+                elemCn.css({'height': heightElemCn});/**VIA**/
+            } else {/**VIA**/
+                elemSx.css({'height': widthElemSx});/**VIA**/
+                elemDx.css({'height': widthElemDx});/**VIA**/
+                elemCn.css({'height': widthElemCn});/**VIA**/
+            }/**VIA**/
 
-            var imgGalleria = $('.album-galleria li img');
+            var imgGalleria = $('.album-galleria li img');/**VIA**/
             imgGalleria.each(function() {
-                if (this.width > this.height) {
+                if (this.width > this.height) {/**VIA**/
                     $(this).css('width', '100%');
                     $(this).css('height', 'auto');
-                } else {
-                    $(this).css('height', '100%');
+                } else {/**VIA**/
+                    $(this).css('height', '100%');/**VIA**/
                     $(this).css('width', 'auto');
-                }
+                }/**VIA**/
             })
-            imgGalleria.each(function() {
+            imgGalleria.each(function() {/**VIA**/
                 $(this).css({
-                    'margin-left': -this.width / 2,
+                    'margin-left': -this.width / 2,/**VIA**/
                     'margin-top': -this.height / 2
-                });
+                });/**VIA**/
             })    
 
         });
