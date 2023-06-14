@@ -439,83 +439,115 @@ div#concerti h1 {
     background: cadetblue;
 }
 
-.album-container {/**VIA**/
-    position: relative;/**VIA**/
-}/**VIA**/
-
-.freccia-album-left {/**VIA**/
-    position: absolute;
-    left: 20%;
-    background: url(../img/navigate-left.png) no-repeat center / cover;
-    border: none;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    border-radius: 50%;
+.items {
+    position: relative;
+    height: 280px; /*da cambiare tramite responsive*/
+    background: lawngreen;
+    user-select: none;
 }
 
-.freccia-album-left:active {/**VIA**/
-   transform: scale(0.9);
+.with {
+    width: 20%;
 }
 
-.freccia-album-right {/**VIA**/
+.item {
     position: absolute;
-    right: 20%;
-    background: url(../img/navigate-right.png) no-repeat center / cover;
-    border: none;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.freccia-album-right:active {/**VIA**/
-    transform: scale(0.9);
- }
-
-.album-galleria {/**VIA**/
-    display: flex;
-    width: 100%;
-    padding: 40px 0;
-    margin: 0 auto;/**VIA**/
-    background: yellow;
-    align-items: center;
-    justify-content: center;/**VIA**/
-}/**VIA**/
-
-.album-galleria li img {/**VIA**/
-    position: absolute;
-    top: 50%;/**VIA**/
+    top: 50%;
     left: 50%;
-}/**VIA**/
-
-.elem-album-cn {/**VIA**/
-    width: 16%;/**VIA**/
-    margin-left: 2%;
-    margin-right: 2%;
-    background: black;/**VIA**/
-    border-radius: 6%;/**VIA**/
+    transform: translate(-50%, -50%);
+    width: 15%; /*da cambiare tramite responsive*/
+    border-radius: 50%;
     overflow: hidden;
-    position: relative;/**VIA**/
-}/**VIA**/
+    transition: all 300ms ease-in-out, height 0ms;
+    z-index: 99;
+    opacity: 0;
+}
+  
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+  
+.item.prev {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-125%, -50%);
+}
+  
+.item.next {
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(25%, -50%);
+}
 
-.elem-album-sx {/**VIA**/
-    width: 10%;
-    margin-right: 3%;/**VIA**/
-    background: black;
-    border-radius: 6%;/**VIA**/
-    overflow: hidden;
-    position: relative;/**VIA**/
-}/**VIA**/
+.items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16%; /*FORSE da cambiare tramite responsive*/
+    z-index: 100;
+}
+  
+.button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
 
-.elem-album-dx {/**VIA**/
-    width: 10%;
-    margin-left: 3%;/**VIA**/
-    background: black;
-    border-radius: 6%;/**VIA**/
-    overflow: hidden;/**VIA**/
-    position: relative;/**VIA**/
-}/**VIA**/
+@media (hover: hover) and (pointer: fine) {
+    .button-container .button:hover {
+        opacity: 1;
+    }
+}
+
+.button-container .button:active {
+    transform: scale(0.85);
+}
+
+.button-container .button:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/navigate-left.png) no-repeat center / cover;
+    width: 50px; /*da cambiare tramite responsive*/
+    height: 50px; /*da cambiare tramite responsive*/
+    border-radius: 50%;
+    z-index: -99;
+}
+
+.button-container .button:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;  /*da cambiare tramite responsive*/
+    height: 50px; /*da cambiare tramite responsive*/
+    background: url(../img/navigate-right.png) no-repeat center / cover;
+    border-radius: 50%;
+    z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+    float: left;
+}
+  
+.button-container .button:nth-child(2) {
+    float: right;
+}
 
 .foto-galleria {
     width: 80%;
