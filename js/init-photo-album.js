@@ -36,7 +36,7 @@ for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", () => i == 0 ? goToPrev() : goToNext());
 }
 
-//PARCO GIOCHI
+
 var imageIds = [];
 
 function createImgElemForAlbum() {
@@ -58,25 +58,24 @@ function createImgElemForAlbum() {
 }
 
 createImgElemForAlbum();
-/*var cacheImgReale = {
-    'img/foto-cover-album/vecchiaFormazione-cover-album.jpg': [
-        {
-            src: 'img/vecchia-formazione/vf-1.jpg',
-            isLoading: true
-        },
-        {
-            src: 'img/vecchia-formazione/vf-2.jpg',
-            isLoading: true
-        },
-    ]
-}*/
 
 function unloadImages() {
-    //per prima cosa unload variabile images ('' per src e alt e classe hide)
+    $('#foto-galleria div img').attr({                          
+            'src': '',                         
+            'alt': ''             
+          }).addClass('hide');
 }
 
 function showLoader() {
-    //mostra loader--nascondi frecce
+  $('#container-photos-loader').addClass('container-photos-loader');
+    $('#photos-loader').addClass('photos-loader');
+    $('#foto-galleria button').addClass('hide');
+}
+
+function hideLoader() {
+    $('#container-photos-loader').removeClass('container-photos-loader');
+    $('#photos-loader').removeClass('photos-loader');
+    $('#foto-galleria button').removeClass('hide');
 }
 
 function addToCache(albumIndex) {
@@ -88,7 +87,7 @@ function addToCache(albumIndex) {
     for (var i = 0; i < selectedPhotos.length; i++) {
          var currentPhoto = selectedPhotos[i]
      
-        var alreadyInCache = cacheImg[albumSrcKey]?.find(function(photo) {
+        var alreadyInCache = cacheImg[albumSrcKey].find(function(photo) {
             return photo.src == currentPhoto.src;
         })
         if (!alreadyInCache) {
@@ -119,29 +118,45 @@ function listenToLoadEvent(albumIndex) {
         $('#' + imageId).attr({                          
             'src': loadedPhotos[i].src,                         
             'alt': loadedPhotos[i].alt             
-          })//display visible
+          }).removeClass('hide').addClass('showImages');
     }
     for (var i = 0; i < notLoadedPhotos.length; i++) {
         var photoIndex = notLoadedPhotos[i].index;
         var imageId = imageIds[photoIndex];
         $('#' + imageId).on('load', function() {
+            var thisELemId = $(this).attr('src');
             var elementInCache = cacheImg[albumSrcKey].find(function(photo) {
-            return photo.src == notLoadedPhotos[i].src;
+            return photo.src == thisELemId;
             })
-            elementInCache.isLoading = false;
+            if (elementInCache) {
+                elementInCache.isLoading = false;
+            }
+            var allPhotoLoaded = cachedAlbumPhotos.every(function(photo) {
+                return photo.isLoading == false;
+            })
+            if (allPhotoLoaded) {
+                hideLoader();
+            }
         })
-         $('#' + imageId).attr({                          
+        $('#' + imageId).attr({                          
             'src': notLoadedPhotos[i].src,                         
             'alt': notLoadedPhotos[i].alt             
-          })//display visible
+        }).removeClass('hide').addClass('showImages');
     }
     
 }
 
 function loadAlbumImages(albumIndex) {
     unloadImages();
-    showLoader();
     addToCache(albumIndex);
+    var albumSrcKey = albumsCover[albumIndex];
+    var cachedAlbumPhotos = cacheImg[albumSrcKey];
+    var stillLoadingPhoto = cachedAlbumPhotos.some(function(photo) {
+        return photo.isLoading == true;
+    })
+    if (stillLoadingPhoto) {
+        showLoader();
+    }
     listenToLoadEvent(albumIndex);    
 }
 
@@ -150,7 +165,7 @@ function loadAlbumImages(albumIndex) {
 
 loadAlbumImages(0);
 
-//FINE PARCO GIOCHI
+
 
 const goToPrev = function() {
     var newCenterIndex  = current > 0 ? current - 1 : slides.length - 1;

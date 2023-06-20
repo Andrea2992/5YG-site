@@ -549,6 +549,13 @@ div#concerti h1 {
     float: right;
 }
 
+.album-title {
+    text-align: center;
+    width: 100%;
+    min-height: 20px;
+    background: lightgreen;
+}
+
 .foto-galleria {
     width: 80%;
     margin: 0 auto;
@@ -556,12 +563,34 @@ div#concerti h1 {
     position: relative;
 }
 
-.album-title {
-    text-align: center;
+.container-photos-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-height: 20px;
-    background: lightgreen;
+    height: 100%;
+    background: #000;
 }
+
+.photos-loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #141414;
+    width: 90px;
+    height: 90px;
+    -webkit-animation: spin 0.6s linear infinite;
+    animation: spin 0.6s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
 .navigate-left {
     position: absolute;
