@@ -47,6 +47,7 @@ function createImgElemForAlbum() {
     var divFotoGalleria = $('#foto-galleria');
     for (var i = 0; i < maxImagesNum; i++) {
         var div = $('<div></div>');
+        div.addClass('photoAlbumDiv')
         var imgItem = $('<img>');
         var id = 'album-image-' + i;
         imgItem.attr('id', id);
@@ -118,7 +119,7 @@ function listenToLoadEvent(albumIndex) {
         $('#' + imageId).attr({                          
             'src': loadedPhotos[i].src,                         
             'alt': loadedPhotos[i].alt             
-          }).removeClass('hide').addClass('showImages');
+          }).removeClass('hide').addClass('block');
     }
     for (var i = 0; i < notLoadedPhotos.length; i++) {
         var photoIndex = notLoadedPhotos[i].index;
@@ -141,9 +142,9 @@ function listenToLoadEvent(albumIndex) {
         $('#' + imageId).attr({                          
             'src': notLoadedPhotos[i].src,                         
             'alt': notLoadedPhotos[i].alt             
-        }).removeClass('hide').addClass('showImages');
+        }).removeClass('hide').addClass('block');
     }
-    
+    //chiamare slider
 }
 
 function loadAlbumImages(albumIndex) {
@@ -171,12 +172,14 @@ const goToPrev = function() {
     var newCenterIndex  = current > 0 ? current - 1 : slides.length - 1;
     gotoNum(newCenterIndex);
     loadAlbumImages(newCenterIndex);
+    sliderAlbum()
 }
 
 const goToNext = function() {
     var newCenterIndex = current < slides.length - 1 ? current + 1 : 0;
     gotoNum(newCenterIndex);
     loadAlbumImages(newCenterIndex);
+    sliderAlbum()
 }
 
 const gotoNum = number => {

@@ -6,10 +6,6 @@
     display: none;
 }
 
-.showImages {
-    display: inline-block;
-}
-
 .textAlignRight {
     text-align: right;
 }
@@ -26,4 +22,26 @@
     content: " ";
     display: table;
     clear: both;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.opacityZero {
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.opacityOne {
+    opacity: 1;
+    transition: all 300ms ease-in-out;
 }
