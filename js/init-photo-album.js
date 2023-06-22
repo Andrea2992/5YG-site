@@ -24,11 +24,24 @@ function elemWidth() {
     var widthItem = item.width();
     item.css({'height': widthItem});
 }
-$(window).on('resize', function() {
+
+
+
+function resizeCoverAlbum(width) {
     var item = $('.item');
-    var widthItem = item.width();
-    item.css({'height': widthItem});
-});
+    item.css({'height': width});
+}
+
+var item = document.querySelector('.item');
+const observer = new ResizeObserver(entries => {
+    const albumCoverElement = entries[0];
+    const width = albumCoverElement.contentRect.width;
+    resizeCoverAlbum(width);
+})
+observer.observe(item)
+
+
+
 elemWidth();
 
 for (let i = 0; i < button.length; i++) {
@@ -70,12 +83,14 @@ function showLoader() {
   $('#container-photos-loader').addClass('container-photos-loader');
     $('#photos-loader').addClass('photos-loader');
     $('#foto-galleria button').addClass('hide');
+    $('.photoAlbumDiv').css({'display': 'none'});
 }
 
 function hideLoader() {
     $('#container-photos-loader').removeClass('container-photos-loader');
     $('#photos-loader').removeClass('photos-loader');
     $('#foto-galleria button').removeClass('hide');
+    $('.photoAlbumDiv').css({'display': 'block'});
 }
 
 function addToCache(albumIndex) {
