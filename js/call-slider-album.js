@@ -1,34 +1,10 @@
 var indexPhoto = 0;
-var arrayElements = [];
 var elementsDiv = $('.photoAlbumDiv');
 var elementsImgShowed = $('.foto-galleria div img');
-elementsDiv.addClass('absolute height100 width100');
-    
-for (i = 0; i < elementsImgShowed.length; i++) {
-    arrayElements.push(elementsImgShowed[i]);
-}
-var showedPhoto = arrayElements.filter(function(img) {
-    return img.attributes[1].nodeValue !== "";
-});
-$showedPhoto = $(showedPhoto);
-$showedPhoto.each(function() {
-    if (this.width > this.height) {
-        $(this).css('width', '100%');
-        $(this).css('height', 'auto');
-        $(this).css('margin', '0 auto');
-    } else {
-        $(this).css('height', '100%');
-        $(this).css('width', 'auto');
-        $(this).css('margin', '0 auto');
-    }
-});
-elementsDiv.addClass('opacityZero');
-elementsDiv.eq(0).removeClass('opacityZero');
-
 
 function sliderAlbum() {
     indexPhoto = 0;
-    arrayElements = [];
+    var arrayElements = [];
     for (i = 0; i < elementsImgShowed.length; i++) {
         arrayElements.push(elementsImgShowed[i]);
     }
@@ -36,17 +12,6 @@ function sliderAlbum() {
         return img.attributes[1].nodeValue !== "";
     });
     $showedPhoto = $(showedPhoto);
-    $showedPhoto.each(function() {
-        if (this.width > this.height) {
-            $(this).css('width', '100%');
-            $(this).css('height', 'auto');
-            $(this).css('margin', '0 auto');
-        } else {
-            $(this).css('height', '100%');
-            $(this).css('width', 'auto');
-            $(this).css('margin', '0 auto');
-        }
-    });
     elementsDiv.removeClass('opacityZero');
     elementsDiv.addClass('opacityZero');
     elementsDiv.eq(indexPhoto).removeClass('opacityZero');

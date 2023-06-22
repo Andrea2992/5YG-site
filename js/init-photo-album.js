@@ -1,8 +1,7 @@
-const slider = document.querySelector(".items");
 const slides = document.querySelectorAll(".item");
 const button = document.querySelectorAll(".button");
 var cacheImg = {};
-
+var cachedAlbumPhotos;
 let current = 0;
 let prev = slides.length - 1;
 let next = 1;
@@ -39,15 +38,15 @@ for (let i = 0; i < button.length; i++) {
 
 var imageIds = [];
 
-function createImgElemForAlbum() {
+function createImgElemForAlbum(idPhotoGalleria) {
     var albumsPhotosLength = albumsPhotos.map(function(album) {
         return album.length;
     });
     var maxImagesNum = Math.max(...albumsPhotosLength);
-    var divFotoGalleria = $('#foto-galleria');
+    var divFotoGalleria = $('#' + idPhotoGalleria);
     for (var i = 0; i < maxImagesNum; i++) {
         var div = $('<div></div>');
-        div.addClass('photoAlbumDiv')
+        div.addClass('photoAlbumDiv absolute height100 width100')
         var imgItem = $('<img>');
         var id = 'album-image-' + i;
         imgItem.attr('id', id);
@@ -58,13 +57,13 @@ function createImgElemForAlbum() {
 
 }
 
-createImgElemForAlbum();
+createImgElemForAlbum('foto-galleria');
 
 function unloadImages() {
     $('#foto-galleria div img').attr({                          
             'src': '',                         
             'alt': ''             
-          }).addClass('hide');
+          }).addClass('hide').removeClass('block');
 }
 
 function showLoader() {
@@ -106,7 +105,7 @@ function addToCache(albumIndex) {
 
 function listenToLoadEvent(albumIndex) {
     var albumSrcKey = albumsCover[albumIndex];
-    var cachedAlbumPhotos = cacheImg[albumSrcKey];
+    cachedAlbumPhotos = cacheImg[albumSrcKey];
     var notLoadedPhotos = cachedAlbumPhotos.filter(function(photo) {
         return photo.isLoading == true;
     });
@@ -119,14 +118,21 @@ function listenToLoadEvent(albumIndex) {
         $('#' + imageId).attr({                          
             'src': loadedPhotos[i].src,                         
             'alt': loadedPhotos[i].alt             
-          }).removeClass('hide').addClass('block');
+          });
+    }
+    if (notLoadedPhotos.length == 0) {
+        for (var i = 0; i < loadedPhotos.length; i++) {
+            var photoIndex = loadedPhotos[i].index;
+            var imageId = imageIds[photoIndex];
+            $('#' + imageId).removeClass('hide').addClass('block');
+        }
     }
     for (var i = 0; i < notLoadedPhotos.length; i++) {
         var photoIndex = notLoadedPhotos[i].index;
         var imageId = imageIds[photoIndex];
         $('#' + imageId).on('load', function() {
             var thisELemId = $(this).attr('src');
-            var elementInCache = cacheImg[albumSrcKey].find(function(photo) {
+            var elementInCache = cachedAlbumPhotos.find(function(photo) {
             return photo.src == thisELemId;
             })
             if (elementInCache) {
@@ -137,12 +143,25 @@ function listenToLoadEvent(albumIndex) {
             })
             if (allPhotoLoaded) {
                 hideLoader();
+                sliderAlbum();
+                var arrayElements = [];
+                var elementsImgShowed = $('.foto-galleria div img');
+                for (i = 0; i < elementsImgShowed.length; i++) {
+                    arrayElements.push(elementsImgShowed[i]);
+                }
+                var showedPhoto = arrayElements.filter(function(img) {
+                    return img.attributes[1].nodeValue !== "";
+                });
+                $showedPhoto = $(showedPhoto);
+                $showedPhoto.each(function() {
+                    $(this).removeClass('hide').addClass('block');
+                })
             }
         })
         $('#' + imageId).attr({                          
             'src': notLoadedPhotos[i].src,                         
             'alt': notLoadedPhotos[i].alt             
-        }).removeClass('hide').addClass('block');
+        });
     }
     //chiamare slider
 }
@@ -161,25 +180,20 @@ function loadAlbumImages(albumIndex) {
     listenToLoadEvent(albumIndex);    
 }
 
-   
-
 
 loadAlbumImages(0);
-
 
 
 const goToPrev = function() {
     var newCenterIndex  = current > 0 ? current - 1 : slides.length - 1;
     gotoNum(newCenterIndex);
     loadAlbumImages(newCenterIndex);
-    sliderAlbum()
 }
 
 const goToNext = function() {
     var newCenterIndex = current < slides.length - 1 ? current + 1 : 0;
     gotoNum(newCenterIndex);
     loadAlbumImages(newCenterIndex);
-    sliderAlbum()
 }
 
 const gotoNum = number => {
