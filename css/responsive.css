@@ -134,7 +134,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -147,6 +147,11 @@
 
     .items .button-container {
         width: 77%;
+    }
+
+    .album-title {
+        font-size: 20px;
+        padding-bottom: 35px;    
     }
 
     .foto-galleria {
@@ -301,7 +306,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -316,6 +321,10 @@
         width: 77%;
     }
 
+    .album-title {
+        font-size: 20px;    
+        padding-bottom: 35px;
+    }
 
     .foto-galleria {
         width: 100%;
@@ -469,7 +478,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -482,6 +491,11 @@
 
     .items .button-container {
         width: 77%;
+    }
+
+    .album-title {
+        font-size: 20px;   
+        padding-bottom: 35px; 
     }
 
     .foto-galleria {
@@ -636,7 +650,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -649,6 +663,11 @@
 
     .items .button-container {
         width: 68%;
+    }
+
+    .album-title {
+        font-size: 22px;    
+        padding-bottom: 35px;
     }
 
     .foto-galleria {
@@ -803,7 +822,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -816,6 +835,11 @@
 
     .items .button-container {
         width: 60%;
+    }
+
+    .album-title {
+        font-size: 22px;   
+        padding-bottom: 35px; 
     }
 
     .foto-galleria {
@@ -948,9 +972,9 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
-
+    
     .items {
         height: 200px;
     }
@@ -961,6 +985,11 @@
 
     .items .button-container {
         width: 60%;
+    }
+
+    .album-title {
+        font-size: 22px;
+        padding-bottom: 35px;    
     }
 
     .foto-galleria {
@@ -1093,7 +1122,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -1106,6 +1135,10 @@
 
     .items .button-container {
         width: 24%;
+    }
+
+    .album-title {
+        padding-bottom: 35px;
     }
 
     .foto-galleria {
@@ -1233,7 +1266,7 @@
     /*********** FOTO ************/
 
     .galleria-container {
-        margin: 30px 0;
+        margin: 0;
     }
 
     .items {
@@ -1246,6 +1279,10 @@
 
     .items .button-container {
         width: 20%;
+    }
+
+    .album-title {
+        padding-bottom: 35px;
     }
 
     .foto-galleria {

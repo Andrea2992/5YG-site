@@ -326,6 +326,7 @@ a, button {
 
 div#concerti h1 {
     font-size: 45px;
+    text-align: center;
 }
 
 .divide-content {
@@ -385,6 +386,16 @@ div#concerti h1 {
                 url(../img/albums.jpg) no-repeat center / cover fixed;
 }
 
+.title-album-section {
+    padding-top: 70px;
+}
+
+.title-album-section h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
+}
+
 .container-albums {
     box-sizing: border-box;
     margin: 30px 10%;
@@ -426,28 +437,27 @@ div#concerti h1 {
 
 /**************** FOTO ******************/
 
+#foto {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+    url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+}
+
 .galleria-container {
     box-sizing: border-box;
-    margin: 30px 10%;
+    margin: 0 10%;
+    padding: 100px 0;
 }
 
 .foto-title h2 {
-    font-size: 2.5em;
-    font-family: Oswald-regular;
-    font-weight: 700;
-    border: 3px solid blue;
-    background: cadetblue;
+    text-align: center;
+    color: #ffffff;
+    font-size: 45px;
 }
 
 .items {
     position: relative;
     height: 280px; /*da cambiare tramite responsive*/
-    background: lawngreen;
     user-select: none;
-}
-
-.with {
-    width: 20%;
 }
 
 .item {
@@ -495,7 +505,15 @@ div#concerti h1 {
     width: 16%; /*FORSE da cambiare tramite responsive*/
     z-index: 100;
 }
-  
+
+.album-title {
+    padding-bottom: 70px;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
+
 .button-container .button {
     color: #fff;
     font-size: 32px;
@@ -549,17 +567,10 @@ div#concerti h1 {
     float: right;
 }
 
-.album-title {
-    text-align: center;
-    width: 100%;
-    min-height: 20px;
-    background: lightgreen;
-}
-
 .foto-galleria {
     width: 80%;
     margin: 0 auto;
-    background: rgb(160, 55, 55);
+    background: #000;
     position: relative;
 }
 
