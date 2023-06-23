@@ -133,6 +133,11 @@
 
     /*********** FOTO ************/
 
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+
     .galleria-container {
         margin: 0;
     }
@@ -304,6 +309,11 @@
     }
 
     /*********** FOTO ************/
+
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
 
     .galleria-container {
         margin: 0;
@@ -477,6 +487,11 @@
 
     /*********** FOTO ************/
 
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+
     .galleria-container {
         margin: 0;
     }
@@ -648,6 +663,11 @@
     }
 
     /*********** FOTO ************/
+
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
 
     .galleria-container {
         margin: 0;
@@ -821,6 +841,11 @@
 
     /*********** FOTO ************/
 
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     .galleria-container {
         margin: 0;
     }
@@ -970,6 +995,11 @@
     }
 
     /*********** FOTO ************/
+
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
 
     .galleria-container {
         margin: 0;
@@ -1121,6 +1151,11 @@
 
     /*********** FOTO ************/
 
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+
     .galleria-container {
         margin: 0;
     }
@@ -1207,6 +1242,7 @@
     }
 
     /*********** SLIDER ************/
+    
     .slider {
         height: 500px;
     }
@@ -1264,6 +1300,11 @@
     }
 
     /*********** FOTO ************/
+
+    #foto {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
 
     .galleria-container {
         margin: 0;

@@ -33,13 +33,12 @@ function resizeCoverAlbum(width) {
 }
 
 var item = document.querySelector('.item');
-const observer = new ResizeObserver(entries => {
+const coverAlbumObserver = new ResizeObserver(entries => {
     const albumCoverElement = entries[0];
     const width = albumCoverElement.contentRect.width;
     resizeCoverAlbum(width);
 })
-observer.observe(item)
-
+coverAlbumObserver.observe(item);
 
 
 elemWidth();
