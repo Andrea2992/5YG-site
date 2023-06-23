@@ -7,12 +7,13 @@
     var navSmallScreen = $('#navSmallScreen');
     var scrollTimeout;
 
-    $navBar.on('click', toggleVisibility);
     $navBar.on('click', function() {
+        toggleVisibility();
         if (window.matchMedia("(orientation: portrait)").matches & window.matchMedia("(max-width: 599.98px)").matches & menu.hasClass('hide') || window.matchMedia("(orientation: landscape)").matches & window.matchMedia("(max-width: 959.98px)").matches & menu.hasClass('hide')) {
             header.addClass('header-scroll-end');
             header.removeClass('header-on-scroll');
         }
+        document.body.classList.toggle('no-scroll')
     })
     navSmallScreen.on('click', closeFullNav);
     menu.on('click', closeFullNav);
