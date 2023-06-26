@@ -26,7 +26,7 @@
 		</div>
 	</div>
 	<header id="header" class="clearfix">
-		<a class="logo" href="index.html">
+		<a class="logo" href="#">
 			<img id="logoImage" src="img/logo.png" alt="Logo 5ive Years Gone">
 		</a>
 		<nav id="navLargeScreen">
@@ -34,7 +34,7 @@
 				<li class="inlineBlock"><a href="#">Home</a></li>
 				<li class="inlineBlock"><a href="#concerti">Concerti</a></li>
 				<li class="inlineBlock"><a href="#albums">Albums</a></li>
-				<li class="inlineBlock"><a href="">Foto</a></li>
+				<li class="inlineBlock"><a href="#foto">Foto</a></li>
 				<li class="inlineBlock"><a href="">News</a></li>
 				<li class="inlineBlock"><a href="">Band</a></li>
 				<li class="inlineBlock"><a href="">Contatti</a></li>
@@ -46,7 +46,7 @@
 					<li><a href="#" class="block textAlignLeft">Home</a></li>
 					<li><a href="#concerti" class="block textAlignLeft">Concerti</a></li>
 					<li><a href="#albums" class="block textAlignLeft">Albums</a></li>
-					<li><a href="" class="block textAlignLeft">Foto</a></li>
+					<li><a href="#foto" class="block textAlignLeft">Foto</a></li>
 					<li><a href="" class="block textAlignLeft">News</a></li>
 					<li><a href="" class="block textAlignLeft">Band</a></li>
 					<li><a href="" class="block textAlignLeft">Contatti</a></li>
@@ -117,11 +117,14 @@
 		<div class="fine-lista-concerti"></div>
 	</div>
 	<div id="albums" class="albums-background">
+		<div class="title-album-section">
+			<h2>ALBUMS</h2>
+		</div>
 		<div class="clearfix container-albums">
 			<section class="section-albums">
 				<ul class="gallery">
 					<li>
-						<a href="https://open.spotify.com/album/6Bvo1P8KIxGIVHU1Z1JFF9" target="_blank">
+						<a href="https://www.burningmindsgroup.com/shop/138" target="_blank">
 							<img src="img/rrr.jpg" alt="Rock 'N' Roll Rebirth">
 							<p>Rock 'N' Roll Rebirth (2023)</p>
 						</a>
@@ -136,10 +139,34 @@
 			</section>
 		</div>
 	</div>
-
-	
+	<div id="foto">
+		<div class="galleria-container">
+			<div class="foto-title">
+				<h2>FOTO</h2>
+			</div>
+			<div class="items">
+				<div class="button-container">
+					<div class="button"></div>
+					<div class="button"></div>
+				</div>
+			</div>
+			<div class="album-title"></div>
+			<div id="foto-galleria" class="foto-galleria">
+				<div id="container-photos-loader">
+					<div id="photos-loader"></div>
+				</div>
+				<button class="navigate-left"></button>
+				<button class="navigate-right"></button>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="js/jQuery-3.7.js"></script>
 	<script type="text/javascript" src="js/nav-menu.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/foto-album.js"></script>
+	<script type="text/javascript" src="js/create-album.elem.js"></script>
+	<script type="text/javascript" src="js/init-photo-album.js"></script>
+	<script type="text/javascript" src="js/foto-load.js"></script>
+	<script type="text/javascript" src="js/call-slider-album.js"></script>
 </body>
 </html>
