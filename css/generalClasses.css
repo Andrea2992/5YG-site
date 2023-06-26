@@ -45,3 +45,11 @@
     opacity: 1;
     transition: all 300ms ease-in-out;
 }
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.no-clickable {
+    pointer-events: none;
+}

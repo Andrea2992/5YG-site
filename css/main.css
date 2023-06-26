@@ -143,6 +143,10 @@ a, button {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+#navBar {
+    -webkit-tap-highlight-color: transparent;
+}
+
 #iconBar {
     background-color: #fff;
 }

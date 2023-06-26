@@ -1590,6 +1590,7 @@
     .header-scroll-end {
         transform: translate(0, -100%);
         transition: 300ms ease-in-out;
+        pointer-events: none;
     }
 
 }
@@ -1601,7 +1602,4 @@
         overflow: scroll;
     }
 
-    .no-scroll {
-        overflow-y: hidden;
-    }
 }
