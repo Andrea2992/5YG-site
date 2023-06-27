@@ -34,10 +34,20 @@
          
         }
     }
-   
+ 
+    function newsBallToggle() {
+        var $supportUs = $('#supportUs');
+        if (window.innerWidth < 960) {
+            $supportUs.removeClass('block').addClass('hide');
+        } else {
+            $supportUs.removeClass('hide').addClass('block');
+        }
+    }
+
     var bodyElem = document.querySelector('body');
     const bodyObserver = new ResizeObserver(entries => {
-        centerPhotoArrows()
+        centerPhotoArrows();
+        newsBallToggle()
     });
     bodyObserver.observe(bodyElem); 
     
