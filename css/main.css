@@ -665,69 +665,37 @@ div#concerti h1 {
     font-size: 45px;
 }
 
-#newsDescription {
-    width: 20%;
-    height: 180px;
-    display: flex;
-    position: absolute;
-    top: 15%;
-    left: 12.1%;
+#facebookFeed {
+    padding: 120px 0;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
 }
 
 .animated-support {
     border-radius: 50%;
     margin: 0 auto;
-    width: 180px;
-    height: 180px;
-    background: url(../img/follow-like.png) no-repeat center / cover;
-    -webkit-animation: spinSupport 1500ms linear infinite, move 1500ms linear infinite;
-    animation: spinSupport 10000ms ease-in-out infinite, move 10000ms ease-in-out infinite;
+    width: 120px;
+    height: 120px;
+    background: url(../img/follow-us.png) no-repeat center / cover;
+    -webkit-animation: spinSupport 1500ms linear infinite;
+    animation: spinSupport 1000ms linear infinite;
     position: absolute;
-    
+    z-index: 200;
+    top: 60px;
+    right: -60px;
 }
 
 @-webkit-keyframes spinSupport {
-    0% { 
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
+    0%   {transform: rotate(-10deg);}
+    50%  {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
 }
   
 @keyframes spinSupport {
-    0%   {transform: rotate(0deg);}
-    10%  {transform: rotate(0deg);}
-    40%  {transform: rotate(360deg);}
-    50%  {transform: rotate(300deg);}
-    60%  {transform: rotate(340deg);}
-    100% {transform: rotate(0deg);}
-}
-
-@-webkit-keyframes move {
-    0%   { left: 20%; }
-    100% { left: 50%; }
-}
-
-@keyframes move {
-    0%   { left: 0%; }
-    10%  { left: 0%; }
-    40%  { left: 68.5%; }
-    50%  { left: 55%; }
-    60%  { left: 60%; }
-    100% { left: 0%; }
-}
-
-#feedContainer {
-    position: relative;
-   /* display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;*/
-}
-
-#facebookFeed {
-    padding: 80px 0;
-  text-align: center;
+    0%   {transform: rotate(-10deg);}
+    50%  {transform: rotate(10deg);}
+    100% {transform: rotate(-10deg);}
 }
