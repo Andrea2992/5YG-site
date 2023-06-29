@@ -29,11 +29,11 @@
         var href= $this.attr('href');
         var components = $('#components-list li');
         var camponentsPanel = $('#panels div');
-        if (!$this.parent().hasClass('active')) {
-            components.removeClass('active');
-            camponentsPanel.removeClass('active');
-            $this.parent().addClass('active')
-            $(href).addClass('active')
+        if (!$this.parent().hasClass('active-panel')) {
+            components.removeClass('active-panel');
+            camponentsPanel.removeClass('active-panel');
+            $this.parent().addClass('active-panel')
+            $(href).addClass('active-panel')
         }
 
 

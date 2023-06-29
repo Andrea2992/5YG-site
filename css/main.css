@@ -771,7 +771,7 @@ div#concerti h1 {
     position: relative;
 }
 
-.active {
+.active-panel {
     display: block;
 }
 
