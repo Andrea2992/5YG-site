@@ -44,10 +44,17 @@
         }
     }
 
+    function heightComponentPanel() {
+        var panelsDiv = $('#panels div.component-panel');
+        var panelsWidth = panelsDiv.width();
+        panelsDiv.css({'height': panelsWidth / 6})
+    }
+
     var bodyElem = document.querySelector('body');
     const bodyObserver = new ResizeObserver(entries => {
         centerPhotoArrows();
-        newsBallToggle()
+        newsBallToggle();
+        heightComponentPanel()
     });
     bodyObserver.observe(bodyElem); 
     
