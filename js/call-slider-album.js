@@ -1,8 +1,9 @@
 var indexPhoto = 0;
-var elementsDiv = $('.photoAlbumDiv');
-var elementsImgShowed = $('.foto-galleria div img');
+
+
 
 function getShowedPhoto() {
+    var elementsImgShowed = $('.foto-galleria div img');
     var arrayElements = [];
     for (i = 0; i < elementsImgShowed.length; i++) {
         arrayElements.push(elementsImgShowed[i]);
@@ -14,6 +15,7 @@ function getShowedPhoto() {
 
 function sliderAlbum() {
     indexPhoto = 0;
+    var elementsDiv = $('.photoAlbumDiv');
     var showedPhoto = getShowedPhoto();
     $showedPhoto = $(showedPhoto);
     $showedPhoto.each(function() {
@@ -39,6 +41,7 @@ $('.navigate-right').on('click', function() {
 
 function gotoNumber(number) {
     indexPhoto = number;
+    var elementsDiv = $('.photoAlbumDiv');
     elementsDiv.removeClass('opacityZero');
     elementsDiv.addClass('opacityZero');
     elementsDiv.eq(number).removeClass('opacityZero');
