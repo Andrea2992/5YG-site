@@ -19,14 +19,6 @@ var albumsPhotos = foto.map(function(f) {
 var albumTitle = $('.album-title');
     albumTitle.html(albumsTitle[0]);
 
-function elemWidth() {
-    var item = $('.item');
-    var widthItem = item.width();
-    item.css({'height': widthItem});
-}
-
-
-
 function resizeCoverAlbum(width) {
     var item = $('.item');
     item.css({'height': width});
@@ -40,8 +32,6 @@ const coverAlbumObserver = new ResizeObserver(entries => {
 })
 coverAlbumObserver.observe(item);
 
-
-elemWidth();
 
 for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", () => i == 0 ? goToPrev() : goToNext());
@@ -158,18 +148,6 @@ function listenToLoadEvent(albumIndex) {
             if (allPhotoLoaded) {
                 hideLoader();
                 sliderAlbum();
-                var arrayElements = [];
-                var elementsImgShowed = $('.foto-galleria div img');
-                for (i = 0; i < elementsImgShowed.length; i++) {
-                    arrayElements.push(elementsImgShowed[i]);
-                }
-                var showedPhoto = arrayElements.filter(function(img) {
-                    return img.attributes[1].nodeValue !== "";
-                });
-                $showedPhoto = $(showedPhoto);
-                $showedPhoto.each(function() {
-                    $(this).removeClass('hide').addClass('block');
-                })
             }
         })
         $('#' + imageId).attr({                          
@@ -177,14 +155,13 @@ function listenToLoadEvent(albumIndex) {
             'alt': notLoadedPhotos[i].alt             
         });
     }
-    //chiamare slider
 }
 
 function loadAlbumImages(albumIndex) {
     unloadImages();
     addToCache(albumIndex);
     var albumSrcKey = albumsCover[albumIndex];
-    var cachedAlbumPhotos = cacheImg[albumSrcKey];
+    var cachedAlbumPhotos = cacheImg[albumSrcKey];//sovrascrive???
     var stillLoadingPhoto = cachedAlbumPhotos.some(function(photo) {
         return photo.isLoading == true;
     })
