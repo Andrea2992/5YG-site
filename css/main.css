@@ -755,24 +755,29 @@ div#concerti h1 {
 
 #components-list p {
     padding-top: 5px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 20px;
     text-transform: uppercase;
     color: #ffffff;
+    height: 40px;
 }
 
 .component-panel {
     display: none;
     width: 100%;
     color: #ffffff;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(255, 0, 0, 0.7));
     box-sizing: border-box;
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     position: relative;
 }
 
 .active-panel {
     display: block;
+}
+
+.active-component {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 .davide-falconetti-bio {

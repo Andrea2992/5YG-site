@@ -47,7 +47,17 @@
     function heightComponentPanel() {
         var panelsDiv = $('#panels div.component-panel');
         var panelsWidth = panelsDiv.width();
-        panelsDiv.css({'height': panelsWidth / 6})
+        if (window.matchMedia("(orientation: landscape)").matches & window.matchMedia("(min-width: 600px)").matches & window.matchMedia("(max-width: 959px)").matches) {
+            panelsDiv.css({'height': panelsWidth / 4.5})     
+        } else if (window.innerWidth < 360) {
+            panelsDiv.css({'height': panelsWidth / 1.2})    
+        } else if (window.innerWidth < 500) {
+            panelsDiv.css({'height': panelsWidth / 2})    
+        } else if (window.innerWidth < 960) {
+            panelsDiv.css({'height': panelsWidth / 3})
+        } else {
+            panelsDiv.css({'height': panelsWidth / 6})
+        }
     }
 
     var bodyElem = document.querySelector('body');

@@ -14,6 +14,7 @@
         'Andrea Cok',
         'Michael Bonanno'
     ]
+
     var fotoBio = $('#components-list img');
     for (var i = 0; i < fotoBio.length; i++) {
             var $fotoBio = $(fotoBio[i]);
@@ -29,11 +30,15 @@
         var href= $this.attr('href');
         var components = $('#components-list li');
         var camponentsPanel = $('#panels div');
+        var componentsParagraph = $('#components-list p')
+        var $thisParagraph = $this.find('p');
         if (!$this.parent().hasClass('active-panel')) {
             components.removeClass('active-panel');
             camponentsPanel.removeClass('active-panel');
-            $this.parent().addClass('active-panel')
-            $(href).addClass('active-panel')
+            $this.parent().addClass('active-panel');
+            $(href).addClass('active-panel');
+            componentsParagraph.removeClass('active-component');
+            $thisParagraph.addClass('active-component');
         }
 
 

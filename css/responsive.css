@@ -175,6 +175,12 @@
                     url(../img/albums.jpg) no-repeat center / cover;
     }
 
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
@@ -357,6 +363,12 @@
     #newsContainer {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/albums.jpg) no-repeat center / cover;
+    }
+
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
     }
 
 }
@@ -543,6 +555,12 @@
                     url(../img/albums.jpg) no-repeat center / cover;
     }
 
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 360px) and (max-width: 439.98px) { /*Smarthphone*/
@@ -725,6 +743,12 @@
     #newsContainer {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/albums.jpg) no-repeat center / cover;
+    }
+
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
     }
 
 }
@@ -911,6 +935,12 @@
                     url(../img/albums.jpg) no-repeat center / cover;
     }    
 
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 500px) and (max-width: 599.98px)  { /*Small*/    
@@ -1073,6 +1103,12 @@
                     url(../img/albums.jpg) no-repeat center / cover;
     }
     
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 600px) and (max-width: 759.98px)  { /*Small*/    
@@ -1234,6 +1270,12 @@
                     url(../img/albums.jpg) no-repeat center / cover;
     }
 
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 760px) and (max-width: 959.98px)  { /*Small*/    
@@ -1391,6 +1433,12 @@
                     url(../img/albums.jpg) no-repeat center / cover;
     }
 
+    /*********** BAND ************/
+
+    #band-container {
+        margin: 0;
+    }
+
 }
 
 @media (min-width: 960px) and (max-width: 1019.98px) { /*Medium*/
@@ -1416,6 +1464,7 @@
     }    
 
     /*********** SLIDER ************/
+    
     .slider {
         height: 570px;
     }
@@ -1473,6 +1522,7 @@
     }    
 
     /*********** SLIDER ************/
+   
     .slider {
         height: 630px;
     }
@@ -1530,6 +1580,7 @@
     }    
 
     /*********** SLIDER ************/
+    
     .slider {
         height: 680px;
     }
@@ -1561,6 +1612,7 @@
 @media (min-width: 1150px) and (max-width: 1279.98px) { /*Medium*/
     
     /*********** SLIDER ************/
+  
     .slider {
         height: 720px;
     }
@@ -1592,6 +1644,7 @@
 @media (min-width: 1280px) and (max-width: 1350.98px) { /*Large*/
          
     /*********** SLIDER ************/
+   
     .slider {
         height: 750px;
     }
@@ -1638,6 +1691,8 @@
 
 @media (max-width: 599.98px) and (orientation: portrait), (max-width: 959.98px) and (orientation: landscape) {
     
+    /*********** HEADER ************/
+
     .header-on-scroll {
         transform: translate(0);
         transition: 300ms ease-in-out;
@@ -1649,13 +1704,99 @@
         pointer-events: none;
     }
 
+    /*********** BAND ************/
+
+    #band-bio {
+        margin: 0 5%;
+    }
+
+    #components-list {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    #components-list li {
+        width: 20%;
+        margin: 0 20px;
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    #components-list p {
+        font-size: calc(1vw + 1vh + .5vmin);
+        white-space: normal;
+    }
+
+    .component-panel {
+        margin-top: -3px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape) {   
+
+    /*********** BAND ************/
+
+    #band-bio {
+        margin: 0 5%;
+    }
+ 
+    #components-list {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        white-space: nowrap;
+        display: inline-block;
+    }
+ 
+    #components-list li {
+        width: 20%;
+        margin: 0 20px;
+        display: inline-block;
+        overflow: hidden;
+    }
+ 
+    #components-list p {
+        font-size: calc(1vw + 1vh + .5vmin);
+        white-space: normal;
+    }
+
+    .component-panel {
+        margin-top: -3px;
+    }
+
+}
+
+@media (max-width: 599.98px) and (orientation: portrait) {
+    
+    /*********** BAND ************/
+    
+        
+
+}
+
+@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait) {
+
+    /*********** BAND ************/
+    
+    
+
 }
 
 @media (max-width: 959.98px) and (orientation: landscape) {
+
+    /*********** HEADER ************/
 
     .navFullScreen ul {
         height: calc(100vh - 70px);
         overflow: scroll;
     }
+
+    
+
+
 
 }
