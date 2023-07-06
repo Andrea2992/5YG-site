@@ -177,6 +177,11 @@
 
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -367,6 +372,11 @@
 
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -557,6 +567,11 @@
 
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -747,6 +762,11 @@
 
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -937,6 +957,11 @@
 
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -1105,6 +1130,11 @@
     
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -1272,6 +1302,11 @@
 
     /*********** BAND ************/
 
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
+    
     #band-container {
         margin: 0;
     }
@@ -1434,6 +1469,11 @@
     }
 
     /*********** BAND ************/
+    
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/sfondo-concerti.jpg) no-repeat center / cover;
+    }
 
     #band-container {
         margin: 0;
