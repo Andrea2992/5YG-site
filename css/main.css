@@ -703,6 +703,20 @@ div#concerti h1 {
     100% {transform: rotate(-10deg);}
 }
 
+.news-facebook-icon-container {
+    padding: 35px 0;
+    display: none;
+}
+
+.news-facebook-icon-container h4 {
+    text-align: center;
+    color: #fff;
+}
+
+.news-facebook-icon {
+    margin: 10px auto;
+}
+
 /**************** BAND ******************/
 
 #band {
@@ -833,4 +847,106 @@ div#concerti h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/**************** CONTATTI ******************/
+
+.contatti-container {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+}
+
+.contatti-flex-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contacts-options {
+    text-align: center;
+    padding: 4px 30px;
+}
+
+.contacts-options h4 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-family: Oswald-Regular;
+    color: #fff;
+}
+
+.contacts-options li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.contacts-options a {
+    color: #fff;
+    font-family: Oswald-Regular;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    padding: 20px 30px;
+}
+
+.facebook {
+    width: 35px;
+    height: 35px;
+}
+
+.facebook img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.instagram {
+    width: 35px;
+    height: 35px;
+}
+
+.instagram img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.youtube {
+    width: 35px;
+    height: 35px;
+}
+
+.youtube img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.spotify {
+    width: 35px;
+    height: 35px;
+}
+
+.spotify img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.copyright {
+    color: #fff;
+    text-align: right;
+    font-family: Oswald-Regular;
+    padding: 4px 30px;
 }

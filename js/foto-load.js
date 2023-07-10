@@ -64,10 +64,9 @@
     const bodyObserver = new ResizeObserver(entries => {
         centerPhotoArrows();
         newsBallToggle();
-        heightComponentPanel()
+        heightComponentPanel();
     });
     bodyObserver.observe(bodyElem); 
-    
 
     window.addEventListener('resize', function() {
         var elemGalleria = $('.foto-galleria');
