@@ -37,7 +37,7 @@
  
     function newsBallToggle() {
         var $supportUs = $('#supportUs');
-        if (window.innerWidth < 960) {
+        if (isMediumScreen()) {
             $supportUs.removeClass('block').addClass('hide');
         } else {
             $supportUs.removeClass('hide').addClass('block');
@@ -53,7 +53,7 @@
             panelsDiv.css({'height': panelsWidth / 1.2})    
         } else if (window.innerWidth < 500) {
             panelsDiv.css({'height': panelsWidth / 2})    
-        } else if (window.innerWidth < 960) {
+        } else if (isMediumScreen()) {
             panelsDiv.css({'height': panelsWidth / 3})
         } else {
             panelsDiv.css({'height': panelsWidth / 6})
