@@ -1,10 +1,10 @@
-const slides = document.querySelectorAll(".item");
-const button = document.querySelectorAll(".button");
+const photos = document.querySelectorAll(".item");
+const photoAlbumButtons = document.querySelectorAll(".album-covers-button");
 var cacheImg = {};
 var cachedAlbumPhotos;
-let current = 0;
-let prev = slides.length - 1;
-let next = 1;
+let currentPhotoAlbum = 0;
+let prevPhotoAlbum = photos.length - 1;
+let nextPhotoAlbum = 1;
 
 var albumsCover = foto.map(function(f) {
     return f.albumSrc;
@@ -17,97 +17,91 @@ var albumsPhotos = foto.map(function(f) {
 })
 
 var albumTitle = $('.album-title');
-    albumTitle.html(albumsTitle[0]);
+albumTitle.html(albumsTitle[0]);
 
-function resizeCoverAlbum(width) {
+function resizeCoverAlbum(height) {
     var item = $('.item');
-    item.css({'height': width});
+    item.css({'height': height});
 }
 
-var item = document.querySelector('.item');
+var firstPhoto = document.querySelector('.item');
 const coverAlbumObserver = new ResizeObserver(entries => {
     const albumCoverElement = entries[0];
     const width = albumCoverElement.contentRect.width;
     resizeCoverAlbum(width);
 })
-coverAlbumObserver.observe(item);
+coverAlbumObserver.observe(firstPhoto);
 
-
-for (let i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", () => i == 0 ? goToPrev() : goToNext());
+for (let i = 0; i < photoAlbumButtons.length; i++) {
+    photoAlbumButtons[i].addEventListener("click", () => i == 0 ? goToPrevAlbum() : goToNextAlbum());
 }
 
+var photoIds = [];
 
-var imageIds = [];
-
-function createImgElemForAlbum(idPhotoGalleria) {
+function createImgElemForAlbum() {
     var albumsPhotosLength = albumsPhotos.map(function(album) {
         return album.length;
     });
-    var maxImagesNum = Math.max(...albumsPhotosLength);
-    var divFotoGalleria = $('#' + idPhotoGalleria);
-    for (var i = 0; i < maxImagesNum; i++) {
-        var div = $('<div></div>');
-        div.addClass('photoAlbumDiv absolute height100 width100')
-        var imgItem = $('<img>');
-        var id = 'album-image-' + i;
-        imgItem.attr('id', id);
-        div.append(imgItem);
-        divFotoGalleria.append(div);
-        imageIds.push(id)
+    var maxPhotoNum = Math.max(...albumsPhotosLength);
+    var photoGalleryContainer = $('#photo-gallery');
+    for (var i = 0; i < maxPhotoNum; i++) {
+        var photoContainer = $('<div></div>');
+        photoContainer.addClass('single-photo-container absolute height-100 width-100')
+        var imgElement = $('<img>');
+        var imgElemId = 'album-image-' + i;
+        imgElement.attr('id', imgElemId);
+        photoContainer.append(imgElement);
+        photoGalleryContainer.append(photoContainer);
+        photoIds.push(imgElemId)
     }
-
 }
-
-createImgElemForAlbum('foto-galleria');
+createImgElemForAlbum();
 
 function unloadImages() {
-    $('#foto-galleria div img').attr({                          
+    $('#photo-gallery div img').attr({                          
             'src': '',                         
             'alt': ''             
           }).addClass('hide').removeClass('block');
 }
 
 function showLoader() {
-  $('#container-photos-loader').addClass('container-photos-loader');
+  $('#photos-loader-container').addClass('photos-loader-container');
     $('#photos-loader').addClass('photos-loader');
-    $('#foto-galleria button').addClass('hide');
-    $('.photoAlbumDiv').css({'display': 'none'});
+    $('#photo-gallery button').addClass('hide');
+    $('.single-photo-container').css({'display': 'none'});
 }
 
 function hideLoader() {
-    $('#container-photos-loader').removeClass('container-photos-loader');
+    $('#photos-loader-container').removeClass('photos-loader-container');
     $('#photos-loader').removeClass('photos-loader');
-    $('#foto-galleria button').removeClass('hide');
-    $('.photoAlbumDiv').css({'display': 'block'});
+    $('#photo-gallery button').removeClass('hide');
+    $('.single-photo-container').css({'display': 'block'});
 }
 
 function addToCache(albumIndex) {
-    var selectedPhotos = albumsPhotos[albumIndex]
+    var selectedAlbumPhotos = albumsPhotos[albumIndex]
     var albumSrcKey = albumsCover[albumIndex]
     if (!cacheImg[albumSrcKey]) {
         cacheImg[albumSrcKey] = [];
     }
-    for (var i = 0; i < selectedPhotos.length; i++) {
-         var currentPhoto = selectedPhotos[i]
-     
+    for (var i = 0; i < selectedAlbumPhotos.length; i++) {
+        var currentPhoto = selectedAlbumPhotos[i]
         var alreadyInCache = cacheImg[albumSrcKey].find(function(photo) {
             return photo.src == currentPhoto.src;
         })
         if (!alreadyInCache) {
             var photoElement = {
-                 src: currentPhoto.src,
-                 alt: currentPhoto.alt,
-                 isLoading: true,
-                 index: i
-             }
+                src: currentPhoto.src,
+                alt: currentPhoto.alt,
+                isLoading: true,
+                index: i
+            }
             cacheImg[albumSrcKey].push(photoElement);
-
         }
     }
 }
 
-function listenToLoadEvent(albumIndex) {
+function onAllPhotosLoaded(albumIndex) {
     var albumSrcKey = albumsCover[albumIndex];
     cachedAlbumPhotos = cacheImg[albumSrcKey];
     var notLoadedPhotos = cachedAlbumPhotos.filter(function(photo) {
@@ -118,7 +112,7 @@ function listenToLoadEvent(albumIndex) {
     });
     for (var i = 0; i < loadedPhotos.length; i++) {
         var photoIndex = loadedPhotos[i].index;
-        var imageId = imageIds[photoIndex];
+        var imageId = photoIds[photoIndex];
         $('#' + imageId).attr({                          
             'src': loadedPhotos[i].src,                         
             'alt': loadedPhotos[i].alt             
@@ -127,13 +121,13 @@ function listenToLoadEvent(albumIndex) {
     if (notLoadedPhotos.length == 0) {
         for (var i = 0; i < loadedPhotos.length; i++) {
             var photoIndex = loadedPhotos[i].index;
-            var imageId = imageIds[photoIndex];
+            var imageId = photoIds[photoIndex];
             $('#' + imageId).removeClass('hide').addClass('block');
         }
     }
     for (var i = 0; i < notLoadedPhotos.length; i++) {
         var photoIndex = notLoadedPhotos[i].index;
-        var imageId = imageIds[photoIndex];
+        var imageId = photoIds[photoIndex];
         $('#' + imageId).on('load', function() {
             var thisELemId = $(this).attr('src');
             var elementInCache = cachedAlbumPhotos.find(function(photo) {
@@ -147,7 +141,7 @@ function listenToLoadEvent(albumIndex) {
             })
             if (allPhotoLoaded) {
                 hideLoader();
-                sliderAlbum();
+                configurePhotoVisibility();
             }
         })
         $('#' + imageId).attr({                          
@@ -161,56 +155,48 @@ function loadAlbumImages(albumIndex) {
     unloadImages();
     addToCache(albumIndex);
     var albumSrcKey = albumsCover[albumIndex];
-    var cachedAlbumPhotos = cacheImg[albumSrcKey];//sovrascrive???
+    var cachedAlbumPhotos = cacheImg[albumSrcKey];
     var stillLoadingPhoto = cachedAlbumPhotos.some(function(photo) {
         return photo.isLoading == true;
     })
     if (stillLoadingPhoto) {
         showLoader();
     }
-    listenToLoadEvent(albumIndex);    
+    onAllPhotosLoaded(albumIndex);    
 }
-
-
 loadAlbumImages(0);
 
-
-const goToPrev = function() {
-    var newCenterIndex  = current > 0 ? current - 1 : slides.length - 1;
-    gotoNum(newCenterIndex);
+const goToPrevAlbum = function() {
+    var newCenterIndex  = currentPhotoAlbum > 0 ? currentPhotoAlbum - 1 : photos.length - 1;
+    selectAlbum(newCenterIndex);
     loadAlbumImages(newCenterIndex);
 }
 
-const goToNext = function() {
-    var newCenterIndex = current < slides.length - 1 ? current + 1 : 0;
-    gotoNum(newCenterIndex);
+const goToNextAlbum = function() {
+    var newCenterIndex = currentPhotoAlbum < photos.length - 1 ? currentPhotoAlbum + 1 : 0;
+    selectAlbum(newCenterIndex);
     loadAlbumImages(newCenterIndex);
 }
 
-const gotoNum = number => {
-    current = number;
-    prev = current - 1;
-    next = current + 1;
-
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-        slides[i].classList.remove("prev");
-        slides[i].classList.remove("next");
+const selectAlbum = number => {
+    currentPhotoAlbum = number;
+    prevPhotoAlbum = currentPhotoAlbum - 1;
+    nextPhotoAlbum = currentPhotoAlbum + 1;
+    for (let i = 0; i < photos.length; i++) {
+        photos[i].classList.remove("active-album-cover");
+        photos[i].classList.remove("previuos-album-cover");
+        photos[i].classList.remove("next-album-cover");
     }
-
-    if (next == slides.length) {
-        next = 0;
+    if (nextPhotoAlbum == photos.length) {
+        nextPhotoAlbum = 0;
     }
-
-    if (prev == -1) {
-        prev = slides.length - 1;
+    if (prevPhotoAlbum == -1) {
+        prevPhotoAlbum = photos.length - 1;
     }
-
-    slides[current].classList.add("active");
-    slides[prev].classList.add("prev");
-    slides[next].classList.add("next");
-
-    albumTitle.html(albumsTitle[current]);
+    photos[currentPhotoAlbum].classList.add("active-album-cover");
+    photos[prevPhotoAlbum].classList.add("previuos-album-cover");
+    photos[nextPhotoAlbum].classList.add("next-album-cover");
+    albumTitle.html(albumsTitle[currentPhotoAlbum]);
 }
 
 

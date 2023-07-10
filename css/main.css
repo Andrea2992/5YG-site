@@ -1,7 +1,9 @@
 @import 'fonts.css';
 @import 'generalClasses.css';
 
-/************** GENERAL ******************/
+
+
+/********************** GENERAL **********************/
 
 *, h1 {
     padding: 0;
@@ -25,49 +27,53 @@ li {
         color: #ed8e6c;
     }
     
-    .gallery li:hover {
+    .album-gallery li:hover {
         box-shadow: 0px 3px 10px 3px rgb(133, 133, 133);
     }
 
-    .freccia-album-left:hover {/**VIA**/
+    .freccia-album-left:hover {
         box-shadow: 0 0 5px 1px rgb(133, 133, 133);
     }
 
-    .freccia-album-right:hover {/**VIA**/
+    .freccia-album-right:hover {
         box-shadow: 0 0 5px 1px rgb(133, 133, 133);
     }
 
-    .navigate-left:hover {
+    .photo-navigate-left:hover {
         box-shadow: 0 0 7px 2px rgb(133, 133, 133);
     }
 
-    .navigate-right:hover {
+    .photo-navigate-right:hover {
         box-shadow: 0 0 7px 2px rgb(133, 133, 133);
     }
 
-    #components-list img:hover {
+    #band-members-list img:hover {
         transform: scale(1.05);
     }
 }
 
-/**************** LOADER ******************/
+
+
+/********************** PRELOADED IMAGES **********************/
 
 #preloaded-images {
     width: 0px;
     height: 0px;
     display: inline;
     background-image: 
-    url(../img/live1.jpg),
-    url(../img/live2.jpg),
-    url(../img/live3.jpg),
-    url(../img/live4.jpg),
-    url(../img/foto-cover-album/vecchiaFormazione-cover-album.jpg),
-    url(../img/foto-cover-album/torreano-cover-album.jpg),
-    url(../img/foto-cover-album/tuneMusicLab-cover-album.jpg),
-    url(../img/foto-cover-album/rockCamp-cover-album.jpg);
+    url(../img/slider-photos/slider-photo-1.jpg),
+    url(../img/slider-photos/slider-photo-2.jpg),
+    url(../img/slider-photos/slider-photo-3.jpg),
+    url(../img/slider-photos/slider-photo-4.jpg),
+    url(../img/photo-cover-album/vecchiaFormazione-cover-album.jpg),
+    url(../img/photo-cover-album/torreano-cover-album.jpg),
+    url(../img/photo-cover-album/tuneMusicLab-cover-album.jpg),
+    url(../img/photo-cover-album/rockCamp-cover-album.jpg);
 }
 
-/**************** HEADER ******************/
+
+
+/********************** HEADER **********************/
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
@@ -77,13 +83,13 @@ header {
 	z-index: 2000;
 }
 
-.logo {
+.band-logo {
     float: left;
     width: 35%;
     margin: 0;
 }
 
-#logoImage {
+#band-logo-image {
     width: 100%;
 }
 
@@ -100,7 +106,7 @@ nav li {
     padding: 1px;
 }
 
-.navFullScreen {
+.nav-menu-full-screen {
     display: block;
     position: static;
     transform: translateY(0%);
@@ -108,7 +114,7 @@ nav li {
     margin-top: 70px;
 }
 
-nav.navFullScreen li {
+nav.nav-menu-full-screen li {
     border: 1px black solid;
     padding: 9px 0 9px 7px;
     margin: 0 2px 0 0;
@@ -124,7 +130,7 @@ nav li a {
     text-transform: uppercase;
 }
 
-#ulSmallScreen a {
+#nav-menu-small-screen-list a {
     margin-left: 2%;
     font-size: 22px;
 }
@@ -133,11 +139,11 @@ a, button {
     -webkit-tap-highlight-color: transparent;
 }
 
-#ulSmallScreen li:hover {
+#nav-menu-small-screen-list li:hover {
     background-color: red;
 }
 
-.menu {
+.nav-menu-small-screen-container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -146,17 +152,19 @@ a, button {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-#navBar {
+#nav-bar {
     -webkit-tap-highlight-color: transparent;
 }
 
-#iconBar {
+#nav-bar-icon {
     background-color: #fff;
 }
 
-/********** LOADER **********/
 
-.loader {
+
+/********************** LOADER **********************/
+
+.site-loader {
     position: fixed;
     display: flex;
     align-items: center;
@@ -167,7 +175,7 @@ a, button {
     background-color: #000000;
 }
 
-.music {
+.site-loader-bar-container {
     width: 20%;
     height: 200px;
     position: relative;
@@ -176,13 +184,13 @@ a, button {
     justify-content: space-between;
 }
 
-.bar {
+.site-loader-bar {
     width: 12px;
     border-radius: 10px;
-    animation: loader 1.5s ease-in-out infinite;
+    animation: site-loader 1.5s ease-in-out infinite;
 }
 
-@keyframes loader {
+@keyframes site-loader {
     0%, 100% {
         height: 2px;
     }
@@ -192,7 +200,7 @@ a, button {
     }
 }
 
-@-webkit-keyframes loader {
+@-webkit-keyframes site-loader {
     50% {
       box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px;
     }
@@ -201,57 +209,60 @@ a, button {
     }
 }
 
-.music .bar:nth-child(1) {
+.site-loader-bar-container .site-loader-bar:nth-child(1) {
     background: blue;
     animation-delay: 1s;
 }
 
-.music .bar:nth-child(2) {
+.site-loader-bar-container .site-loader-bar:nth-child(2) {
     background: rgb(129, 0, 180);
     animation-delay: .8s;
 }
 
-.music .bar:nth-child(3) {
+.site-loader-bar-container .site-loader-bar:nth-child(3) {
     background: rgb(228, 34, 83);
     animation-delay: .6s;
 }
 
-.music .bar:nth-child(4) {
+.site-loader-bar-container .site-loader-bar:nth-child(4) {
     background: red;
     animation-delay: .4s;
 }
 
-.music .bar:nth-child(5) {
+.site-loader-bar-container .site-loader-bar:nth-child(5) {
     background: orangered;
     animation-delay: .2s;
 }
 
-.music .bar:nth-child(6) {
+.site-loader-bar-container .site-loader-bar:nth-child(6) {
     background: rgb(255, 166, 0);
     animation-delay: .2s;
 }
 
-.music .bar:nth-child(7) {
+.site-loader-bar-container .site-loader-bar:nth-child(7) {
     background: yellow;
     animation-delay: .4s;
 }
 
-.music .bar:nth-child(8) {
+.site-loader-bar-container .site-loader-bar:nth-child(8) {
     background: greenyellow;
     animation-delay: .6s;
 }
 
-.music .bar:nth-child(9) {
+.site-loader-bar-container .site-loader-bar:nth-child(9) {
     background: limegreen;
     animation-delay: .8s;
 }
 
-.music .bar:nth-child(10) {
+.site-loader-bar-container .site-loader-bar:nth-child(10) {
     background: green;
     animation-delay: 1s;
 }
 
-/********** SLIDER **********/
+
+
+/********************** SLIDER **********************/
+
 .slider {
     max-width: 100%;
     height: calc(100vh - 40.391px);
@@ -271,19 +282,19 @@ a, button {
 }
 
 .slide-1 {
-    background: url(../img/live1.jpg) no-repeat center / cover;
+    background: url(../img/slider-photos/slider-photo-1.jpg) no-repeat center / cover;
 }
 
 .slide-2 {
-    background: url(../img/live2.jpg) no-repeat center / cover;
+    background: url(../img/slider-photos/slider-photo-2.jpg) no-repeat center / cover;
 }
 
 .slide-3 {
-    background: url(../img/live3.jpg) no-repeat center / cover;
+    background: url(../img/slider-photos/slider-photo-3.jpg) no-repeat center / cover;
 }
 
 .slide-4 {
-    background: url(../img/live4.jpg) no-repeat center / cover;
+    background: url(../img/slider-photos/slider-photo-4.jpg) no-repeat center / cover;
 }
 
 .slide {
@@ -316,56 +327,58 @@ a, button {
     cursor: pointer;
 }
 
-/********** CONCERTI **********/
 
-#concerti {
+
+/********************** GIGS **********************/
+
+#gigs {
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-                url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+                url(../img/site-background-2.jpg) no-repeat center / cover fixed;
     color: #fff;
 }
 
-.title-container {
+.gigs-title-container {
     width: 80%;
     padding-top: 90px;
     margin: 0 auto 40px auto;
 }
 
-div#concerti h1 {
+div#gigs h1 {
     font-size: 45px;
     text-align: center;
 }
 
-.divide-content {
+.content-divider {
     height: 1px;
     width: 80%;
     background-color: #fff;
     margin: 20px auto;
 }
 
-.container-live {
+.gig-container {
     display: flex;
     margin: 0 10%;
     align-items: center
 }
 
-.container-giorno {
+.gig-date {
     display: flex;
     width: 40%;
     align-items: center;
 }
 
-.giorno-concerto {
+.gig-date-text {
     font-size: 30px;
 }
 
-.info-concerto {
+.gig-info {
     display: flex;
     width: 53%;
     margin-left: 5%;
 }
 
-.evento-locale {
+.gig-name {
     display: flex;
     width: 46%;
     margin: 0 2%;
@@ -373,46 +386,48 @@ div#concerti h1 {
     font-size: 23px;
 }
 
-.luogo {
+.gig-location {
     display: flex;
     width: 46%;
     margin: 0 2%;
     font-size: 23px;
 }
 
-.fine-lista-concerti {
+.gig-list-end-space {
     width: 100%;
     height: 100px;
 }
 
-/********** ALBUMS **********/
+
+
+/********************** ALBUMS **********************/
 
 .albums-background {
     overflow: hidden;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-                url(../img/albums.jpg) no-repeat center / cover fixed;
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover fixed;
 }
 
-.title-album-section {
+.album-section-title {
     padding-top: 70px;
 }
 
-.title-album-section h2 {
+.album-section-title h2 {
     text-align: center;
     color: #ffffff;
     font-size: 45px;
 }
 
-.container-albums {
+.album-container {
     box-sizing: border-box;
     margin: 30px 10%;
 }
 
-.section-albums {
+.album-section {
     width: 100%;
 }
 
-.gallery {
+.album-gallery {
     list-style: none;
     margin: 0;
 	padding: 0;
@@ -422,11 +437,11 @@ div#concerti h1 {
     align-items: center;
 }
 
-.gallery img {
+.album-gallery img {
     width: 100%;
 }
 
-.gallery li {
+.album-gallery li {
     width: 25%;
     margin: 50px 4.15%;
     float: left;
@@ -434,7 +449,7 @@ div#concerti h1 {
 	z-index: 2;
 }
 
-.gallery li a p {
+.album-gallery li a p {
     color: #000;
     padding: 5px;
     text-align: center;
@@ -442,28 +457,30 @@ div#concerti h1 {
     font-size: 1.2em;
 }
 
-/**************** FOTO ******************/
 
-#foto {
+
+/********************** PHOTO **********************/
+
+#photo {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+    url(../img/site-background-2.jpg) no-repeat center / cover fixed;
 }
 
-.galleria-container {
+.photo-gallery-container {
     box-sizing: border-box;
     margin: 0 10%;
     padding: 100px 0;
 }
 
-.foto-title h2 {
+.photo-section-title h2 {
     text-align: center;
     color: #ffffff;
     font-size: 45px;
 }
 
-.items {
+.photo-section-album-covers-container {
     position: relative;
-    height: 280px; /*da cambiare tramite responsive*/
+    height: 280px;
     user-select: none;
 }
 
@@ -472,7 +489,7 @@ div#concerti h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 15%; /*da cambiare tramite responsive*/
+    width: 15%;
     border-radius: 50%;
     overflow: hidden;
     transition: all 300ms ease-in-out, height 0ms;
@@ -486,30 +503,30 @@ div#concerti h1 {
     object-fit: cover;
 }
   
-.item.active {
+.item.active-album-cover {
     opacity: 1;
     z-index: 99;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
 }
   
-.item.prev {
+.item.previuos-album-cover {
     z-index: 2;
     opacity: 0.25;
     transform: translate(-125%, -50%);
 }
   
-.item.next {
+.item.next-album-cover {
     z-index: 2;
     opacity: 0.25;
     transform: translate(25%, -50%);
 }
 
-.items .button-container {
+.photo-section-album-covers-container .album-covers-buttons-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16%; /*FORSE da cambiare tramite responsive*/
+    width: 16%; 
     z-index: 100;
 }
 
@@ -521,7 +538,7 @@ div#concerti h1 {
     width: 100%;
 }
 
-.button-container .button {
+.album-covers-buttons-container .album-covers-button {
     color: #fff;
     font-size: 32px;
     cursor: pointer;
@@ -531,57 +548,57 @@ div#concerti h1 {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .button-container .button:hover {
+    .album-covers-buttons-container .album-covers-button:hover {
         opacity: 1;
     }
 }
 
-.button-container .button:active {
+.album-covers-buttons-container .album-covers-button:active {
     transform: scale(0.85);
 }
 
-.button-container .button:nth-child(1):before {
+.album-covers-buttons-container .album-covers-button:nth-child(1):before {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url(../img/navigate-left.png) no-repeat center / cover;
-    width: 50px; /*da cambiare tramite responsive*/
-    height: 50px; /*da cambiare tramite responsive*/
+    background: url(../img/site-icon/navigate-left.png) no-repeat center / cover;
+    width: 50px; 
+    height: 50px; 
     border-radius: 50%;
     z-index: -99;
 }
 
-.button-container .button:nth-child(2):before {
+.album-covers-buttons-container .album-covers-button:nth-child(2):before {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;  /*da cambiare tramite responsive*/
-    height: 50px; /*da cambiare tramite responsive*/
-    background: url(../img/navigate-right.png) no-repeat center / cover;
+    width: 50px;  
+    height: 50px; 
+    background: url(../img/site-icon/navigate-right.png) no-repeat center / cover;
     border-radius: 50%;
     z-index: -99;
 }
 
-.button-container .button:nth-child(1) {
+.album-covers-buttons-container .album-covers-button:nth-child(1) {
     float: left;
 }
   
-.button-container .button:nth-child(2) {
+.album-covers-buttons-container .album-covers-button:nth-child(2) {
     float: right;
 }
 
-.foto-galleria {
+.photo-gallery {
     width: 80%;
     margin: 0 auto;
     background: #000;
     position: relative;
 }
 
-.container-photos-loader {
+.photos-loader-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -610,11 +627,11 @@ div#concerti h1 {
     100% { transform: rotate(360deg); }
   }
 
-.navigate-left {
+.photo-navigate-left {
     position: absolute;
     z-index: 1000;
     left: 5%;
-    background: url(../img/navigate-left.png) no-repeat center / cover;
+    background: url(../img/site-icon/navigate-left.png) no-repeat center / cover;
     border: none;
     height: 40px;
     width: 40px;
@@ -623,15 +640,15 @@ div#concerti h1 {
     opacity: 0.7;
 }
 
-.navigate-left:active {
+.photo-navigate-left:active {
     transform: scale(0.9);
 }
 
-.navigate-right {
+.photo-navigate-right {
     position: absolute;
     z-index: 1000;
     right: 5%;
-    background: url(../img/navigate-right.png) no-repeat center / cover;
+    background: url(../img/site-icon/navigate-right.png) no-repeat center / cover;
     border: none;
     border-radius: 50%;   
     height: 40px;
@@ -640,35 +657,37 @@ div#concerti h1 {
     opacity: 0.7;
 }
 
-.navigate-right:active {
+.photo-navigate-right:active {
     transform: scale(0.9);
 }
 
-.photoAlbumDiv img {
+.single-photo-container img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-/**************** NEWS ******************/
 
-#newsContainer {
+
+/********************** NEWS **********************/
+
+#news-container {
     padding: 30px 0;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-                url(../img/albums.jpg) no-repeat center / cover fixed;
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover fixed;
 }
 
-#newsTitle {
+#news-title {
     padding-top: 40px;
 }
 
-#newsTitle h2 {
+#news-title h2 {
     color: #ffffff;
     text-align: center;
     font-size: 45px;
 }
 
-#facebookFeed {
+#facebook-feed {
     padding: 120px 0;
     width: 300px;
     height: 500px;
@@ -717,11 +736,13 @@ div#concerti h1 {
     margin: 10px auto;
 }
 
-/**************** BAND ******************/
+
+
+/********************** BAND **********************/
 
 #band {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
-    url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
+    url(../img/site-background-2.jpg) no-repeat center / cover fixed;
 }
 
 #band-container {
@@ -730,7 +751,7 @@ div#concerti h1 {
     padding-bottom: 100px;
 }
 
-#band-title h2 {
+#band-section-title h2 {
     text-align: center;
     font-size: 45px;
     color: #ffffff;
@@ -748,26 +769,26 @@ div#concerti h1 {
     font-style: italic;
 }
 
-#components-list {
+#band-members-list {
     display: flex;
     justify-content: space-around;
 }
 
-#components-list li {
+#band-members-list li {
     width: 12%;
 }
 
-#components-list img {
+#band-members-list img {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
 
-#components-list img:active {
+#band-members-list img:active {
     transform: scale(0.9);
 }
 
-#components-list p {
+#band-members-list p {
     padding-top: 5px;
     padding-bottom: 10px;
     font-size: 20px;
@@ -776,7 +797,7 @@ div#concerti h1 {
     height: 40px;
 }
 
-.component-panel {
+.member-bio {
     display: none;
     width: 100%;
     color: #ffffff;
@@ -786,11 +807,11 @@ div#concerti h1 {
     position: relative;
 }
 
-.active-panel {
+.active-member-bio {
     display: block;
 }
 
-.active-component {
+.active-member-name {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
@@ -849,16 +870,18 @@ div#concerti h1 {
     transform: translate(-50%, -50%);
 }
 
-/**************** CONTATTI ******************/
 
-.contatti-container {
+
+/********************** CONTACTS **********************/
+
+.contacts-container {
     width: 100%;
     height: auto;
     padding-top: 40px;
     background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
 }
 
-.contatti-flex-container {
+.contacts-flexible-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -888,7 +911,7 @@ div#concerti h1 {
     font-family: Oswald-Regular;
 }
 
-.social {
+.social-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -896,48 +919,48 @@ div#concerti h1 {
     padding: 20px 30px;
 }
 
-.facebook {
+.facebook-link {
     width: 35px;
     height: 35px;
 }
 
-.facebook img {
+.facebook-link img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
 }
 
-.instagram {
+.instagram-link {
     width: 35px;
     height: 35px;
 }
 
-.instagram img {
+.instagram-link img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
 }
 
-.youtube {
+.youtube-link {
     width: 35px;
     height: 35px;
 }
 
-.youtube img {
+.youtube-link img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 50%;
 }
 
-.spotify {
+.spotify-link {
     width: 35px;
     height: 35px;
 }
 
-.spotify img {
+.spotify-link img {
     width: 100%;
     height: 100%;
     object-fit: contain;
