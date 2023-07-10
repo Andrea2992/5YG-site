@@ -14,6 +14,10 @@
     text-align: left;
 }
 
+.textAlignCenter {
+    text-align: center;
+}
+
 .inlineBlock {
     display: inline-block;
 }
