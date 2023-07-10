@@ -186,6 +186,22 @@
         margin: 0;
     }
 
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px 5%;
+    }    
+
+    .copyright {
+        font-size: 11.5px;
+    }
+
 }
 
 @media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
@@ -379,6 +395,22 @@
     
     #band-container {
         margin: 0;
+    }
+
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px 5%;
+    }    
+
+    .copyright {
+        font-size: 11.5px;
     }
 
 }
@@ -576,6 +608,20 @@
         margin: 0;
     }
 
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+    }    
+
+    .copyright {
+        font-size: 11.5px;
+    }
+
 }
 
 @media (min-width: 360px) and (max-width: 439.98px) { /*Smarthphone*/
@@ -769,6 +815,20 @@
     
     #band-container {
         margin: 0;
+    }
+
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+    }    
+
+    .copyright {
+        font-size: 14px;
     }
 
 }
@@ -966,6 +1026,16 @@
         margin: 0;
     }
 
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+    }    
+
 }
 
 @media (min-width: 500px) and (max-width: 599.98px)  { /*Small*/    
@@ -1139,6 +1209,16 @@
         margin: 0;
     }
 
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+    }    
+
 }
 
 @media (min-width: 600px) and (max-width: 759.98px)  { /*Small*/    
@@ -1311,6 +1391,16 @@
         margin: 0;
     }
 
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
+    }    
+
 }
 
 @media (min-width: 760px) and (max-width: 959.98px)  { /*Small*/    
@@ -1477,6 +1567,16 @@
 
     #band-container {
         margin: 0;
+    }
+
+    /*********** CONTATTI ************/
+
+    .contatti-flex-container {
+        display: inline;
+    }
+
+    .social {
+        margin: 0 auto;
     }
 
 }
