@@ -1,24 +1,8 @@
 (function() {
-    var fotoHref = [
-        'img/foto-bio/davide-bio.png',
-        'img/foto-bio/andrea-avv-bio.png',
-        'img/foto-bio/francesca-bio.png',
-        'img/foto-bio/andrea-bass-bio.png',
-        'img/foto-bio/michael-bio.png',
-    ];
-
-    var fotoAlt = [
-        'Davide Falconetti',
-        'Andrea Imbergamo',
-        'Francesca Cocolet',
-        'Andrea Cok',
-        'Michael Bonanno'
-    ]
-
-    var fotoBio = $('#components-list img');
-    for (var i = 0; i < fotoBio.length; i++) {
-            var $fotoBio = $(fotoBio[i]);
-            $fotoBio.attr({'src': fotoHref[i],
+    var membersPhotoElements = $('#components-list img');
+    for (var i = 0; i < membersPhotoElements.length; i++) {
+            var memberPhotoElement = $(membersPhotoElements[i]);
+            memberPhotoElement.attr({'src': fotoHref[i],
                            'alt': fotoAlt[i]   
                          });
     }
@@ -31,19 +15,14 @@
         var components = $('#components-list li');
         var camponentsPanel = $('#panels div');
         var componentsParagraph = $('#components-list p')
-        var $thisParagraph = $this.find('p');
+        var thisParagraph = $this.find('p');
         if (!$this.parent().hasClass('active-panel')) {
             components.removeClass('active-panel');
             camponentsPanel.removeClass('active-panel');
             $this.parent().addClass('active-panel');
             $(href).addClass('active-panel');
             componentsParagraph.removeClass('active-component');
-            $thisParagraph.addClass('active-component');
+            thisParagraph.addClass('active-component');
         }
-
-
-
     })
-
-      
 }())

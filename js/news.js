@@ -1,6 +1,4 @@
 (function() {
-
-    
     window.addEventListener('load', function(){
         if (window.innerWidth < 305) {
             $('#feedContainer').css({'display': 'none'});
@@ -10,6 +8,4 @@
             $('.news-facebook-icon-container').css({'display': 'none'});
         }
     })
-    
-
 }())

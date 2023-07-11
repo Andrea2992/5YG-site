@@ -283,4 +283,20 @@ var foto = [
             }
         ] 
     }
-]
+];
+
+var fotoHref = [
+    'img/foto-bio/davide-bio.png',
+    'img/foto-bio/andrea-avv-bio.png',
+    'img/foto-bio/francesca-bio.png',
+    'img/foto-bio/andrea-bass-bio.png',
+    'img/foto-bio/michael-bio.png',
+];
+
+var fotoAlt = [
+    'Davide Falconetti',
+    'Andrea Imbergamo',
+    'Francesca Cocolet',
+    'Andrea Cok',
+    'Michael Bonanno'
+];
