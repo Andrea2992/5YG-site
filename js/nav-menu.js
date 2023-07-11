@@ -21,12 +21,10 @@
     menuObserver.observe(menuElem, {attributeFilter: ['class']})
 
     function manageHeaderVisibility() {
-        var isPortrait = window.matchMedia("(orientation: portrait)").matches;
         var isUnder600px = window.matchMedia("(max-width: 599.98px)").matches;
-        var smallDevicesOnPortrait = isPortrait & isUnder600px;
-        var isLandscape = window.matchMedia("(orientation: landscape)").matches;
+        var smallDevicesOnPortrait = isPortrait() & isUnder600px;
         var isUnder960px = window.matchMedia("(max-width: 959.98px)").matches;
-        var smallDevicesOnLandscape = isLandscape & isUnder960px;
+        var smallDevicesOnLandscape = isLandscape() & isUnder960px;
         var isMenuHidden = menu.hasClass('hide');
         if ((smallDevicesOnPortrait || smallDevicesOnLandscape) & isMenuHidden) {
             header.removeClass('header-on-scroll');
