@@ -147,7 +147,7 @@ function listenToLoadEvent(albumIndex) {
             })
             if (allPhotoLoaded) {
                 hideLoader();
-                sliderAlbum();
+                configurePhotoVisibility();
             }
         })
         $('#' + imageId).attr({                          
