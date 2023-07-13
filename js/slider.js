@@ -50,10 +50,5 @@ function createSlider() {
     });
 
     advance();                          
-
-
-
-
-
   });
 }

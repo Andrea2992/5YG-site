@@ -1747,6 +1747,12 @@
         width: 20%;
     }
 
+    /*********** BAND ************/
+
+    #components-list p {
+        height: 50px;
+    }
+
 }
 
 @media (min-width: 1150px) and (max-width: 1279.98px) { /*Medium*/
