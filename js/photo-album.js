@@ -46,7 +46,7 @@ function createImgElemForAlbum() {
     var photoGalleryContainer = $('#foto-galleria');
     for (var i = 0; i < maxPhotoNum; i++) {
         var photoContainer = $('<div></div>');
-        photoContainer.addClass('photoAlbumDiv absolute height100 width100')
+        photoContainer.addClass('photoAlbumDiv absolute height-100 width-100')
         var imgElement = $('<img>');
         var imgElemId = 'album-image-' + i;
         imgElement.attr('id', imgElemId);

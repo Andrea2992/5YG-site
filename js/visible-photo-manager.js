@@ -34,7 +34,7 @@ $('.navigate-right').on('click', function() {
 function showSelectedPhoto(index) {
     currentVisiblePhotoIndex = index;
     var imageContainerElements = $('.photoAlbumDiv');
-    imageContainerElements.removeClass('opacityZero');
-    imageContainerElements.addClass('opacityZero');
-    imageContainerElements.eq(index).removeClass('opacityZero');
+    imageContainerElements.removeClass('opacity-zero');
+    imageContainerElements.addClass('opacity-zero');
+    imageContainerElements.eq(index).removeClass('opacity-zero');
 }
