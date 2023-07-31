@@ -6,19 +6,19 @@
     display: none;
 }
 
-.text-align-right {/*cambiare*/
+.text-align-right {
     text-align: right;
 }
 
-.text-align-left {/*cambiare*/
+.text-align-left {
     text-align: left;
 }
 
-.text-align-center {/*cambiare*/
+.text-align-center {
     text-align: center;
 }
 
-.inline-block {/*cambiare*/
+.inline-block {
     display: inline-block;
 }
 
@@ -32,15 +32,15 @@
     position: absolute;
 }
 
-.height-100 {/*cambiare*/
+.height-100 {
     height: 100%;
 }
 
-.width-100 {/*cambiare*/
+.width-100 {
     width: 100%;
 }
 
-.opacity-zero {/*cambiare*/
+.opacity-zero {
     opacity: 0;
     transition: all 300ms ease-in-out;
 }

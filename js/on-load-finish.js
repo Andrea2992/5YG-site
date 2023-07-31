@@ -1,5 +1,5 @@
 $(window).on('load', function() {
-    $('.loader').remove();
+    $('.site-loader').remove();
     $('body').removeClass('no-scroll');
     createSlider();
 })
