@@ -77,13 +77,13 @@ header {
 	z-index: 2000;
 }
 
-.logo {
+.band-logo {
     float: left;
     width: 35%;
     margin: 0;
 }
 
-#logoImage {
+#band-logo-image {
     width: 100%;
 }
 
