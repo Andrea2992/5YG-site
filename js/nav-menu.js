@@ -1,10 +1,10 @@
 (function() {
     var body = $(document.body);
-    var menu = $('#menu');
-    var navBar = $('#navBar');
+    var menu = $('#nav-menu-small-screen-container');
+    var navBar = $('#nav-bar');
     var header = $('#header');
-    var navLargeScreen = $('#navLargeScreen');
-    var navSmallScreen = $('#navSmallScreen');
+    var navLargeScreen = $('#nav-menu-large-screen');
+    var navSmallScreen = $('#nav-menu-small-screen');
     var scrollTimeout;
 
 
@@ -16,7 +16,7 @@
         }
     }
 
-    const menuElem = document.querySelector('#menu');
+    const menuElem = document.querySelector('#nav-menu-small-screen-container');
     const menuObserver = new MutationObserver(toggleNoScroll);
     menuObserver.observe(menuElem, {attributeFilter: ['class']})
 
@@ -77,7 +77,7 @@
     })
 
     window.addEventListener('scrollend', function() {
-        var menu = $('#menu');
+        var menu = $('#nav-menu-small-screen-container');
         clearTimeout(scrollTimeout);                 
         scrollTimeout = setTimeout(function() {      
             if (menu.hasClass('hide')) {

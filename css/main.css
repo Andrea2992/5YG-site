@@ -100,7 +100,7 @@ nav li {
     padding: 1px;
 }
 
-.navFullScreen {
+.nav-menu-full-screen {
     display: block;
     position: static;
     transform: translateY(0%);
@@ -108,7 +108,7 @@ nav li {
     margin-top: 70px;
 }
 
-nav.navFullScreen li {
+nav.nav-menu-full-screen li {
     border: 1px black solid;
     padding: 9px 0 9px 7px;
     margin: 0 2px 0 0;
@@ -124,7 +124,7 @@ nav li a {
     text-transform: uppercase;
 }
 
-#ulSmallScreen a {
+#nav-menu-small-screen-list a {
     margin-left: 2%;
     font-size: 22px;
 }
@@ -133,11 +133,11 @@ a, button {
     -webkit-tap-highlight-color: transparent;
 }
 
-#ulSmallScreen li:hover {
+#nav-menu-small-screen-list li:hover {
     background-color: red;
 }
 
-.menu {
+.nav-menu-small-screen-container {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -146,11 +146,11 @@ a, button {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-#navBar {
+#nav-bar {
     -webkit-tap-highlight-color: transparent;
 }
 
-#iconBar {
+#nav-bar-icon {
     background-color: #fff;
 }
 
@@ -318,54 +318,54 @@ a, button {
 
 /********** CONCERTI **********/
 
-#concerti {
+#gigs {
     min-height: 500px;
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
     color: #fff;
 }
 
-.title-container {
+.gigs-title-container {
     width: 80%;
     padding-top: 90px;
     margin: 0 auto 40px auto;
 }
 
-div#concerti h1 {
+div#gigs h1 {
     font-size: 45px;
     text-align: center;
 }
 
-.divide-content {
+.content-divider {
     height: 1px;
     width: 80%;
     background-color: #fff;
     margin: 20px auto;
 }
 
-.container-live {
+.gig-container {
     display: flex;
     margin: 0 10%;
     align-items: center
 }
 
-.container-giorno {
+.gig-date {
     display: flex;
     width: 40%;
     align-items: center;
 }
 
-.giorno-concerto {
+.gig-date-text {
     font-size: 30px;
 }
 
-.info-concerto {
+.gig-info {
     display: flex;
     width: 53%;
     margin-left: 5%;
 }
 
-.evento-locale {
+.gig-name {
     display: flex;
     width: 46%;
     margin: 0 2%;
@@ -373,14 +373,14 @@ div#concerti h1 {
     font-size: 23px;
 }
 
-.luogo {
+.gig-location {
     display: flex;
     width: 46%;
     margin: 0 2%;
     font-size: 23px;
 }
 
-.fine-lista-concerti {
+.gig-list-end-space {
     width: 100%;
     height: 100px;
 }

@@ -31,12 +31,12 @@
         margin: 0;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 30px;
         height: 5px;
@@ -62,39 +62,39 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
         text-align: center;
     }
 
-    .container-live {
+    .gig-container {
        display: block;
        width: 80%;
     }
 
-    .container-giorno {
+    .gig-date {
         width: 100%;
         margin: 0 0 10px 0;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 22px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .info-concerto {
+    .gig-info {
         display: block;
         width: 100%;
         margin: 0;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 19px;
         display: block;
         width: 100%;
@@ -102,7 +102,7 @@
         text-align: center;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 19px;
         display: block;
         width: 100%;
@@ -241,7 +241,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -250,7 +250,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 30px;
         height: 5px;
@@ -278,39 +278,39 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
         text-align: center;
     }
 
-    .container-live {
+    .gig-container {
        display: block;
        width: 80%;
     }
 
-    .container-giorno {
+    .gig-date {
         width: 100%;
         margin: 0 0 10px 0;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 25px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .info-concerto {
+    .gig-info {
         display: block;
         width: 100%;
         margin: 0;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -318,7 +318,7 @@
         text-align: center;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -452,7 +452,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -461,7 +461,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 30px;
         height: 5px;
@@ -489,39 +489,39 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
         text-align: center;
     }
 
-    .container-live {
+    .gig-container {
        display: block;
        width: 80%;
     }
 
-    .container-giorno {
+    .gig-date {
         width: 100%;
         margin: 0 0 10px 0;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 25px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .info-concerto {
+    .gig-info {
         display: block;
         width: 100%;
         margin: 0;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -529,7 +529,7 @@
         text-align: center;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -661,7 +661,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -670,7 +670,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 30px;
         height: 5px;
@@ -698,39 +698,39 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
         text-align: center;
     }
 
-    .container-live {
+    .gig-container {
        display: block;
        width: 80%;
     }
 
-    .container-giorno {
+    .gig-date {
         width: 100%;
         margin: 0 0 10px 0;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 25px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .info-concerto {
+    .gig-info {
         display: block;
         width: 100%;
         margin: 0;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -738,7 +738,7 @@
         text-align: center;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -870,7 +870,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -879,7 +879,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 30px;
         height: 5px;
@@ -907,39 +907,39 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
         text-align: center;
     }
 
-    .container-live {
+    .gig-container {
        display: block;
        width: 80%;
     }
 
-    .container-giorno {
+    .gig-date {
         width: 100%;
         margin: 0 0 10px 0;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 25px;
         margin: 0 auto;
         text-align: center;
     }
 
-    .info-concerto {
+    .gig-info {
         display: block;
         width: 100%;
         margin: 0;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -947,7 +947,7 @@
         text-align: center;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 22px;
         display: block;
         width: 100%;
@@ -1076,7 +1076,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -1085,7 +1085,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 35px;
         height: 5px;
@@ -1113,24 +1113,24 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 24px;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 19px;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 19px;
     }
     
@@ -1259,7 +1259,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -1268,7 +1268,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 35px;
         height: 5px;
@@ -1296,24 +1296,24 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 24px;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 19px;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 19px;
     }
     
@@ -1441,7 +1441,7 @@
         left: 5px;
     }
 
-    #navBar {
+    #nav-bar {
         float: right;
         cursor: pointer;
         position: absolute;
@@ -1450,7 +1450,7 @@
         right: 10px;
     }
 
-    #iconBar {
+    #nav-bar-icon {
         display: block;
         width: 35px;
         height: 5px;
@@ -1479,24 +1479,24 @@
 
     /*********** CONCERTI ************/
 
-    #concerti {
+    #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                 url(../img/sfondo-concerti.jpg) no-repeat center / cover;    
     }
 
-    div#concerti h1 {
+    div#gigs h1 {
         font-size: 35px;
     }
 
-    .giorno-concerto {
+    .gig-date-text {
         font-size: 24px;
     }
 
-    .evento-locale {
+    .gig-name {
         font-size: 19px;
     }
 
-    .luogo {
+    .gig-location {
         font-size: 19px;
     }
     
@@ -1920,7 +1920,7 @@
 
     /*********** HEADER ************/
 
-    .navFullScreen ul {
+    .nav-menu-full-screen ul {
         height: calc(100dvh - 70px);
         overflow: scroll;
     }
