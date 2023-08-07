@@ -23,7 +23,7 @@
     centerNavigationArrows()
 
     function toggleFollowUs() {
-        var supportUs = $('#supportUs');
+        var supportUs = $('#support-us-banner');
         if (isMediumScreen()) {
             supportUs.removeClass('block').addClass('hide');
         } else {
