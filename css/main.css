@@ -37,11 +37,11 @@ li {
         box-shadow: 0 0 5px 1px rgb(133, 133, 133);
     }
 
-    .navigate-left:hover {
+    .photo-navigate-left:hover {
         box-shadow: 0 0 7px 2px rgb(133, 133, 133);
     }
 
-    .navigate-right:hover {
+    .photo-navigate-right:hover {
         box-shadow: 0 0 7px 2px rgb(133, 133, 133);
     }
 
@@ -444,24 +444,24 @@ div#gigs h1 {
 
 /**************** FOTO ******************/
 
-#foto {
+#photo {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
     url(../img/sfondo-concerti.jpg) no-repeat center / cover fixed;
 }
 
-.galleria-container {
+.photo-gallery-container {
     box-sizing: border-box;
     margin: 0 10%;
     padding: 100px 0;
 }
 
-.foto-title h2 {
+.photo-section-title h2 {
     text-align: center;
     color: #ffffff;
     font-size: 45px;
 }
 
-.items {
+.photo-section-album-covers-container {
     position: relative;
     height: 280px; /*da cambiare tramite responsive*/
     user-select: none;
@@ -486,25 +486,25 @@ div#gigs h1 {
     object-fit: cover;
 }
   
-.item.active {
+.item.active-album-cover {
     opacity: 1;
     z-index: 99;
     box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
 }
   
-.item.prev {
+.item.previuos-album-cover {
     z-index: 2;
     opacity: 0.25;
     transform: translate(-125%, -50%);
 }
   
-.item.next {
+.item.next-album-cover {
     z-index: 2;
     opacity: 0.25;
     transform: translate(25%, -50%);
 }
 
-.items .button-container {
+.photo-section-album-covers-container .album-covers-buttons-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -521,7 +521,7 @@ div#gigs h1 {
     width: 100%;
 }
 
-.button-container .button {
+.album-covers-buttons-container .album-covers-button {
     color: #fff;
     font-size: 32px;
     cursor: pointer;
@@ -531,16 +531,16 @@ div#gigs h1 {
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .button-container .button:hover {
+    .album-covers-buttons-container .album-covers-button:hover {
         opacity: 1;
     }
 }
 
-.button-container .button:active {
+.album-covers-buttons-container .album-covers-button:active {
     transform: scale(0.85);
 }
 
-.button-container .button:nth-child(1):before {
+.album-covers-buttons-container .album-covers-button:nth-child(1):before {
     content: "";
     position: absolute;
     top: 50%;
@@ -553,7 +553,7 @@ div#gigs h1 {
     z-index: -99;
 }
 
-.button-container .button:nth-child(2):before {
+.album-covers-buttons-container .album-covers-button:nth-child(2):before {
     content: "";
     position: absolute;
     top: 50%;
@@ -566,22 +566,22 @@ div#gigs h1 {
     z-index: -99;
 }
 
-.button-container .button:nth-child(1) {
+.album-covers-buttons-container .album-covers-button:nth-child(1) {
     float: left;
 }
   
-.button-container .button:nth-child(2) {
+.album-covers-buttons-container .album-covers-button:nth-child(2) {
     float: right;
 }
 
-.foto-galleria {
+.photo-gallery {
     width: 80%;
     margin: 0 auto;
     background: #000;
     position: relative;
 }
 
-.container-photos-loader {
+.photos-loader-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -610,7 +610,7 @@ div#gigs h1 {
     100% { transform: rotate(360deg); }
   }
 
-.navigate-left {
+.photo-navigate-left {
     position: absolute;
     z-index: 1000;
     left: 5%;
@@ -623,11 +623,11 @@ div#gigs h1 {
     opacity: 0.7;
 }
 
-.navigate-left:active {
+.photo-navigate-left:active {
     transform: scale(0.9);
 }
 
-.navigate-right {
+.photo-navigate-right {
     position: absolute;
     z-index: 1000;
     right: 5%;
@@ -640,7 +640,7 @@ div#gigs h1 {
     opacity: 0.7;
 }
 
-.navigate-right:active {
+.photo-navigate-right:active {
     transform: scale(0.9);
 }
 

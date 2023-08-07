@@ -133,16 +133,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 120px;
     }
 
@@ -150,7 +150,7 @@
         width: 30%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 77%;
     }
 
@@ -159,11 +159,11 @@
         padding-bottom: 35px;    
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 45px;
         height: 45px;
     }
@@ -344,16 +344,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 120px;
     }
 
@@ -361,7 +361,7 @@
         width: 30%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 77%;
     }
 
@@ -370,11 +370,11 @@
         padding-bottom: 35px;
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 45px;
         height: 45px;
     }
@@ -555,16 +555,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 150px;
     }
 
@@ -572,7 +572,7 @@
         width: 30%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 77%;
     }
 
@@ -581,11 +581,11 @@
         padding-bottom: 35px; 
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 55px;
         height: 55px;
     }
@@ -764,16 +764,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 150px;
     }
 
@@ -781,7 +781,7 @@
         width: 26%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 68%;
     }
 
@@ -790,11 +790,11 @@
         padding-bottom: 35px;
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 55px;
         height: 55px;
     }
@@ -973,16 +973,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
     
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 180px;
     }
 
@@ -990,7 +990,7 @@
         width: 24%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 60%;
     }
 
@@ -999,11 +999,11 @@
         padding-bottom: 35px; 
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 55px;
         height: 55px;
     }
@@ -1156,16 +1156,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
     
-    .items {
+    .photo-section-album-covers-container {
         height: 200px;
     }
 
@@ -1173,7 +1173,7 @@
         width: 24%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 60%;
     }
 
@@ -1182,11 +1182,11 @@
         padding-bottom: 35px;    
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 55px;
         height: 55px;
     }
@@ -1339,16 +1339,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 230px;
     }
 
@@ -1356,7 +1356,7 @@
         width: 22%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 24%;
     }
 
@@ -1364,11 +1364,11 @@
         padding-bottom: 35px;
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 55px;
         height: 55px;
     }
@@ -1517,16 +1517,16 @@
 
     /*********** FOTO ************/
 
-    #foto {
+    #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
         url(../img/sfondo-concerti.jpg) no-repeat center / cover;
     }
 
-    .galleria-container {
+    .photo-gallery-container {
         margin: 0;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 230px;
     }
 
@@ -1534,7 +1534,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 
@@ -1542,11 +1542,11 @@
         padding-bottom: 35px;
     }
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .navigate-left, .navigate-right {
+    .photo-navigate-left, .photo-navigate-right {
         width: 55px;
         height: 55px;
     }
@@ -1621,11 +1621,11 @@
 
     /*********** FOTO ************/
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 230px;
     }
 
@@ -1633,7 +1633,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 
@@ -1679,11 +1679,11 @@
 
     /*********** FOTO ************/
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 250px;
     }
 
@@ -1691,7 +1691,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 
@@ -1731,11 +1731,11 @@
     
     /*********** FOTO ************/
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 250px;
     }
 
@@ -1743,7 +1743,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 
@@ -1769,11 +1769,11 @@
  
     /*********** FOTO ************/
 
-    .foto-galleria {
+    .photo-gallery {
         width: 100%;
     }
 
-    .items {
+    .photo-section-album-covers-container {
         height: 250px;
     }
 
@@ -1781,7 +1781,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 
@@ -1800,7 +1800,7 @@
     }        
        
     /*********** FOTO ************/
-    .items {
+    .photo-section-album-covers-container {
         height: 250px;
     }
 
@@ -1808,7 +1808,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 
@@ -1817,7 +1817,7 @@
 @media (min-width: 1351px) and (max-width: 1499.98px) { /*Large*/
       
     /*********** FOTO ************/
-    .items {
+    .photo-section-album-covers-container {
         height: 250px;
     }
 
@@ -1825,7 +1825,7 @@
         width: 18%;
     }
 
-    .items .button-container {
+    .photo-section-album-covers-container .album-covers-buttons-container {
         width: 20%;
     }
 

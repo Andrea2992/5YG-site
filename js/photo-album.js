@@ -1,5 +1,5 @@
 const photos = document.querySelectorAll(".item");
-const photoAlbumButtons = document.querySelectorAll(".button");
+const photoAlbumButtons = document.querySelectorAll(".album-covers-button");
 var cacheImg = {};
 var cachedAlbumPhotos;
 let currentPhotoAlbum = 0;
@@ -43,7 +43,7 @@ function createImgElemForAlbum() {
         return album.length;
     });
     var maxPhotoNum = Math.max(...albumsPhotosLength);
-    var photoGalleryContainer = $('#foto-galleria');
+    var photoGalleryContainer = $('#photo-gallery');
     for (var i = 0; i < maxPhotoNum; i++) {
         var photoContainer = $('<div></div>');
         photoContainer.addClass('photoAlbumDiv absolute height-100 width-100')
@@ -58,23 +58,23 @@ function createImgElemForAlbum() {
 createImgElemForAlbum();
 
 function unloadImages() {
-    $('#foto-galleria div img').attr({                          
+    $('#photo-gallery div img').attr({                          
             'src': '',                         
             'alt': ''             
           }).addClass('hide').removeClass('block');
 }
 
 function showLoader() {
-  $('#container-photos-loader').addClass('container-photos-loader');
+  $('#photos-loader-container').addClass('photos-loader-container');
     $('#photos-loader').addClass('photos-loader');
-    $('#foto-galleria button').addClass('hide');
+    $('#photo-gallery button').addClass('hide');
     $('.photoAlbumDiv').css({'display': 'none'});
 }
 
 function hideLoader() {
-    $('#container-photos-loader').removeClass('container-photos-loader');
+    $('#photos-loader-container').removeClass('photos-loader-container');
     $('#photos-loader').removeClass('photos-loader');
-    $('#foto-galleria button').removeClass('hide');
+    $('#photo-gallery button').removeClass('hide');
     $('.photoAlbumDiv').css({'display': 'block'});
 }
 
@@ -183,9 +183,9 @@ const selectAlbum = number => {
     prevPhotoAlbum = currentPhotoAlbum - 1;
     nextPhotoAlbum = currentPhotoAlbum + 1;
     for (let i = 0; i < photos.length; i++) {
-        photos[i].classList.remove("active");
-        photos[i].classList.remove("prev");
-        photos[i].classList.remove("next");
+        photos[i].classList.remove("active-album-cover");
+        photos[i].classList.remove("previuos-album-cover");
+        photos[i].classList.remove("next-album-cover");
     }
     if (nextPhotoAlbum == photos.length) {
         nextPhotoAlbum = 0;
@@ -193,9 +193,9 @@ const selectAlbum = number => {
     if (prevPhotoAlbum == -1) {
         prevPhotoAlbum = photos.length - 1;
     }
-    photos[currentPhotoAlbum].classList.add("active");
-    photos[prevPhotoAlbum].classList.add("prev");
-    photos[nextPhotoAlbum].classList.add("next");
+    photos[currentPhotoAlbum].classList.add("active-album-cover");
+    photos[prevPhotoAlbum].classList.add("previuos-album-cover");
+    photos[nextPhotoAlbum].classList.add("next-album-cover");
     albumTitle.html(albumsTitle[currentPhotoAlbum]);
 }
 

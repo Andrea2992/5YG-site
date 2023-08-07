@@ -1,7 +1,7 @@
 var currentVisiblePhotoIndex = 0;
 
 function getShowedPhoto() {
-    var $allPhotoElements = $('.foto-galleria div img');
+    var $allPhotoElements = $('.photo-gallery div img');
     var allPhotoElements = [];
     for (i = 0; i < $allPhotoElements.length; i++) {
         allPhotoElements.push($allPhotoElements[i]);
@@ -20,12 +20,12 @@ function configurePhotoVisibility() {
     showSelectedPhoto(0)
 }
 
-$('.navigate-left').on('click', function() {
+$('.photo-navigate-left').on('click', function() {
     var showedPhoto = getShowedPhoto();
     var newVisiblePhotoIndex = currentVisiblePhotoIndex > 0 ? currentVisiblePhotoIndex -1 : showedPhoto.length - 1;
     showSelectedPhoto(newVisiblePhotoIndex)
 });
-$('.navigate-right').on('click', function() {
+$('.photo-navigate-right').on('click', function() {
     var showedPhoto = getShowedPhoto();
     var newVisiblePhotoIndex = currentVisiblePhotoIndex < showedPhoto.length - 1 ? currentVisiblePhotoIndex + 1 : 0;
     showSelectedPhoto(newVisiblePhotoIndex)

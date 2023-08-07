@@ -1,5 +1,5 @@
 (function() {
-    var albums = $('.items');
+    var albums = $('.photo-section-album-covers-container');
     var albumsCover = foto.map(function(f) {
         return f.albumSrc;
     });
@@ -18,7 +18,7 @@
         albums.append(albumElem);
     }
     var album = $('.item');
-    album.eq(0).addClass('active');
-    album.eq(1).addClass('next');
-    album.eq(albumsCover.length - 1).addClass('prev');
+    album.eq(0).addClass('active-album-cover');
+    album.eq(1).addClass('next-album-cover');
+    album.eq(albumsCover.length - 1).addClass('previuos-album-cover');
 }())

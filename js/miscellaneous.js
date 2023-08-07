@@ -1,13 +1,13 @@
 (function() {
-    var photoGalleryContainer = $('.foto-galleria');
+    var photoGalleryContainer = $('.photo-gallery');
     var photoGalleryContainerWidth = photoGalleryContainer.width();
     photoGalleryContainer.css ({'height': photoGalleryContainerWidth / 2});
            
     function centerNavigationArrows() {
-        var navigateLeft = $('.navigate-left');
-        var navigateRight = $('.navigate-right');
+        var navigateLeft = $('.photo-navigate-left');
+        var navigateRight = $('.photo-navigate-right');
         var navigateLeftHeight = navigateLeft.height();
-        var photoGalleryContainerHeight = $('.foto-galleria').height();
+        var photoGalleryContainerHeight = $('.photo-gallery').height();
         var isUnder700px = window.matchMedia("(max-width: 700px)").matches; 
         if (isPortrait() & isUnder700px) {
             navigateLeft.css({'top': photoGalleryContainerHeight + 30});
@@ -57,7 +57,7 @@
     bodyObserver.observe(bodyElem); 
 
     window.addEventListener('resize', function() {
-        var photoGalleryContainer = $('.foto-galleria');
+        var photoGalleryContainer = $('.photo-gallery');
         var photoGalleryContainerWidth = photoGalleryContainer.width();
         photoGalleryContainer.css ({'height': photoGalleryContainerWidth / 2});
     });
