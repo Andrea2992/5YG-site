@@ -1,7 +1,9 @@
 @import 'fonts.css';
 @import 'generalClasses.css';
 
-/************** GENERAL ******************/
+
+
+/********************** GENERAL **********************/
 
 *, h1 {
     padding: 0;
@@ -29,11 +31,11 @@ li {
         box-shadow: 0px 3px 10px 3px rgb(133, 133, 133);
     }
 
-    .freccia-album-left:hover {/**VIA**/
+    .freccia-album-left:hover {
         box-shadow: 0 0 5px 1px rgb(133, 133, 133);
     }
 
-    .freccia-album-right:hover {/**VIA**/
+    .freccia-album-right:hover {
         box-shadow: 0 0 5px 1px rgb(133, 133, 133);
     }
 
@@ -50,7 +52,9 @@ li {
     }
 }
 
-/**************** LOADER ******************/
+
+
+/********************** PRELOADED IMAGES **********************/
 
 #preloaded-images {
     width: 0px;
@@ -67,7 +71,9 @@ li {
     url(../img/photo-cover-album/rockCamp-cover-album.jpg);
 }
 
-/**************** HEADER ******************/
+
+
+/********************** HEADER **********************/
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
@@ -154,7 +160,9 @@ a, button {
     background-color: #fff;
 }
 
-/********** LOADER **********/
+
+
+/********************** LOADER **********************/
 
 .site-loader {
     position: fixed;
@@ -251,7 +259,10 @@ a, button {
     animation-delay: 1s;
 }
 
-/********** SLIDER **********/
+
+
+/********************** SLIDER **********************/
+
 .slider {
     max-width: 100%;
     height: calc(100vh - 40.391px);
@@ -316,7 +327,9 @@ a, button {
     cursor: pointer;
 }
 
-/********** CONCERTI **********/
+
+
+/********************** GIGS **********************/
 
 #gigs {
     min-height: 500px;
@@ -385,7 +398,9 @@ div#gigs h1 {
     height: 100px;
 }
 
-/********** ALBUMS **********/
+
+
+/********************** ALBUMS **********************/
 
 .albums-background {
     overflow: hidden;
@@ -442,7 +457,9 @@ div#gigs h1 {
     font-size: 1.2em;
 }
 
-/**************** FOTO ******************/
+
+
+/********************** PHOTO **********************/
 
 #photo {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -463,7 +480,7 @@ div#gigs h1 {
 
 .photo-section-album-covers-container {
     position: relative;
-    height: 280px; /*da cambiare tramite responsive*/
+    height: 280px;
     user-select: none;
 }
 
@@ -472,7 +489,7 @@ div#gigs h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 15%; /*da cambiare tramite responsive*/
+    width: 15%;
     border-radius: 50%;
     overflow: hidden;
     transition: all 300ms ease-in-out, height 0ms;
@@ -509,7 +526,7 @@ div#gigs h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16%; /*FORSE da cambiare tramite responsive*/
+    width: 16%; 
     z-index: 100;
 }
 
@@ -547,8 +564,8 @@ div#gigs h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     background: url(../img/site-icon/navigate-left.png) no-repeat center / cover;
-    width: 50px; /*da cambiare tramite responsive*/
-    height: 50px; /*da cambiare tramite responsive*/
+    width: 50px; 
+    height: 50px; 
     border-radius: 50%;
     z-index: -99;
 }
@@ -559,8 +576,8 @@ div#gigs h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;  /*da cambiare tramite responsive*/
-    height: 50px; /*da cambiare tramite responsive*/
+    width: 50px;  
+    height: 50px; 
     background: url(../img/site-icon/navigate-right.png) no-repeat center / cover;
     border-radius: 50%;
     z-index: -99;
@@ -650,7 +667,9 @@ div#gigs h1 {
     object-fit: contain;
 }
 
-/**************** NEWS ******************/
+
+
+/********************** NEWS **********************/
 
 #news-container {
     padding: 30px 0;
@@ -717,7 +736,9 @@ div#gigs h1 {
     margin: 10px auto;
 }
 
-/**************** BAND ******************/
+
+
+/********************** BAND **********************/
 
 #band {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -849,7 +870,9 @@ div#gigs h1 {
     transform: translate(-50%, -50%);
 }
 
-/**************** CONTATTI ******************/
+
+
+/********************** CONTACTS **********************/
 
 .contacts-container {
     width: 100%;

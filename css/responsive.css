@@ -1,11 +1,11 @@
 @media (max-width: 219.98px) { /*minimal*/
    
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 40%;
     }
-
+    
     .site-loader-bar {
         width: 5px;
     }
@@ -20,7 +20,8 @@
         }
     }            
 
-    /*********** HEADER ************/    
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -43,7 +44,8 @@
         margin: 4px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 150px;
     }
@@ -60,7 +62,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -110,7 +112,7 @@
         text-align: center;
     }
 
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -131,7 +133,7 @@
         font-size: 0.9em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -168,14 +170,14 @@
         height: 45px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -186,7 +188,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -206,7 +208,7 @@
 
 @media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 40%;
@@ -226,7 +228,8 @@
         }
     }            
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -257,7 +260,8 @@
         margin: 4px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 155px;
     }
@@ -276,7 +280,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -326,7 +330,7 @@
         text-align: center;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -342,7 +346,7 @@
         font-size: 0.9em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -379,14 +383,14 @@
         height: 45px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -397,7 +401,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -417,7 +421,7 @@
 
 @media (min-width: 300px) and (max-width: 359.98px) { /*Smarthphone*/
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 40%;
@@ -437,7 +441,8 @@
         }
     }            
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -468,7 +473,8 @@
         margin: 4px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 200px;
     }
@@ -487,7 +493,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -537,7 +543,7 @@
         text-align: center;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -553,7 +559,7 @@
         font-size: 0.9em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -590,14 +596,14 @@
         height: 55px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -608,7 +614,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -626,7 +632,7 @@
 
 @media (min-width: 360px) and (max-width: 439.98px) { /*Smarthphone*/
  
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -646,7 +652,8 @@
         }
     }        
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -677,7 +684,8 @@
         margin: 4px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 250px;
     }
@@ -696,7 +704,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -746,7 +754,7 @@
         text-align: center;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -762,7 +770,7 @@
         font-size: 1em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -799,14 +807,14 @@
         height: 55px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -817,7 +825,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -835,7 +843,7 @@
 
 @media (min-width: 440px) and (max-width: 499.98px) { /*Smarthphone*/
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -855,7 +863,8 @@
         }
     }        
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -886,7 +895,8 @@
         margin: 4px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 300px;
     }
@@ -905,7 +915,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -955,7 +965,7 @@
         text-align: center;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -971,7 +981,7 @@
         font-size: 1em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1008,14 +1018,14 @@
         height: 55px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }    
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1026,7 +1036,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -1038,9 +1048,9 @@
 
 }
 
-@media (min-width: 500px) and (max-width: 599.98px)  { /*Small*/    
+@media (min-width: 500px) and (max-width: 599.98px)  { /*Smarthphone*/    
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -1060,7 +1070,8 @@
         }
     }
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -1092,7 +1103,8 @@
         margin: 5px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 350px;
     }
@@ -1111,7 +1123,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1134,7 +1146,7 @@
         font-size: 19px;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1154,7 +1166,7 @@
         font-size: 1em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1191,14 +1203,14 @@
         height: 55px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
     
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1209,7 +1221,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -1221,9 +1233,9 @@
 
 }
 
-@media (min-width: 600px) and (max-width: 759.98px)  { /*Small*/    
+@media (min-width: 600px) and (max-width: 759.98px)  { /*Smarthphone*/ 
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -1243,7 +1255,8 @@
         }
     }
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -1275,7 +1288,8 @@
         margin: 5px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
+
     .slider {
         height: 400px;
     }
@@ -1294,7 +1308,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1317,7 +1331,7 @@
         font-size: 19px;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1337,7 +1351,7 @@
         font-size: 1em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1373,14 +1387,14 @@
         height: 55px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1391,7 +1405,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -1405,7 +1419,7 @@
 
 @media (min-width: 760px) and (max-width: 959.98px)  { /*Small*/    
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -1425,7 +1439,8 @@
         }
     }
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
+
     header {
         min-height: 65px;
     }
@@ -1457,7 +1472,7 @@
         margin: 5px;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
     
     .slider {
         height: 500px;
@@ -1477,7 +1492,7 @@
         line-height: 0.7em;
     }
 
-    /*********** CONCERTI ************/
+    /********************** GIGS **********************/
 
     #gigs {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1500,7 +1515,7 @@
         font-size: 19px;
     }
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .albums-background {
         background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1515,7 +1530,7 @@
         font-size: 0.9em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     #photo {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1551,14 +1566,14 @@
         height: 55px;
     }
 
-    /*********** NEWS ************/
+    /********************** NEWS **********************/
 
     #news-container {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
                     url(../img/site-backgroung-1.jpg) no-repeat center / cover;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
     
     #band {
         background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
@@ -1569,7 +1584,7 @@
         margin: 0;
     }
 
-    /*********** CONTATTI ************/
+    /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
         display: inline;
@@ -1583,7 +1598,7 @@
 
 @media (min-width: 960px) and (max-width: 1019.98px) { /*Medium*/
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -1603,7 +1618,7 @@
         }
     }    
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
     
     .slider {
         height: 570px;
@@ -1613,13 +1628,13 @@
         height: 100%;
     }        
  
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .album-gallery li a p {
         font-size: 1em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     .photo-gallery {
         width: 100%;
@@ -1641,7 +1656,7 @@
 
 @media (min-width: 1020px) and (max-width: 1069.98px) { /*Medium*/
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -1661,7 +1676,7 @@
         }
     }    
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
    
     .slider {
         height: 630px;
@@ -1671,13 +1686,13 @@
         height: 100%;
     }        
     
-    /*********** ALBUMS ************/
+    /********************** ALBUMS **********************/
 
     .album-gallery li a p {
         font-size: 1em;
     }
 
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     .photo-gallery {
         width: 100%;
@@ -1699,7 +1714,7 @@
 
 @media (min-width: 1070px) and (max-width: 1149.98px) { /*Medium*/
 
-    /*********** LOADER ************/
+    /********************** LOADER **********************/
 
     .site-loader-bar-container {
         width: 30%;
@@ -1719,7 +1734,7 @@
         }
     }    
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
     
     .slider {
         height: 680px;
@@ -1729,7 +1744,7 @@
         height: 100%;
     }        
     
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     .photo-gallery {
         width: 100%;
@@ -1747,7 +1762,7 @@
         width: 20%;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band-members-list p {
         height: 50px;
@@ -1757,7 +1772,7 @@
 
 @media (min-width: 1150px) and (max-width: 1279.98px) { /*Medium*/
     
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
   
     .slider {
         height: 720px;
@@ -1767,7 +1782,7 @@
         height: 100%;
     }        
  
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
 
     .photo-gallery {
         width: 100%;
@@ -1789,7 +1804,7 @@
 
 @media (min-width: 1280px) and (max-width: 1350.98px) { /*Large*/
          
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
    
     .slider {
         height: 750px;
@@ -1799,7 +1814,8 @@
         height: 100%;
     }        
        
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
+
     .photo-section-album-covers-container {
         height: 250px;
     }
@@ -1816,7 +1832,8 @@
 
 @media (min-width: 1351px) and (max-width: 1499.98px) { /*Large*/
       
-    /*********** FOTO ************/
+    /********************** PHOTO **********************/
+
     .photo-section-album-covers-container {
         height: 250px;
     }
@@ -1835,9 +1852,9 @@
 
 }
 
-@media (max-width: 599.98px) and (orientation: portrait), (max-width: 959.98px) and (orientation: landscape) {
+@media (max-width: 599.98px) and (orientation: portrait), (max-width: 959.98px) and (orientation: landscape) { /*Small-Smarthphone Portrait/Landscape*/
     
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
 
     .header-on-scroll {
         transform: translate(0);
@@ -1850,7 +1867,7 @@
         pointer-events: none;
     }
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band-bio {
         margin: 0 5%;
@@ -1877,14 +1894,14 @@
     }
 
     .member-bio {
-        margin-top: -3px;
+        margin-top: -6px;
     }
 
 }
 
-@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape) {   
+@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape) {   /*Large-Smarthphone/Tablet Portrait/Landscape*/
 
-    /*********** BAND ************/
+    /********************** BAND **********************/
 
     #band-bio {
         margin: 0 5%;
@@ -1911,21 +1928,21 @@
     }
 
     .member-bio {
-        margin-top: -3px;
+        margin-top: -7px;
     }
 
 }
 
-@media (max-width: 959.98px) and (orientation: landscape) {
+@media (max-width: 959.98px) and (orientation: landscape) { /*Tablet Landscape*/
 
-    /*********** HEADER ************/
+    /********************** HEADER **********************/
 
     .nav-menu-full-screen ul {
         height: calc(100dvh - 70px);
         overflow: scroll;
     }
 
-    /*********** SLIDER ************/
+    /********************** SLIDER **********************/
 
     .slider {
         height: calc(100vh - 40px);
