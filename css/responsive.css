@@ -117,17 +117,17 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 85%;
         margin: 30px 7.5%;
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 90%;
         margin: 30px 5%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 0.9em;
     }
 
@@ -333,12 +333,12 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 80%;
         margin: 30px 10%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 0.9em;
     }
 
@@ -544,12 +544,12 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 65%;
         margin: 30px 17.5%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 0.9em;
     }
 
@@ -753,12 +753,12 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 65%;
         margin: 30px 17.5%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 1em;
     }
 
@@ -962,12 +962,12 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 60%;
         margin: 30px 20%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 1em;
     }
 
@@ -1141,16 +1141,16 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .container-albums {
+    .album-container {
         margin: 30px 10%;
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 45%;
         margin: 40px 2.5%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 1em;
     }
 
@@ -1324,16 +1324,16 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .container-albums {
+    .album-container {
         margin: 30px 10%;
     }
 
-    .gallery li {
+    .album-gallery li {
         width: 45%;
         margin: 40px 2.5%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 1em;
     }
 
@@ -1507,11 +1507,11 @@
                 url(../img/albums.jpg) no-repeat center / cover;    
     }
 
-    .container-albums {
+    .album-container {
         margin: 30px 5%;
     }
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 0.9em;
     }
 
@@ -1615,7 +1615,7 @@
  
     /*********** ALBUMS ************/
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 1em;
     }
 
@@ -1673,7 +1673,7 @@
     
     /*********** ALBUMS ************/
 
-    .gallery li a p {
+    .album-gallery li a p {
         font-size: 1em;
     }
 
