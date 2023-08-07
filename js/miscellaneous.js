@@ -32,7 +32,7 @@
     }
 
     function configureBioMemberContainerHeight() {
-        var bandMemberBioContainer = $('#panels div.component-panel');
+        var bandMemberBioContainer = $('#members-bio-container div.member-bio');
         var bandMemberBioContainerWidth = bandMemberBioContainer.width();
         var isBetween600And959px = window.matchMedia("(min-width: 600px)").matches & window.matchMedia("(max-width: 959px)").matches;
         if (isLandscape() & isBetween600And959px) {

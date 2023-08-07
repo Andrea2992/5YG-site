@@ -1749,7 +1749,7 @@
 
     /*********** BAND ************/
 
-    #components-list p {
+    #band-members-list p {
         height: 50px;
     }
 
@@ -1856,7 +1856,7 @@
         margin: 0 5%;
     }
 
-    #components-list {
+    #band-members-list {
         overflow-x: auto;
         overflow-y: hidden;
         width: 100%;
@@ -1864,19 +1864,19 @@
         display: inline-block;
     }
 
-    #components-list li {
+    #band-members-list li {
         width: 20%;
         margin: 0 20px;
         display: inline-block;
         overflow: hidden;
     }
 
-    #components-list p {
+    #band-members-list p {
         font-size: calc(1vw + 1vh + .5vmin);
         white-space: normal;
     }
 
-    .component-panel {
+    .member-bio {
         margin-top: -3px;
     }
 
@@ -1890,7 +1890,7 @@
         margin: 0 5%;
     }
  
-    #components-list {
+    #band-members-list {
         overflow-x: auto;
         overflow-y: hidden;
         width: 100%;
@@ -1898,19 +1898,19 @@
         display: inline-block;
     }
  
-    #components-list li {
+    #band-members-list li {
         width: 20%;
         margin: 0 20px;
         display: inline-block;
         overflow: hidden;
     }
  
-    #components-list p {
+    #band-members-list p {
         font-size: calc(1vw + 1vh + .5vmin);
         white-space: normal;
     }
 
-    .component-panel {
+    .member-bio {
         margin-top: -3px;
     }
 

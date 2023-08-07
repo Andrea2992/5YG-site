@@ -45,7 +45,7 @@ li {
         box-shadow: 0 0 7px 2px rgb(133, 133, 133);
     }
 
-    #components-list img:hover {
+    #band-members-list img:hover {
         transform: scale(1.05);
     }
 }
@@ -730,7 +730,7 @@ div#gigs h1 {
     padding-bottom: 100px;
 }
 
-#band-title h2 {
+#band-section-title h2 {
     text-align: center;
     font-size: 45px;
     color: #ffffff;
@@ -748,26 +748,26 @@ div#gigs h1 {
     font-style: italic;
 }
 
-#components-list {
+#band-members-list {
     display: flex;
     justify-content: space-around;
 }
 
-#components-list li {
+#band-members-list li {
     width: 12%;
 }
 
-#components-list img {
+#band-members-list img {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
 
-#components-list img:active {
+#band-members-list img:active {
     transform: scale(0.9);
 }
 
-#components-list p {
+#band-members-list p {
     padding-top: 5px;
     padding-bottom: 10px;
     font-size: 20px;
@@ -776,7 +776,7 @@ div#gigs h1 {
     height: 40px;
 }
 
-.component-panel {
+.member-bio {
     display: none;
     width: 100%;
     color: #ffffff;
@@ -786,11 +786,11 @@ div#gigs h1 {
     position: relative;
 }
 
-.active-panel {
+.active-member-bio {
     display: block;
 }
 
-.active-component {
+.active-member-name {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
