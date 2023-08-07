@@ -46,7 +46,7 @@ function createImgElemForAlbum() {
     var photoGalleryContainer = $('#photo-gallery');
     for (var i = 0; i < maxPhotoNum; i++) {
         var photoContainer = $('<div></div>');
-        photoContainer.addClass('photoAlbumDiv absolute height-100 width-100')
+        photoContainer.addClass('single-photo-container absolute height-100 width-100')
         var imgElement = $('<img>');
         var imgElemId = 'album-image-' + i;
         imgElement.attr('id', imgElemId);
@@ -68,14 +68,14 @@ function showLoader() {
   $('#photos-loader-container').addClass('photos-loader-container');
     $('#photos-loader').addClass('photos-loader');
     $('#photo-gallery button').addClass('hide');
-    $('.photoAlbumDiv').css({'display': 'none'});
+    $('.single-photo-container').css({'display': 'none'});
 }
 
 function hideLoader() {
     $('#photos-loader-container').removeClass('photos-loader-container');
     $('#photos-loader').removeClass('photos-loader');
     $('#photo-gallery button').removeClass('hide');
-    $('.photoAlbumDiv').css({'display': 'block'});
+    $('.single-photo-container').css({'display': 'block'});
 }
 
 function addToCache(albumIndex) {

@@ -1,6 +1,6 @@
 var foto = [
     {
-        albumSrc: 'img/foto-cover-album/vecchiaFormazione-cover-album.jpg',
+        albumSrc: 'img/photo-cover-album/vecchiaFormazione-cover-album.jpg',
         albumTitle: 'Formazione Precedente 2019/2023',
         fotoSrc: [
             {
@@ -46,7 +46,7 @@ var foto = [
         ] 
     },
     {
-        albumSrc: 'img/foto-cover-album/torreano-cover-album.jpg',
+        albumSrc: 'img/photo-cover-album/torreano-cover-album.jpg',
         albumTitle: 'Match Ball - Torreano 2023',
         fotoSrc: [
             {
@@ -128,7 +128,7 @@ var foto = [
         ] 
     },
     {
-        albumSrc: 'img/foto-cover-album/tuneMusicLab-cover-album.jpg',
+        albumSrc: 'img/photo-cover-album/tuneMusicLab-cover-album.jpg',
         albumTitle: 'Tune Music Lab - Pordenone 2023',
         fotoSrc: [
             {
@@ -190,7 +190,7 @@ var foto = [
         ] 
     },
     {
-        albumSrc: 'img/foto-cover-album/rockCamp-cover-album.jpg',
+        albumSrc: 'img/photo-cover-album/rockCamp-cover-album.jpg',
         albumTitle: 'Rock Camp 2023 - Prepotto (TS) 2023',
         fotoSrc: [
             {
@@ -286,11 +286,11 @@ var foto = [
 ];
 
 var fotoHref = [
-    'img/foto-bio/davide-bio.png',
-    'img/foto-bio/andrea-avv-bio.png',
-    'img/foto-bio/francesca-bio.png',
-    'img/foto-bio/andrea-bass-bio.png',
-    'img/foto-bio/michael-bio.png',
+    'img/photo-bio/davide-bio.png',
+    'img/photo-bio/andrea-gtr-bio.png',
+    'img/photo-bio/francesca-bio.png',
+    'img/photo-bio/andrea-bass-bio.png',
+    'img/photo-bio/michael-bio.png',
 ];
 
 var fotoAlt = [

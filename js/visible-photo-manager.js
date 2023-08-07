@@ -33,7 +33,7 @@ $('.photo-navigate-right').on('click', function() {
 
 function showSelectedPhoto(index) {
     currentVisiblePhotoIndex = index;
-    var imageContainerElements = $('.photoAlbumDiv');
+    var imageContainerElements = $('.single-photo-container');
     imageContainerElements.removeClass('opacity-zero');
     imageContainerElements.addClass('opacity-zero');
     imageContainerElements.eq(index).removeClass('opacity-zero');
