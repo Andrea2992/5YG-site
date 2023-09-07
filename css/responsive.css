@@ -1036,6 +1036,11 @@
         margin: 0;
     }
 
+    #band-members-list p {
+        font-size: calc(0.75vw + 0.75vh + .5vmin);
+        white-space: normal;
+    }
+
     /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
@@ -1219,6 +1224,11 @@
     
     #band-container {
         margin: 0;
+    }
+
+    #band-members-list p {
+        font-size: calc(0.8vw + 0.8vh + .5vmin);
+        white-space: normal;
     }
 
     /********************** CONTACTS **********************/
@@ -1405,6 +1415,11 @@
         margin: 0;
     }
 
+    #band-members-list p {
+        font-size: calc(0.8vw + 0.8vh + .5vmin);
+        white-space: normal;
+    }
+
     /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
@@ -1582,6 +1597,11 @@
 
     #band-container {
         margin: 0;
+    }
+
+    #band-members-list p {
+        font-size: calc(0.8vw + 0.8vh + .5vmin);
+        white-space: normal;
     }
 
     /********************** CONTACTS **********************/
@@ -1852,7 +1872,7 @@
 
 }
 
-@media (max-width: 599.98px) and (orientation: portrait), (max-width: 959.98px) and (orientation: landscape) { /*Small-Smarthphone Portrait/Landscape*/
+@media (max-width: 599.98px) and (orientation: portrait) and (pointer:coarse), (max-width: 959.98px) and (orientation: landscape) and (pointer:coarse) { /*Small-Smarthphone Portrait/Landscape*/
     
     /********************** HEADER **********************/
 
@@ -1899,7 +1919,7 @@
 
 }
 
-@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape) {   /*Large-Smarthphone/Tablet Portrait/Landscape*/
+@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait) and (pointer:coarse), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape) and (pointer:coarse)  {   /*Large-Smarthphone/Tablet Portrait/Landscape*/
 
     /********************** BAND **********************/
 
@@ -1933,7 +1953,7 @@
 
 }
 
-@media (max-width: 959.98px) and (orientation: landscape) { /*Tablet Landscape*/
+@media (max-width: 959.98px) and (orientation: landscape) and (pointer:coarse) { /*Tablet Landscape*/
 
     /********************** HEADER **********************/
 
@@ -1946,6 +1966,16 @@
 
     .slider {
         height: calc(100vh - 40px);
+    }
+
+}
+
+@media (pointer:none), (pointer:coarse) {
+
+    /********************** BAND **********************/
+
+    #band-members-list::-webkit-scrollbar {
+        display: none;
     }
 
 }
