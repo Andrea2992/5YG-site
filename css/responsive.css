@@ -1943,7 +1943,7 @@
     }
  
     #band-members-list p {
-        font-size: calc(1vw + 1vh + .5vmin);
+        font-size: calc(0.85vw + 0.85vh + .5vmin);
         white-space: normal;
     }
 
