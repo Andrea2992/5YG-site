@@ -1,0 +1,1578 @@
+@media (max-width: 219.98px) { /*minimal*/
+   
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 40%;
+    }
+    
+    .site-loader-bar {
+        width: 5px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 40px;
+        }
+    }            
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: none;
+        width: 70%;
+        margin: 0;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 150px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+    
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        width: 200px;
+        height: 30px;
+        padding-top: 20px;
+        transform: scale(0.80);
+        left: -105px;
+        bottom: -10px;
+    }
+
+    .music-player-buttons, .song-info-container {
+        height: 30px;
+    }
+
+    .music-player-buttons button {
+        width: 25px;
+        height: 25px;
+    }    
+
+    .previous {
+        margin-right: -5px;
+    }
+
+    .next {
+        margin-left: -5px;
+    }
+
+    .song-info {
+        font-size: 18px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-gallery li {
+        width: 85%;
+        margin: 30px 7.5%;
+    }
+
+    .album-gallery li {
+        width: 90%;
+        margin: 30px 5%;
+    }
+
+    .album-gallery li a p {
+        font-size: 0.9em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 120px;
+    }
+
+    .item {
+        width: 30%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 77%;
+    }
+
+    .album-title {
+        font-size: 20px;
+        padding-bottom: 35px;    
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 45px;
+        height: 45px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px 5%;
+    }    
+
+    .copyright {
+        font-size: 11.5px;
+    }
+
+}
+
+@media (min-width: 220px) and (max-width: 299.98px) { /*Smarthphone*/
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 40%;
+    }
+
+    .site-loader-bar {
+        width: 5px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 50px;
+        }
+    }            
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 155px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        width: 200px;
+        height: 30px;
+        padding-top: 20px;
+        transform: scale(0.95);
+        left: -105px;
+        bottom: -10px;
+    }
+
+    .music-player-buttons, .song-info-container {
+        height: 30px;
+    }
+
+    .music-player-buttons button {
+        width: 25px;
+        height: 25px;
+    }    
+
+    .previous {
+        margin-right: -5px;
+    }
+
+    .next {
+        margin-left: -5px;
+    }
+
+    .song-info {
+        font-size: 18px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-gallery li {
+        width: 80%;
+        margin: 30px 10%;
+    }
+
+    .album-gallery li a p {
+        font-size: 0.9em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 120px;
+    }
+
+    .item {
+        width: 30%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 77%;
+    }
+
+    .album-title {
+        font-size: 20px;    
+        padding-bottom: 35px;
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 45px;
+        height: 45px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+        width: 90%;
+        padding: 20px 5%;
+    }    
+
+    .copyright {
+        font-size: 11.5px;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 359.98px) { /*Smarthphone*/
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 40%;
+    }
+
+    .site-loader-bar {
+        width: 5px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 50px;
+        }
+    }            
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 200px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        width: 300px;
+        height: 45px;
+        padding-top: 20px;
+        transform: scale(0.80);
+        left: -105px;
+        bottom: -10px;
+    }
+
+    .music-player-buttons, .song-info-container {
+        height: 45px;
+    }
+
+    .music-player-buttons button {
+        width: 39px;
+        height: 39px;
+    }    
+
+    .previous {
+        margin-right: -8px;
+    }
+
+    .next {
+        margin-left: -8px;
+    }
+
+    .song-info {
+        font-size: 18px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-gallery li {
+        width: 65%;
+        margin: 30px 17.5%;
+    }
+
+    .album-gallery li a p {
+        font-size: 0.9em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 150px;
+    }
+
+    .item {
+        width: 30%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 77%;
+    }
+
+    .album-title {
+        font-size: 20px;   
+        padding-bottom: 35px; 
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 55px;
+        height: 55px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }    
+
+    .copyright {
+        font-size: 11.5px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 439.98px) { /*Smarthphone*/
+ 
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 5px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 50px;
+        }
+    }        
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 250px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        width: 300px;
+        height: 45px;
+        padding-top: 20px;
+        transform: scale(0.90);
+        left: -105px;
+        bottom: -10px;
+    }
+
+    .music-player-buttons, .song-info-container {
+        height: 45px;
+    }
+
+    .music-player-buttons button {
+        width: 39px;
+        height: 39px;
+    }    
+
+    .previous {
+        margin-right: -8px;
+    }
+
+    .next {
+        margin-left: -8px;
+    }
+
+    .song-info {
+        font-size: 20px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-gallery li {
+        width: 65%;
+        margin: 30px 17.5%;
+    }
+
+    .album-gallery li a p {
+        font-size: 1em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 150px;
+    }
+
+    .item {
+        width: 26%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 68%;
+    }
+
+    .album-title {
+        font-size: 22px;    
+        padding-bottom: 35px;
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 55px;
+        height: 55px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }    
+
+    .copyright {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 440px) and (max-width: 499.98px) { /*Smarthphone*/
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 7px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 50px;
+        }
+    }        
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        width: 70%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 300px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }      
+
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 300%;
+        padding: 0 5px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        transform: scale(0.80);
+        left: -75px;
+        bottom: 2px;
+    }
+
+    .song-info {
+        font-size: 22px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-gallery li {
+        width: 60%;
+        margin: 30px 20%;
+    }
+
+    .album-gallery li a p {
+        font-size: 1em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 180px;
+    }
+
+    .item {
+        width: 24%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 60%;
+    }
+
+    .album-title {
+        font-size: 22px;   
+        padding-bottom: 35px; 
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 55px;
+        height: 55px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }    
+
+}
+
+@media (min-width: 500px) and (max-width: 599.98px)  { /*Smarthphone*/    
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 7px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        min-width: 300px;
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 350px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }
+    
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 280%;
+        padding: 0 4px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        transform: scale(0.80);
+        left: -65px;
+        bottom: 2px;
+    }
+
+    .song-info {
+        font-size: 22px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-container {
+        margin: 30px 10%;
+    }
+
+    .album-gallery li {
+        width: 45%;
+        margin: 40px 2.5%;
+    }
+
+    .album-gallery li a p {
+        font-size: 1em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+    
+    .photo-section-album-covers-container {
+        height: 200px;
+    }
+
+    .item {
+        width: 24%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 60%;
+    }
+
+    .album-title {
+        font-size: 22px;
+        padding-bottom: 35px;    
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 55px;
+        height: 55px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }    
+
+}
+
+@media (min-width: 600px) and (max-width: 759.98px)  { /*Smarthphone*/ 
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 9px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        min-width: 300px;
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: 400px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }
+    
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 280%;
+        padding: 0 4px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        transform: scale(0.80);
+        left: -38px;
+        bottom: 10px;
+    }
+
+    .song-info {
+        font-size: 22px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-container {
+        margin: 30px 10%;
+    }
+
+    .album-gallery li {
+        width: 45%;
+        margin: 40px 2.5%;
+    }
+
+    .album-gallery li a p {
+        font-size: 1em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 230px;
+    }
+
+    .item {
+        width: 22%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 24%;
+    }
+
+    .album-title {
+        padding-bottom: 35px;
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 55px;
+        height: 55px;
+    }
+
+    /********************** BAND **********************/
+
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+    
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }    
+
+}
+
+@media (min-width: 760px) and (max-width: 959.98px)  { /*Small*/    
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 9px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        min-width: 300px;
+        width: 50%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    /********************** SLIDER **********************/
+    
+    .slider {
+        height: 500px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }
+    
+    .slide-buttons {
+        padding: 0;
+    }
+
+    .slide-btn {
+        font-size: 280%;
+        padding: 0 4px;
+        line-height: 0.7em;
+    }
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        transform: scale(0.85);
+        left: -38px;
+        bottom: 10px;
+    }
+
+    .song-info {
+        font-size: 20px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .albums-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+                url(../img/site-backgroung-1.jpg) no-repeat center / cover;    
+    }
+
+    .album-container {
+        margin: 30px 5%;
+    }
+
+    .album-gallery li a p {
+        font-size: 0.9em;
+    }
+
+    /********************** PHOTO **********************/
+
+    #photo {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    .photo-gallery-container {
+        margin: 0;
+    }
+
+    .photo-section-album-covers-container {
+        height: 230px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+    .album-title {
+        padding-bottom: 35px;
+    }
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-navigate-left, .photo-navigate-right {
+        width: 55px;
+        height: 55px;
+    }
+
+    /********************** BAND **********************/
+    
+    #band {
+        background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+        url(../img/site-background-2.jpg) no-repeat center / cover;
+    }
+
+    #band-container {
+        margin: 0;
+    }
+
+    /********************** CONTACTS **********************/
+
+    .contacts-flexible-container {
+        display: inline;
+    }
+
+    .social-links {
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 960px) and (max-width: 1019.98px) { /*Medium*/
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 9px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }    
+
+    /********************** SLIDER **********************/
+    
+    .slider {
+        height: 570px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+
+    /********************** MUSIC PLAYER **********************/
+
+    .music-player {
+        transform: scale(0.85);
+        left: -8px;
+    }
+
+    .song-info {
+        font-size: 20px;
+    }
+
+    /********************** ALBUMS **********************/
+
+    .album-gallery li a p {
+        font-size: 1em;
+    }
+
+    /********************** PHOTO **********************/
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-section-album-covers-container {
+        height: 230px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1020px) and (max-width: 1069.98px) { /*Medium*/
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 9px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }    
+
+    /********************** SLIDER **********************/
+   
+    .slider {
+        height: 630px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+    
+    /********************** ALBUMS **********************/
+
+    .album-gallery li a p {
+        font-size: 1em;
+    }
+
+    /********************** PHOTO **********************/
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-section-album-covers-container {
+        height: 250px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1070px) and (max-width: 1149.98px) { /*Medium*/
+
+    /********************** LOADER **********************/
+
+    .site-loader-bar-container {
+        width: 30%;
+    }
+
+    .site-loader-bar {
+        width: 9px;
+    }
+
+    @keyframes site-loader {
+        0%, 100% {
+            height: 2px;
+        }
+
+        50% {
+            height: 65px;
+        }
+    }    
+
+    /********************** SLIDER **********************/
+    
+    .slider {
+        height: 680px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+    
+    /********************** PHOTO **********************/
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-section-album-covers-container {
+        height: 250px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1150px) and (max-width: 1279.98px) { /*Medium*/
+    
+    /********************** SLIDER **********************/
+  
+    .slider {
+        height: 720px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+ 
+    /********************** PHOTO **********************/
+
+    .photo-gallery {
+        width: 100%;
+    }
+
+    .photo-section-album-covers-container {
+        height: 250px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1280px) and (max-width: 1350.98px) { /*Large*/
+         
+    /********************** SLIDER **********************/
+   
+    .slider {
+        height: 750px;
+    }
+    
+    .slide-viewer {
+        height: 100%;
+    }        
+       
+    /********************** PHOTO **********************/
+
+    .photo-section-album-covers-container {
+        height: 250px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1351px) and (max-width: 1499.98px) { /*Large*/
+      
+    /********************** PHOTO **********************/
+
+    .photo-section-album-covers-container {
+        height: 250px;
+    }
+
+    .item {
+        width: 18%;
+    }
+
+    .photo-section-album-covers-container .album-covers-buttons-container {
+        width: 20%;
+    }
+
+}
+
+@media (min-width: 1500px) { /*Large*/
+
+}
+
+@media (max-width: 599.98px) and (orientation: portrait) and (pointer:coarse), (max-width: 959.98px) and (orientation: landscape) and (pointer:coarse) { /*Small-Smarthphone Portrait/Landscape*/
+    
+    /********************** HEADER **********************/
+
+    .header-on-scroll {
+        transform: translate(0);
+        transition: 300ms ease-in-out;
+    }
+    
+    .header-scroll-end {
+        transform: translate(0, -100%);
+        transition: 300ms ease-in-out;
+        pointer-events: none;
+    }
+
+    /********************** BAND **********************/
+
+    #band-bio {
+        margin: 0 5%;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 839.98px) and (orientation: portrait) and (pointer:coarse), (min-width: 960px) and (max-width: 1279.98px) and (orientation: landscape) and (pointer:coarse)  {   /*Large-Smarthphone/Tablet Portrait/Landscape*/
+
+    /********************** BAND **********************/
+
+    #band-bio {
+        margin: 0 5%;
+    }
+ 
+}
+
+@media (max-width: 959.98px) and (orientation: landscape) and (pointer:coarse) { /*Tablet Landscape*/
+
+    /********************** SLIDER **********************/
+
+    .slider {
+        height: calc(100vh - 40px);
+    }
+
+}
