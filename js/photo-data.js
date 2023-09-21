@@ -1,51 +1,5 @@
 var foto = [
     {
-        albumSrc: 'img/photo-cover-album/vecchiaFormazione-cover-album.jpg',
-        albumTitle: 'Formazione Precedente 2019/2023',
-        fotoSrc: [
-            {
-                src: 'img/vecchia-formazione/vf-1.jpg',
-                alt: 'formazione precedente-img1'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-2.jpg',
-                alt: 'formazione precedente-img2'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-3.jpg',
-                alt: 'formazione precedente-img3'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-4.jpg',
-                alt: 'formazione precedente-img4'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-5.jpg',
-                alt: 'formazione precedente-img5'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-6.jpg',
-                alt: 'formazione precedente-img6'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-7.jpg',
-                alt: 'formazione precedente-img7'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-8.jpg',
-                alt: 'formazione precedente-img8'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-9.jpg',
-                alt: 'formazione precedente-img9'
-            },
-            {
-                src: 'img/vecchia-formazione/vf-10.jpg',
-                alt: 'formazione precedente-img10'
-            }
-        ] 
-    },
-    {
         albumSrc: 'img/photo-cover-album/torreano-cover-album.jpg',
         albumTitle: 'Match Ball - Torreano 2023',
         fotoSrc: [

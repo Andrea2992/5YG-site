@@ -1,0 +1,202 @@
+const photos = document.querySelectorAll(".item");
+const photoAlbumButtons = document.querySelectorAll(".album-covers-button");
+var cacheImg = {};
+var cachedAlbumPhotos;
+let currentPhotoAlbum = 0;
+let prevPhotoAlbum = photos.length - 1;
+let nextPhotoAlbum = 1;
+
+var albumsCover = fotoArchivio.map(function(f) {
+    return f.albumSrc;
+});
+var albumsTitle = fotoArchivio.map(function(f) {
+    return f.albumTitle;
+});
+var albumsPhotos = fotoArchivio.map(function(f) {
+    return f.fotoSrc;
+})
+
+var albumTitle = $('.album-title');
+albumTitle.html(albumsTitle[0]);
+
+function resizeCoverAlbum(height) {
+    var item = $('.item');
+    item.css({'height': height});
+}
+
+var firstPhoto = document.querySelector('.item');
+const coverAlbumObserver = new ResizeObserver(entries => {
+    const albumCoverElement = entries[0];
+    const width = albumCoverElement.contentRect.width;
+    resizeCoverAlbum(width);
+})
+coverAlbumObserver.observe(firstPhoto);
+
+for (let i = 0; i < photoAlbumButtons.length; i++) {
+    photoAlbumButtons[i].addEventListener("click", () => i == 0 ? goToPrevAlbum() : goToNextAlbum());
+}
+
+var photoIds = [];
+
+function createImgElemForAlbum() {
+    var albumsPhotosLength = albumsPhotos.map(function(album) {
+        return album.length;
+    });
+    var maxPhotoNum = Math.max(...albumsPhotosLength);
+    var photoGalleryContainer = $('#photo-gallery');
+    for (var i = 0; i < maxPhotoNum; i++) {
+        var photoContainer = $('<div></div>');
+        photoContainer.addClass('single-photo-container absolute height-100 width-100')
+        var imgElement = $('<img>');
+        var imgElemId = 'album-image-' + i;
+        imgElement.attr('id', imgElemId);
+        photoContainer.append(imgElement);
+        photoGalleryContainer.append(photoContainer);
+        photoIds.push(imgElemId)
+    }
+}
+createImgElemForAlbum();
+
+function unloadImages() {
+    $('#photo-gallery div img').attr({                          
+            'src': '',                         
+            'alt': ''             
+          }).addClass('hide').removeClass('block');
+}
+
+function showLoader() {
+  $('#photos-loader-container').addClass('photos-loader-container');
+    $('#photos-loader').addClass('photos-loader');
+    $('#photo-gallery button').addClass('hide');
+    $('.single-photo-container').css({'display': 'none'});
+}
+
+function hideLoader() {
+    $('#photos-loader-container').removeClass('photos-loader-container');
+    $('#photos-loader').removeClass('photos-loader');
+    $('#photo-gallery button').removeClass('hide');
+    $('.single-photo-container').css({'display': 'block'});
+}
+
+function addToCache(albumIndex) {
+    var selectedAlbumPhotos = albumsPhotos[albumIndex]
+    var albumSrcKey = albumsCover[albumIndex]
+    if (!cacheImg[albumSrcKey]) {
+        cacheImg[albumSrcKey] = [];
+    }
+    for (var i = 0; i < selectedAlbumPhotos.length; i++) {
+        var currentPhoto = selectedAlbumPhotos[i]
+        var alreadyInCache = cacheImg[albumSrcKey].find(function(photo) {
+            return photo.src == currentPhoto.src;
+        })
+        if (!alreadyInCache) {
+            var photoElement = {
+                src: currentPhoto.src,
+                alt: currentPhoto.alt,
+                isLoading: true,
+                index: i
+            }
+            cacheImg[albumSrcKey].push(photoElement);
+        }
+    }
+}
+
+function onAllPhotosLoaded(albumIndex) {
+    var albumSrcKey = albumsCover[albumIndex];
+    cachedAlbumPhotos = cacheImg[albumSrcKey];
+    var notLoadedPhotos = cachedAlbumPhotos.filter(function(photo) {
+        return photo.isLoading == true;
+    });
+    var loadedPhotos = cachedAlbumPhotos.filter(function(photo) {
+        return photo.isLoading == false;
+    });
+    for (var i = 0; i < loadedPhotos.length; i++) {
+        var photoIndex = loadedPhotos[i].index;
+        var imageId = photoIds[photoIndex];
+        $('#' + imageId).attr({                          
+            'src': loadedPhotos[i].src,                         
+            'alt': loadedPhotos[i].alt             
+          });
+    }
+    if (notLoadedPhotos.length == 0) {
+        for (var i = 0; i < loadedPhotos.length; i++) {
+            var photoIndex = loadedPhotos[i].index;
+            var imageId = photoIds[photoIndex];
+            $('#' + imageId).removeClass('hide').addClass('block');
+        }
+    }
+    for (var i = 0; i < notLoadedPhotos.length; i++) {
+        var photoIndex = notLoadedPhotos[i].index;
+        var imageId = photoIds[photoIndex];
+        $('#' + imageId).on('load', function() {
+            var thisELemId = $(this).attr('src');
+            var elementInCache = cachedAlbumPhotos.find(function(photo) {
+            return photo.src == thisELemId;
+            })
+            if (elementInCache) {
+                elementInCache.isLoading = false;
+            }
+            var allPhotoLoaded = cachedAlbumPhotos.every(function(photo) {
+                return photo.isLoading == false;
+            })
+            if (allPhotoLoaded) {
+                hideLoader();
+                configurePhotoVisibility();
+            }
+        })
+        $('#' + imageId).attr({                          
+            'src': notLoadedPhotos[i].src,                         
+            'alt': notLoadedPhotos[i].alt             
+        });
+    }
+}
+
+function loadAlbumImages(albumIndex) {
+    unloadImages();
+    addToCache(albumIndex);
+    var albumSrcKey = albumsCover[albumIndex];
+    var cachedAlbumPhotos = cacheImg[albumSrcKey];
+    var stillLoadingPhoto = cachedAlbumPhotos.some(function(photo) {
+        return photo.isLoading == true;
+    })
+    if (stillLoadingPhoto) {
+        showLoader();
+    }
+    onAllPhotosLoaded(albumIndex);    
+}
+loadAlbumImages(0);
+
+const goToPrevAlbum = function() {
+    var newCenterIndex  = currentPhotoAlbum > 0 ? currentPhotoAlbum - 1 : photos.length - 1;
+    selectAlbum(newCenterIndex);
+    loadAlbumImages(newCenterIndex);
+}
+
+const goToNextAlbum = function() {
+    var newCenterIndex = currentPhotoAlbum < photos.length - 1 ? currentPhotoAlbum + 1 : 0;
+    selectAlbum(newCenterIndex);
+    loadAlbumImages(newCenterIndex);
+}
+
+const selectAlbum = number => {
+    currentPhotoAlbum = number;
+    prevPhotoAlbum = currentPhotoAlbum - 1;
+    nextPhotoAlbum = currentPhotoAlbum + 1;
+    for (let i = 0; i < photos.length; i++) {
+        photos[i].classList.remove("active-album-cover");
+        photos[i].classList.remove("previuos-album-cover");
+        photos[i].classList.remove("next-album-cover");
+    }
+    if (nextPhotoAlbum == photos.length) {
+        nextPhotoAlbum = 0;
+    }
+    if (prevPhotoAlbum == -1) {
+        prevPhotoAlbum = photos.length - 1;
+    }
+    photos[currentPhotoAlbum].classList.add("active-album-cover");
+    photos[prevPhotoAlbum].classList.add("previuos-album-cover");
+    photos[nextPhotoAlbum].classList.add("next-album-cover");
+    albumTitle.html(albumsTitle[currentPhotoAlbum]);
+}
+
+
