@@ -200,6 +200,14 @@
         margin: 0;
     }
 
+    .detect-left-scroll-container{
+        transform: scale(0.6);
+    }
+
+    .detect-right-scroll-container {
+        transform: scale(0.6);
+    }
+
     /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
@@ -423,6 +431,14 @@
     
     #band-container {
         margin: 0;
+    }
+
+    .detect-left-scroll-container{
+        transform: scale(0.6);
+    }
+
+    .detect-right-scroll-container {
+        transform: scale(0.6);
     }
 
     /********************** CONTACTS **********************/
@@ -650,6 +666,14 @@
         margin: 0;
     }
 
+    .detect-left-scroll-container{
+        transform: scale(0.75);
+    }
+
+    .detect-right-scroll-container {
+        transform: scale(0.75);
+    }
+
     /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
@@ -873,6 +897,14 @@
         margin: 0;
     }
 
+    .detect-left-scroll-container{
+        transform: scale(0.8);
+    }
+
+    .detect-right-scroll-container {
+        transform: scale(0.8);
+    }
+
     /********************** CONTACTS **********************/
 
     .contacts-flexible-container {
@@ -1094,6 +1126,14 @@
     
     #band-container {
         margin: 0;
+    }
+
+    .detect-left-scroll-container{
+        transform: scale(0.8);
+    }
+
+    .detect-right-scroll-container {
+        transform: scale(0.8);
     }
 
     #band-members-list p {
@@ -1733,6 +1773,27 @@
             height: 65px;
         }
     }    
+
+    /********************** HEADER **********************/
+
+    header {
+        min-height: 65px;
+    }
+
+    .band-logo {
+        float: left;
+        min-width: 280px;
+        width: 30%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5px;
+    }
+
+    nav {
+        width: 70%;
+    }
 
     /********************** SLIDER **********************/
     

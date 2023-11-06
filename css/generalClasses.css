@@ -52,3 +52,15 @@
 .no-clickable {
     pointer-events: none;
 }
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.negative-index {
+    z-index: -100;
+}
+
+.z-index100 {
+    z-index: 100;
+}

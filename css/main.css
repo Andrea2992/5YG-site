@@ -57,7 +57,7 @@ li {
     }
 
     #band-members-list img:hover {
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 }
 
@@ -942,6 +942,10 @@ div#gigs h1 {
     font-style: italic;
 }
 
+#band-members-container {
+    position: relative;
+}
+
 #band-members-list {
     display: flex;
     justify-content: space-around;
@@ -958,7 +962,7 @@ div#gigs h1 {
 }
 
 #band-members-list img:active {
-    transform: scale(0.9);
+    transform: scale(0.98);
 }
 
 #band-members-list p {
@@ -968,6 +972,67 @@ div#gigs h1 {
     text-transform: uppercase;
     color: #ffffff;
     height: 40px;
+}
+
+.detect-left-scroll-container{
+    animation: opacity 1.5s infinite;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+
+.triangle-detect-left-scroll {
+    border-right: 30px solid #c5c8cc;
+    border-top: 20px solid transparent;
+    display: inline-block;
+}
+
+.rectangular-detect-left-scroll {
+    border-left: 27px solid #c5c8cc;
+    border-top: 10px solid #c5c8cc;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.detect-right-scroll-container{
+    animation: opacity 1.5s infinite;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.rectangular-detect-right-scroll {
+    border-left: 27px solid #c5c8cc;
+    border-top: 10px solid #c5c8cc;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.triangle-detect-right-scroll {
+    border-left: 30px solid #c5c8cc;
+    border-top: 20px solid transparent;
+    display: inline-block;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .member-bio {

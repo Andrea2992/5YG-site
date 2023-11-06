@@ -48,11 +48,31 @@
         }
     }
 
+    function configureDetectScroll() {
+        var arrowScrollLeft = $('.detect-left-scroll-container');
+        var arrowScrollRight = $('.detect-right-scroll-container');
+        var isUnder839px = window.matchMedia("(max-width: 839px)").matches;
+        var isUnder1279px = window.matchMedia("(max-width: 1279px)").matches;
+        var pointerCoarse = window.matchMedia("(pointer:coarse)").matches;
+        if (window.innerWidth > 1280) {
+            arrowScrollLeft.removeClass('z-index100');
+            arrowScrollRight.removeClass('z-index100')
+            arrowScrollLeft.addClass('negative-index');
+            arrowScrollRight.addClass('negative-index');
+        } else if (isUnder839px & isPortrait() & pointerCoarse || isUnder1279px & isLandscape() & pointerCoarse) {
+            arrowScrollLeft.removeClass('negative-index');
+            arrowScrollRight.removeClass('negative-index');
+            arrowScrollLeft.addClass('z-index100');
+            arrowScrollRight.addClass('z-index100');
+        }
+    }
+
     var bodyElem = document.querySelector('body');
     const bodyObserver = new ResizeObserver(entries => {
         centerNavigationArrows();
         toggleFollowUs();
         configureBioMemberContainerHeight();
+        configureDetectScroll();
     });
     bodyObserver.observe(bodyElem); 
 
